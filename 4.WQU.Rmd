@@ -1,0 +1,150 @@
+---
+title: "WQU4"
+output: html_document
+date: "2025-07-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Alternative Data
+
+## Similarity Measures
+
+The choice of similarity measure depends on the type of data and the desired interpretation of similarity. 
+Common types of Similarity Measures are:
+
+### 1. Distance Measures
+
+These measures quantify dissimilarity, i.e. Smaller distances indicate higher similarity
+
+#### i) Euclidean Distance
+
+Takes numerical data type. It measures the straight-line distance between two points in Euclidean space:
+
+$$\sqrt{\sum_i (x_i - y_i)^2}$$
+
+Used for K-means clustering, K-nearest neighbors, and finding similar data points
+
+#### ii) Manhattan Distance
+
+Takes numerical data type. It measures the distance between two points by summing the absolute differences of their coordinates. Also known as city block distance or L1 distance.
+
+$$\sum_i \lvert x_i - y_i|$$
+
+Used for Recommender systems, Feature selection, and Robust to outliers
+
+#### iii) Minkowski Distance
+
+Takes numerical data type. Its a generalized distance metric that includes Euclidean (p=2) and Manhattan (p=1) distances as special cases. Where p is the order of the distance.
+
+$$ \left( \sum_i |x_i - y_i|^p \right)^{\frac{1}{p}}$$
+
+Use cases include adaptable to different data distributions, and experimenting with different distance metrics.
+
+#### iv) Word Mover's Distance (WMD)
+
+Takes text data type. It measures the dissimilarity between two text documents based on the "travel cost" of moving words from one document to match the words in the other document. Uses word embeddings to represent words in a semantic space.
+
+Lower WMD indicates higher similarity.
+
+Used for document classification, text similarity tasks where semantic meaning is important, and clustering documents
+
+#### v) Dynamic Time Warping
+
+Takes time series data type. It measures the similarity between two time series that may vary in speed or have time shifts. It finds the optimal alignment between the time series by "warping" the time axis.
+
+Lower DTW distance indicates higher similarity.
+
+Used for speech recognition, gesture recognition, financial time series analysis, and anomaly detection in time series
+
+### 2. Similarity Coefficients
+
+These measures directly quantify similarity. Higher values indicate greater similarity.
+
+#### i) Cosine similarity
+
+Takes numerical vectors (often used for text data after vectorization). It measures the cosine of the angle between two vectors.
+$$\bf \frac{(A \cdot B)}{\|A\|  \|B\|}$$
+Range: -1 to 1 (1 = perfect similarity, 0 = no similarity, -1 = perfect dissimilarity)
+
+Use cases include document similarity, information retrieval, and recommender systems.
+
+#### ii) Jaccard index
+
+Takes sets (categorical data) data type. It measures the similarity between two sets by dividing the number of elements they have in common by the total number of elements in both sets.
+$$\bf \frac{|A \cap B|}{|A \cup B|}$$
+Range: 0 to 1 (1 = perfect similarity, 0 = no similarity)
+
+Use cases include Text analysis (comparing documents based on word sets), Image recognition (comparing image features), and Recommender systems
+
+#### iii)  Pearson correlation coefficient
+
+Takes numerical data type. It measures the linear relationship between two variables.
+
+Range: -1 to 1 (1 = perfect positive correlation, 0 = no correlation, -1 = perfect negative correlation)
+
+Use cases includes Finding relationships between variables, Feature selection, and Stock market analysis
+
+#### iv) Spearman Rank Correlation
+
+It takes ordinal data or numerical data where the rank order is more important than the actual values. It measures the monotonic relationship between two variables. It assesses how well the relationship between two variables can be described by a monotonic function (always increasing or always decreasing).
+
+Range: -1 to 1, similar to Pearson correlation.
+
+Use cases include:
+- Assessing correlations when data doesn't meet the assumptions of Pearson correlation (linearity, normality).
+- Analyzing ranked data (e.g., customer preferences, survey responses).
+
+
+## Textual Data
+
+Textual data, in simple terms, is data that is in the form of text. It refers to non-traditional data sources that are used to gain insights into investment opportunities or market trends
+
+It can provide insights into:
+- Market sentiment: By analyzing the tone and language used in news articles and social media posts, can gauge how the market feels about specific companies, industries, or assets. This help to predict potential market movements or identify emerging trends.
+
+- Company performance and strategies: Textual data like earnings call transcripts and company filings can provide information about a company's financial performance, strategic direction, and future plans.
+
+- Risk assessment: By analyzing news and social media for mentions of risks or potential threats, investors can identify emerging risks or monitor market sentiment related to specific risk factors.
+
+- Alternative data analysis: Textual data is a rich source of "alternative data" that can complement traditional financial data and provide a more comprehensive view of the market or specific investments.
+
+Text analysis techniques include:
+
+#### i) Term Frequency-Inverse Document Frequency (TF-IDF)
+
+is a statistical measure that evaluates the importance of a word to a document within a collection of documents. It works by calculating two metrics: Term Frequency (TF), which measures how often a word appears in a document, and Inverse Document Frequency (IDF), which measures how rare the word is across the entire collection. Thus, TF-IDF highlights words that are frequent within a specific document but relatively rare across the entire corpus, identifying the most distinctive and meaningful words for each document.
+
+#### ii) Word Embeddings (Word2Vec, GloVe, FastText)
+
+represents words as dense vectors in a high-dimensional space, where words with similar meanings are located closer to each other. This allows capturing semantic relationships between words and understanding their contextual meaning. They enable capturing the essence of word meanings and relationships, going beyond simple word frequency counts.
+
+#### iii) Sentiment Analysis (Lexicon-based, Machine Learning-based)
+
+aims to determine the emotional tone or opinion expressed in text. It can be rule-based using sentiment lexicons, which are lists of words with associated sentiment scores, or machine learning-based using classifiers trained on labeled data. It helps understand the overall positivity or negativity expressed in text, providing valuable insights for investment decisions.
+
+#### iv) Topic Modeling (LDA, NMF)
+
+uncovers hidden thematic structures in a collection of documents by identifying groups of words that frequently co-occur. This helps understand the main topics or themes discussed in the text data. Techniques like Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF) are commonly used for topic modeling. 
+
+#### v) Named Entity Recognition (NER) 
+
+identifies and classifies named entities in text, such as people, organizations, locations, dates, and monetary values. It extracts structured information from unstructured text, making it easier to analyze and understand the relationships between different entities. 
+
+#### vi) Text Classification
+
+assigns predefined categories or labels to text documents based on their content. It can be rule-based, using predefined rules to categorize documents, or machine learning-based, using classifiers trained on labeled data. It helps automate the process of categorizing text data, making it easier to analyze and understand large volumes of textual information.
+
+
+
+
+
+
+
+
+
+
+
+
