@@ -1,0 +1,62 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lesson 5: News Data and Sentiment Analysis
+
+## Non-Negative Matrix Factorization (NMF)
+
+is a dimensionality reduction technique that decomposes a non-negative matrix into two smaller non-negative matrices.
+The mathematical definition of non-negative matrix factorization (NMF) is:
+
+Given a non-negative matrix $\bf V_{m \times n}$, NMF seeks to find two non-negative matrices 
+
+- $\bf W_{m \times k}$, where k is the reduced dimensionality
+
+- $\bf H_{k \times n}$
+
+such that $$\bf V \approx W * H$$
+where
+
+- $*$ denotes matrix multiplication
+- $\approx$ is typically measured using a cost function, such as the Frobenius norm: $\| \bf V - W * H \| ^2$
+
+Constraints: All elements of $\bf W$ and $\bf H$ must be non-negative real numbers, i.e. $\bf W \ge0, H \ge0$.
+
+That is, we want to find two matrices (i.e. $\bf W$ and $\bf H$) that, when multiplied together, closely resemble original data matrix (i.e. $\bf V$).
+The elements of $\bf W$ and $\bf H$ must be non-negative (greater than/equal to zero).
+
+Factorization rank in NMF (denoted k) represents the number of factors/components we're trying to extract from data.
+It essentially determines the dimensionality of the reduced representation.
+
+NMF algorithms typically employ iterative update rules to refine $\bf W$ and $\bf H$ until convergence. 
+These rules aim to minimize the difference between original $\bf V$ and the product $\bf W * H$.
+One common update rule is the multiplicative update rule, which is derived from minimizing the Frobenius norm:
+$$\bf W_{ia} \leftarrow W_{ia} * \frac{(V * H^T)_{ia}}{(W*H*H^T)_{ia}}$$
+$$\bf H_{aj} \leftarrow H_{aj} * \frac{(W^T * V)_{aj}}{(W^T*W*H)_{aj}}$$
+where
+- 
+
+
+
+
+
+
