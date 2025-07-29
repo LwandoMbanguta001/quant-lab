@@ -1,0 +1,436 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 2: Introduction to Alternative Investments
+
+## SubTopic 2.4: Quantitative Foundations
+
+### Return and Rate Mathematics
+
+- The Compounding Assumption
+
+Compounding is the recognition of reinvestment of capital, such as interest on interest or, earnings on earnings.
+
+Simple interest is an interest rate computation approach that does not incorporate compounding.
+
+The vast majority of investment reporting and analysis is based on the assumption of compounding.
+
+Returns of short intervals would be adjusted to reflect the compound performance over a full year.
+
+Continuous compounding assumes that earnings can be instantaneously re‐invested to generate additional earnings. 
+
+Discrete compounding includes any compounding interval other than continuous compounding such as daily, monthly, or annual.
+
+- Discrete Compounding
+
+Majority of alternative investments do not assume that earnings can be instantaneously reinvested.
+
+Most alternative investments report performance in discrete time intervals (e.g. weekly, monthly, quarterly) or on a cumulative basis.
+
+Discrete compounding is not commonly used by institutional investors for investments in which there are multiple cash flows (i.e. are using Internal Rate of Return) or for the few securities that price on a continuous compound basis.
+
+Discrete compounding is commonly used for traditional investments (e.g. stocks and bonds) and with open-end fund structures such as hedge funds.
+
+- Continuous Compounding with Logarithmic Returns
+
+Majority of investors use discrete compounding when measuring returns, and a few specific investments priced/valued under the assumption of continuous compounding, most notably derivative contracts.
+
+Let R be total (non‐annualized) return or rate with no compounding. 
+Adding 1 to R forms a wealth ratio. 
+
+A log return is a continuously compounded return that can be formed by taking the natural logarithm of a wealth ratio
+
+$$R^{m = \infty} = \ln(1 + R)$$
+where:
+  
+  i) $R^{m = \infty}$ - log return or continuously compounded return.
+
+  ii) $m$ - no. of compounding intervals per year
+
+The advantage of continuous compounding is its ease in aggregating short‐term returns into a longer‐term return.
+
+The mean of a series of log returns has special importance:
+
+$$\text{Arithmetic Mean Log Return} = \frac{1}{T} \sum_{t=1}^T R_t^{m = \infty}$$
+
+When the arithmetic mean log return is converted into an equivalent simple rate, that rate is the geometric mean return.
+
+Alternatively, geometric mean returns are computed from the total (non‐annualized) return over an interval as:
+
+$$\text{Geometric Mean Return} = \sqrt[t]{1 + R_{0, T}} - 1$$
+
+Continuous compounding is limited to specific use cases in the practical investment world and is an uncommon tool for many investors. 
+
+Geometric mean return should be used with care in inferring long‐term performance expectations.
+
+\newpage
+
+### Internal Rate of Return
+
+For such investments, IRR is superior to using traditional performance calculations, however it has numerous potential complications and shortcomings and thus, investors evaluate performance for these investment types across a number of metrics.
+
+IRR is the most common tool used for alternative investments with multiple cash flows (due to using a closed-end fund drawdown structure) and a lack of observable market prices.
+
+Thus investors must understand the mechanics of IRR, the limitations of IRR, and the differences between IRR and traditional time weighted return measurements.
+
+When investors have regular market prices, performance measurement usually computes total return as:
+
+$$\text{Rate of Return} = \frac{\text{change in price (net of fees)} + \text{cash flows recieved (i.e. dividend or interest payments)}}{\text{initial price}}$$
+
+Traditional investment investors favor measuring performance on a compound basis, meaning any interim cash flows received would be reinvested into the investment at prevailing prices. 
+Returns measured from one period, can then be linked and compounded with returns from subsequent periods.
+
+- Defining the IRR
+
+Internal rate of return (IRR) is defined as the discount rate that equates the present value of the costs (cash outflows) of an investment with the present value of the benefits (cash inflows) from the investment.
+
+IRR is the discount rate that makes the net present value (NPV) of an investment equal to zero.
+
+Let $\text{CF}_0$ be the cash flow or a valuation related to the start of an investment.
+Typically noted as a cash outflow from the investor to the fund.
+
+Then $\text{CF}_1$ - $\text{CF}_{T-1}$ are the actual or projected cash inflows (i.e. flows from the fund to the investor) if positive and cash outflows (i.e. from the investor to the fund) if negative, generated or required by the underlying investment.
+
+Then $\text{CF}_T$ is the final cash flow when the investment terminates, the final cash flow received from selling/disposing of the investment, or a residual valuation, meaning some appraisal of the value of the remaining cash flows related to the investment.
+
+In the case of an appraised valuation of $\text{CF}_T$, the valuation should be designed to represent opinions with regard to the amount of cash that would be received from selling all remaining rights to the investment. 
+
+Thus,
+$$\text{CF}_0 + \frac{\text{CF}_1}{(1 + \text{IRR})^1} + \frac{\text{CF}_2}{(1 + \text{IRR})^2} + ... + \frac{\text{CF}_T}{(1 + \text{IRR})^T} = 0$$
+
+- Computing the IRR
+
+  1) For investments that last only a few periods or most of the cash flows are identical (i.e. annuities), the IRR may be solved algebraically with a closed‐form solution.
+  
+  2) For investments with several different cash flows, the solution relies on a trial‐and‐error search performed by an advanced financial calculator or computer (Goal-Seek).
+  
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.2 Im13.png"}
+\end{center}
+
+The IRR is represented by the point at where the NPV curve crosses through the horizontal axis.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.2 Im14.png"}
+\end{center}
+
+- IRR Measurement Intervals
+
+The primary reason for using IRR approach to calculate returns is that illiquidity of the underlying asset prevents observation of highly reliable and regular valuations.
+
+IRR can be calculated across any defined time interval given a series of cash flows. 
+These cash flow may be realized (observed), expected (projected), or appraised (e.g. a net asset value)
+
+IRR can be applied to individual investments, or a collection of investments (i.e. held in a private equity fund) in which the cash flows and valuations are pooled together. 
+
+All IRR computations are point‐to‐point computations.
+
+Most investors prefer to measure the since-inception IRR or the IRR in which the time interval begins with the initial cash and ends at a specified date.
+
+The end date may be represented by an interim valuation (here the since-inception IRR is also an interim IRR), or represent the final cash outflow of the investment (i.e. there's no remaining market value and investment has been fully realized). 
+
+An interim IRR is a computation of IRR based on cash flows prior to the investment’s termination and therefore may still be subject to change based on future cash flows and change in market valuations. 
+
+Thus, in interim IRR, $\text{CF}_T$ is an estimated market value rather than a realized cash flow.
+
+\newpage
+
+### Problems with IRR
+
+The first complication arises when an investment offers a complex cash flow pattern other than the traditional pattern of a cash outflow to initiate an investment, followed only by cash inflows until the investment is terminated.
+
+The second complication occurs when investments must be compared to see which is preferred.
+
+- Complex Cash Flow Patterns
+
+A complex cash flow pattern is an investment involving either borrowing or multiple sign changes.
+
+A borrowing type cash flow pattern begins with one or more cash inflows and is followed only by cash outflows.
+
+A multiple sign change cash flow pattern is an investment where the cash flows switch over time from inflows to outflows, or from outflows to inflows, more than once.
+
+\begin{center}
+\includegraphics[width=10cm, height=3cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.3 Im15.png"}
+\end{center}
+
+1) In borrowing type cash flow patterns, there is a unique solution (i.e. there is only one IRR that solves the equation), but the IRR must be interpreted differently. 
+
+A high IRR is undesirable because the IRR is revealing the cost of borrowing rather than the return on investment.
+
+When a trial‐and‐error search is performed to find the IRR, any increase in the discount rate lowers the present value of the cash outflows rather than lowering the present value of the cash inflows, as would be the case in a simple cash flow pattern. 
+
+Thus, the trial‐and‐error process must operate in a reverse direction from the simplified investment cash flow pattern.
+
+That is, if the net value with a given discount rate is positive, the next IRR in the search should be lower rather than higher, as occurs in the case of a simplified cash flow pattern.
+
+2) In the case of multiple sign change cash flow patterns, the maximum number of possible IRRs is equal to the number of sign changes. 
+
+There is no easy way for the IRR model to overcome this particular shortcoming.
+
+While each solution is correct and represents a discount rate resulting in an NPV of zero, typically one of the solutions is the most intuitive and is the primary solution. 
+
+For investors unwilling to make this compromise, or scenarios in which no clear solution presents itself, investors may revert to Modified IRR.
+
+- Comparing Investments Based on IRRs
+
+The major challenge with comparing IRRs across investments occurs when investments have scale differences.
+
+Scale differences are when investments have unequal sizes and/or timing of their cash flows.
+
+When comparing investments with different scales, an investment with a higher IRR may be inferior to an investment with a lower IRR.
+
+A common performance debate for investors is comparing an investment with a high IRR and lower multiple of capital against an investment with a lower IRR and a higher multiple of capital.
+
+NB: being offered a larger scale means more money is invested for longer periods of time.
+
+- IRRs Should Not Be Averaged
+
+Aggregation of IRRs refers to the relationship between the IRRs of individual investments and the IRR of the combined cash flows of the investments.
+
+The IRR of a portfolio of two investments is not generally equal to a value‐weighted average of the IRRs of the constituent investments. 
+
+In practice, investors commonly aggregate IRR across investments.
+
+When aggregating multiple investments, those with significant larger (smaller) cash flows will have a greater (lesser) impact on the aggregate IRR.
+
+That is, from separate investments
+
+\begin{center}
+\includegraphics[width=10cm, height=2cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.3 Im16.png"}
+\end{center}
+
+to aggregated investments
+
+\begin{center}
+\includegraphics[width=10cm, height=2cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.3 Im17.png"}
+\end{center}
+
+- IRR and the Reinvestment Rate Assumption
+
+Even if all investments have simplified cash flow patterns without borrowing or multiple sign change problems, the IRR does not necessarily rank investments accurately.
+It relies on the reinvestment rate assumption.
+
+The reinvestment rate assumption refers to the assumption of the rate at which any cash flows not invested in a particular investment or received during the investment's life can be reinvested during the investment's lifetime. 
+
+If the assumed reinvestment rate is the same rate of return as the investment's IRR, then no ranking problem exists.
+
+In practice, there'd be no reason to assume that cash inflows could be reinvested at the same rate throughout the project's life, so ranking remains a problem.
+
+\newpage
+
+### Modified Internal Rate of Return
+
+The modified IRR approach addresses the challenges of multiple IRRs and the restrictiveness of the reinvestment assumption in the IRR approach by discounting all project cash outflows into a present value using a user-specified financing rate, compounding all cash inflows into a future value using an assumed reinvestment rate, and calculating the modified IRR as the discount rate that sets the absolute values of that future value and that present value equal to each other.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.4 Im18.png"}
+\end{center}
+
+Implicit in the use of IRR as a performance measure is the assumption that net distributions can be reinvested at the IRR.
+
+The assumption would be very unrealistic and misleading if IRR were used to rank dissimilar projects.
+
+To address this problem, the modified IRR (MIRR) imposes user‐specified rates to compound all cash inflows forward to the project's termination date and discount all cash outflows back to the project's inception date.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/2.4.4 Im19.png"}
+\end{center}
+
+The modified IRR is calculated as the discount rate that equates the future value of the cash flows to the present value of the negative cash flows (with both signs positive).
+
+$$\text{MIRR}_T = \left(\frac{\text{FV of Positive Cash Flows Using Reinvestment Rate}}{- \text{PV of Negative Cash Flows Using Cost of Capital}} \right)^{\frac{1}{T}} - 1$$
+where $T$ - no. of years between project's first and last cash flows.
+
+NB: the negative sign in the denominator highlights the need to use absolute values in place of negative cash flows.
+
+$$\text{MIRR}_T = \left( \frac{\sum_{t=0}^T D_t \times (1 + \text{RR})^{T-t}}{ \lvert \sum_{t=0}^T \frac{C_t}{(1+\text{CC})^t} \rvert} \right)^{\frac{1}{T}} - 1$$
+
+where:
+
+  1) $D_t$ - distribution in year t
+  
+  2) $C_t$ - contribution in year t
+  
+  3) $RR$ - expected reinvestment rate for period until time T
+  
+  4) $CC$ - investors' cost of capital through period T
+
+RR is used to find the total value that the distributions would accrue to at the end of the project's life if they were all reinvested at RR. 
+
+CC is used to find the aggregated initial cost of financing the project's contributions. 
+
+To the extent that RR and CC are accurate and properly reflect implications of the various risks involved, the $\text{MIRR}_T$ can be viewed as an indication of the return earned from the excess of the accrued distributions over the project's financing costs.
+
+- Advantages and Disadvantages of Modified Internal Rate of Return
+
+RR is interpreted as the firm's reinvestment rate, i.e. the expected return the firm could be expected to earn by reinvesting the distributions that it receives from the project.
+
+CC is interpreted as the firm's marginal cost of capital, i.e. the expected cost of financing the project's contributions.
+
+The two advantages to the MIRR approach are that it addresses two important deficiencies with IRR:
+
+  i) By imposing RR and CC for discounting the cash outflows and compounding the cash inflows, the computation of MIRR becomes a simple rate of return computation with no possibility of multiple solutions. 
+  
+  ii) The MIRR approach overrides the implicit reinvestment assumption of the traditional IRR model (i.e. cash distributions from a project can be reinvested at a rate equal to the project's IRR). 
+  When various projects are ranked by IRR, the reinvestment assumption implicit in IRR cause the rankings to differ from those generated by the net present value rule (which is found to be superior). 
+  The MIRR approach addresses this problem by imposing a user‐specified reinvestment rate, RR.
+
+The MIRR approach is viewed as having substantial disadvantages that make it a rarely used approach relative to the IRR. 
+
+Unlike IRR; MIRR is driven by user‐selected rates (RR and CC) that conceptually are unrelated to the project.
+
+As the location of the extra rand is moved into the future (i.e. the project's lifetime is expanded with a trivial cash flow), the MIRR approaches the RR because the addition of a distribution even of only R1 causes the approach to compound all of the other distributions to the project's termination.
+
+- Time‐Weighted Returns versus Dollar‐Weighted Returns
+
+Time‐weighted returns are averaged returns that assume that no cash was contributed or withdrawn during the averaging period, meaning after the initial investment.
+
+Dollar‐weighted returns (i.e. money-weighted returns) are averaged returns that are adjusted for and reflect when cash has been contributed or withdrawn during the averaging period. 
+
+The IRR is the primary method of computing a dollar‐weighted return.
+
+When evaluating the return of hedge funds, mutual funds, or any investment, it's important to recognize the distinction between the time‐weighted return (reported on performance charts in marketing literature and client letters), and the dollar‐weighted return, which represents what the average investor actually earned.
+
+Investment managers are best evaluated on time‐weighted returns, as these managers should not be held accountable for the cash flow decisions of their investors. 
+Investors should evaluate their own investment results using dollar‐weighted returns based on the cash flows from their particular investment pattern.
+
+\newpage
+
+### Other Performance Measures
+
+In addition to IRR, analysts examine value ratios unadjusted for time value.
+
+- Ratios as Performance Measures
+
+  1) Distribution to paid‐in (DPI) ratio/realized return
+
+is the ratio of the cumulative distribution to investors to the total capital drawn from investors.
+
+Can be loosely viewed as a non‐annualized measure of income (i.e. distributions) in the numerator to total investment in the denominator.
+
+$$\text{DPI}_T = \frac{\sum_{t=0}^T D_t}{\sum_{t=0}^T C_t}$$
+where
+
+$D_t$ - distribution in year t
+
+$C_t$ - contribution in year t
+
+This informs investors how much capital has been returned relative to how much capital has been called. 
+
+If $\text{DPI} > 1$, more capital was returned than invested.
+
+If $\text{DPI} < 1$, investors likely continue to have capital at risk and are not assured of permanent capital impairment. 
+
+DPI will remain low early in the life of the investment and will not begin to rise meaningfully until the fund realizes one or more investments.
+
+  2) Residual value to paid‐in (RVPI) ratio/unrealized return
+
+is the ratio of the total value of the unrealized investments at time T to the total capital drawn from investors during the previous time periods.
+
+It reveals how much capital remains at risk relative to the amount of capital invested.
+
+If no distributions have occurred, the RVPI is viewed as a measure of capital gain or loss. 
+
+RVPI is often predicated on knowledge of interim valuations.
+When interim valuations are not available, RVPI is the by-product of capital calls (inflows) and distributions ( outflows).
+
+$$\text{RVPI}_T = \frac{\text{NAV}_T}{\sum_{t=0}^T C_t}$$
+
+  3) Total value to paid‐in (TVPI) ratio/Multiple of Invested Capital (MOIC)/Investment Multiple
+
+is a measure of cumulative distributions to investors plus total value of any remaining unrealized investments relative to the total capital drawn from investors, and is the sum of the income (DPI) and capital gain or loss (RVPI)
+
+Absent interim valuations, the RVPI will reflect any known changes in cash flow.
+
+If a fund makes a distribution after the last known valuation, the RVPI will decrease by the size of the distribution, the DPI will increase by the size of the distribution, and the TVPI will remain unchanged.
+
+Investors recognize that change in the TVPI over time is due to gains/losses incurred by the fund and reported via interim market valuations.
+
+TVPI is an alternative measure of total return, revealing overall gains or losses on invested capital. 
+
+When used as an interim measurement:
+
+  - The greater the proportion of the TVPI which comes from DPI, the lower the likelihood of meaningful movement in the TVPI in the future.
+  
+  - When RVPI represents a larger portion of the TVPI, there remains a significant amount of invested (unrealized) capital and investors may expect meaningful change in the TVPI going forward.
+
+$$\text{TVPI}_T = \frac{ \sum_{t=0}^T D_t + \text{NAV}_T }{ \sum_{t=0}^T C_t}$$
+$$= \text{DPI}_T + \text{RVPI}_T$$
+
+NB: these ratios do not take the time value of money into account.
+
+The RVPI and the TVPI depend on net asset values, which in the case of illiquid assets are professional estimates rather than observed market values.
+
+Their estimations are the most problematic components of return evaluation and so DPI (measured using only distributed capital), is seen as being the more reliable measure for mature funds.
+
+When plotting the TVPI across time, investors may note the TVPI can exhibit the J-curve characteristics.
+
+- The Public Market Equivalent (PME) Method & Direct Alpha
+
+While IRR and TVPI do an adequate job of measuring returns, they are not ideal tools for evaluating outperformance.
+
+The most common approach to evaluating relative performance of drawdown style funds is the PME method and the related metric Direct Alpha.
+
+The Public Market Equivalent (PME) method uses a publicly traded securities index that's believed to have a similar risk exposure to the fund as a return target and finds the corresponding premium over the selected index.
+
+PME uses the investment’s cash contributions (calls), distributions, and terminal value in performing the calculation.
+
+The PME method uses the returns of a public market index as a base for the fund’s reinvestment rate and opportunity cost of capital. 
+
+The PME method finds the added (or reduced) cash‐weighted return for a private investment obtained by investing in the private investment rather than by investing in a market index.
+
+The resulting output will look similar to the TVPI in that it is represented as a multiple. 
+
+  i) A multiple of 1.0 implies the private investment generated the exact same returns as the public markets
+  
+  ii) A multiple greater than 1.0 reveals relative outperformance, and 
+  
+  iii) A multiple less than 1.0 shows the public markets return exceeded that of the private investment over the same time period. 
+
+Direct Alpha follows a similar pattern, however the calculations use adjusted cash flows to calculate a relative performance IRR where a 0.0% direct alpha indicates an equivalent return.
+
+Application of the PME method involving more than two cash flows requires simulation of the performance of an investment in a public equity market index using the actual cash flows pertaining to an investment in a private fund.
+
+\newpage
+
+### Illiquidity, Accounting Conservatism, IRR, and the J‐Curve
+
+The illiquidity of some alternative investments means that interim IRRs are often based on estimated values rather than market values.
+
+These estimated values are based on accounting principles that reflect the convention of conservativism.
+
+The accounting convention of conservatism holds that it is prudent to recognize potential expenses and liabilities as soon as possible but not to similarly anticipate potential revenues or gains, often resulting in an understatement of income and assets in the short run.
+
+- Accounting Conservatism and Early Fund Losses
+
+
+
+
+
+
+
+
+
+
+
+
+
