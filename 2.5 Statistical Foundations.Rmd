@@ -1,0 +1,136 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 2: Introduction to Alternative Investments
+
+## SubTopic 2.5: Statistical Foundations
+
+### Return Distributions
+
+Risky assets experience unexpected value changes and therefore unexpected returns. 
+
+If we assume investors are rational, the more competitively traded an asset, the more these unexpected price changes may be random and unpredictable. 
+
+Thus asset prices and asset returns in competitively traded markets are modeled as random variables. 
+
+Frequency and probability distributions provide starting points for describing asset returns.
+
+- Ex Ante and Ex Post Return Distributions
+
+Ex post returns are realized outcomes rather than anticipated outcomes. 
+
+Future possible returns and their probabilities are expectational or ex ante returns.
+
+Predictions are formed partially/fully through analysis of ex post (i.e. historical) data. 
+
+The direct use of past return behavior as a predictor of future potential return behavior requires two properties to be accurate:
+
+  i) Return distribution must be stationary through time, i.e. expected return and dispersion of the underlying asset do not change
+  
+  ii) The sample of past observations must be sufficiently large to be likely to form a reasonably accurate representation of the process
+
+The requirements for past returns to be representative of the future returns raise a serious challenge:
+
+  i) If past observation period is long, the sample of historical returns will be large; however, it's likely that the oldest observations reflect different risks or other economic conditions than can be anticipated in the future. 
+  
+  ii) If the sample is limited to the most recent observations, the data may be more representative of future economic conditions, but the sample may be too small to draw accurate inferences from it.
+
+For a traditional asset, its plausible that the asset's past behavior is a reasonable indication of its future behavior.
+
+In alternative investments such as hedge funds, return distributions change as the fund's investment strategies and use of leverage change through time.
+
+Thus, forecasted (ex ante) return distributions may need to be based on economic analysis and modeling rather than simply projected from historical (ex post) data.
+
+Whether based on prior observations or on economic analysis, the return distribution is a central tool for understanding the characteristics of an investment.
+
+- The Normal Distribution
+
+is the bell‐shaped symmetric distribution, where the left and right sides are mirror images of each other. 
+
+The normal distribution clusters or peaks near the center, with decreasing probabilities of extreme events.
+
+It tends to approximate many distributions observed in nature or generated as the result of human actions and interactions, including financial return distributions. 
+
+The more competitively traded an asset's price is, the more the price change over a small unit of time would be the result of hundreds or thousands of independent financial events and/or trading decisions. 
+
+Therefore, the probability distribution of the resulting price change should resemble the normal distribution.
+
+- Log Returns and the Lognormal Distribution
+
+Returns are predominantly reported using discrete compounding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
