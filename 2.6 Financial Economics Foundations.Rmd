@@ -1,0 +1,57 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 2: Introduction to Alternative Investments
+
+## SubTopic 2.6: Financial Economics Foundations
+
+### Informational Market Efficiency
+
+Informational market efficiency refers to the extent to which asset prices reflect available information.
+
+An informationally efficient market is a market in which assets are traded at prices that equal their values based on all available information. 
+
+The concept of informational market efficiency is referred to as efficient market theory or efficient market hypothesis.
+
+All financial markets display some informational market efficiency, but no financial market is perfectly efficient.
+
+- Further Definitions of Informational Market Efficiency
+
+Informationally efficient markets are described as markets in which net present values (NPVs) of all investment decisions are zero.
+
+Informationally efficient markets are described as markets in which investors are unable to use information to consistently earn superior risk‐adjusted returns.
+
+Investors bearing higher risk should earn consistently higher returns, and any investor bearing risk might occasionally earn high returns.
+
+However, in informationally efficient market, investors cannot earn higher expected returns without bearing additional risk. 
+
+- Forms or Levels of Informational Market Efficiency
+
+
+
+
+
+
+
+
+
+
