@@ -1,0 +1,72 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 2: Introduction to Alternative Investments
+
+## SubTopic 2.7: Derivatives and Risk-Neutral Valuation
+
+### Forward Contracts Vs Futures Contracts
+
+- Trading Differences between Forward Contracts and Futures Contracts
+
+Forward contracts are ad hoc contracts negotiated between two parties, with flexibility regarding the details to help meet needs and preferences of each party. 
+
+Forward contracts are over‐the‐counter (OTC) contracts.
+
+Futures contracts are standardized exchange‐traded contracts. 
+
+Each futures contract trades with relatively high degree of uniformity with regard to quantity and quality of underlying asset and location and time of delivery.
+
+Compared to most forward contracts, futures contracts enjoy clearinghouse security, uniform contract size and terms, and daily liquidity.
+
+Standardization of futures contracts permits active trading and liquidity. 
+
+At any point in time, long futures position holder can close a position by establishing an identical short position. 
+Converse is true too.
+
+The outstanding quantity of unclosed contracts is open interest. 
+If buyer (i.e. long) of futures contract does not wish to take delivery of underlying asset, buyer closes out the long futures position at prevailing market price of the contract by taking on a short position. 
+Similar for short position holder.
+
+Only a very small percentage of futures contracts (usually less than 1%) result in delivery of the underlying asset. 
+
+Primary purpose of futures (and forward) contracts is to exchange risks, rather than to serve as vehicles for arranging physical transfers of goods. 
+
+The idea is by using futures markets to manage risk, a party can take or make delivery of physical goods using the cash market with the lowest transportation or other costs.
+
+- The Mechanics of Marking‐to‐Market
+
+A distinction between most futures and forward contracts is that futures contracts are marked‐to‐market.
+
+Marked‐to‐market means the side of futures contract that benefits from a price change receives cash from the other side of the contract (and vice versa) throughout the contract's life. 
+Cash exchanges resulting from positions being marked‐to‐market are intended to cause each side of derivative to have a zero market value at the end of each day. 
+
+The reason each contract has a zero value at end of the day is that the price at which the commodity is promised to be delivered is adjusted to current futures price as a result of the marking‐to‐market process.
+
+An exchange‐traded futures contract is viewed as forward contract that's settled in cash at end of each day (i.e. marked‐to‐market) and then restruck at prevailing price for new futures contracts.
+
+- Marking‐to‐Market and Counterparty Risk
+
+The importance of the marking‐to‐market process is to avoid the counterparty risk known as crisis at maturity.
+
+A crisis at maturity is when party owing payment is forced at last moment to reveal that it cannot afford to make payment or when the party obligated to deliver the asset at original price is forced to reveal that it cannot deliver the asset.
+
