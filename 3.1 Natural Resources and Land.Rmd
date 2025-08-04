@@ -1,0 +1,313 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 3: Real Assets
+
+## SubTopic 3.1: Natural Resources and Land
+
+### Natural Resources Other Than Land
+
+Real assets are economic resources that create or add to consumption opportunities available to people. 
+
+Financial assets are the counterpart to real assets.
+
+Financial assets serve as conduits of value rather than as direct creators of consumption opportunities.
+
+Most natural resources are related to facilitating energy consumption because energy is such a major input to the world economy.
+
+- Economic Roles and Vehicles of Natural Resources
+
+Globally, most private land ownership is limited to surface rights, with ownership of underground mineral and energy rights retained by governments. 
+
+A split estate is when surface rights and mineral and energy rights are separately owned.
+
+Public or private owners of natural resources often lease their natural resource rights to developers for eventual extraction. 
+
+Pure plays on a private investment in natural resources are rare. 
+
+A pure play on an investment is an investment vehicle that offers direct exposure to the risks and returns of a specific type of investment without the inclusion of other exposures. 
+
+Institutional ownership of natural resources can be achieved through land ownership that includes underground rights, ownership of mineral rights, or leasing of mineral rights. 
+
+- Natural Resources as Exchange Options
+
+Viewing natural resources as options to develop commodities and other real assets offers important insight regarding the analysis of natural resources. 
+
+A key aspect of natural resources as options is that they are better analyzed as an exchange option rather than as a call option with a fixed strike price. 
+
+An exchange option is an option to exchange one risky asset for another rather than to buy or sell one asset at a fixed exercise or strike price.
+
+The volatility of an exchange option depends on:
+
+  1) volatility of the price of the asset(s) being delivered, 
+  
+  2) volatility of the price of the asset(s) being received, and 
+  3) covariance or correlation coefficient between the prices.
+
+If the cost of development is highly correlated with value of the commodity, the volatility of the value of the exchange will be lower and the value of the option will be lower (everything else being equal). 
+
+The option can be valuable when development costs and commodity prices are not highly positively correlated.
+
+- Moneyness as a Crucial Factor in Natural Resource Development
+
+The below is a value diagram for natural resource development as an option similar to the value diagram of a call option.
+
+The horizontal axis is the ratio of the current price of the developed natural resource to the current cost of development. 
+
+Both the price of developed natural resource and cost of developing the resource are stochastic, so the moneyness depends on the spread between the benefits and the costs of development.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.1.1 Im33.png"}
+\end{center}
+
+Moneyness reflects the direct benefit‐to‐cost ratio of developing the natural resource immediately. 
+
+There are three ranges of moneyness: 
+
+  i) in‐the‐money (to the right of 1.0 on the horizontal axis), 
+  
+  ii) at‐the‐money (1.0 on the horizontal axis), and 
+  
+  iii) out‐of‐the‐money (to the left of 1.0 on the horizontal axis). 
+  
+Being in‐the‐money means that if mineral rights are mined at the current price of the commodity, then the revenues from the sale of the commodity will exceed the current costs of developing the commodity.
+
+The option to develop rights to a natural resource may have no expiration date or may be leased on a temporary basis.
+
+There are limited cases in which an option should be exercised early, such as deep‐in‐the‐money put options and call options prior to ex‐dividend dates.
+
+A natural resource should generally not be developed until the option is substantially into the money.
+
+The low‐hanging‐fruit principle states the first action that should be taken is the one that reaps the highest benefits over costs. 
+
+Thus, the order in which natural resource properties are developed should tend to be driven by the low‐hanging‐fruit principle.
+
+- Why Some In‐the‐Money Options Should Not Be Exercised Immediately
+
+The value of delaying a decision to exercise an in‐the‐money development option is based on the time value of money and an analysis of the benefit of awaiting further information.
+
+The convex nature of the payoff diagram illustrates the asymmetric payoff to options.
+
+A long position in an option has increased value at an increasing rate in one direction and decreased value at a decreasing rate in the other direction. 
+
+The essence of this convexity to holders of long positions in options is to consider the advantage generated by the volatilities of market prices when deciding on the optimal time to exercise an option.
+
+The point at and above which a development option should be exercised is depicted by point A, where the time value of the option is zero.
+
+Above that point, the developer gains more wealth from immediately reaping the profit of development than from delaying the decision to exercise the option and potentially benefit from the option's convexity and stochastic market prices. 
+
+The financial economics are similar to the decision to exercise an American put option early.
+
+From a macroeconomic perspective, the price of the associated commodity rises or falls to either increase or decrease development rates so the supply of the commodity matches the demand for the commodity.
+
+- Implications of Moneyness for Risk of Natural Resources
+
+For natural resources that represent in‐the‐money development options, the short‐term financial risks are primarily driven by the price of the underlying commodity.
+
+The steep slope of the option curve in Exhibit 2 for options that are far in‐the‐money indicates that changes in the price of the commodity are the dominant source of short‐term volatility in the value of the option to develop the natural resource.
+
+Higher moneyness shortens the time horizon of the exercise of the option and reduces the chance that the option's price will be substantially altered directly by changes in the costs of developing the natural resource.
+
+Conversely, natural resources that represent out‐of‐the‐money development options have substantial sensitivity to uncertainty other than the price of the underlying commodity.
+
+The more distant time horizon for possible development increases the sensitivity of the natural resource's price to changes in development costs, interest rates, and other factors.
+
+\newpage
+
+###  Land
+
+- The Land Development Value Chain
+
+A term for investment in and acquisition of undeveloped land or vacant lots is land banking.
+
+Land banking is the practice of buying vacant lots for the purpose of development or disposition at a future date. 
+
+Land banking refers to the acquisition of unimproved or raw land that sits in the anticipated path of residential growth, but the term also references improved vacant lots held by a third‐party entity for home builders who have option agreements to use these lots as needed. 
+
+All else equal, the value of the land should increase from one level of improvement to the next.
+
+  i) Raw Land - the least developed type of land, and has not been graded, or prepared in any way for development.
+  The land may lack appropriate zoning or permitting that would be required for development.
+  
+  ii) Entitled lots - have likely seen little to no physical improvements. 
+  These have met all local regulatory requirements for development. 
+  
+  iii) Paper lots - are vacant sites approved for development by local zoning authority but construction on streets, utilities, and other infrastructure has not yet commenced.
+  
+  iv) Blue top lots - at interim stage of lot completion where owner has completed the rough grading of the property and the lots, including undercutting of street section, interim drainage, and erosion control facilities, and has paid all applicable fees required.
+  At this stage, a home builder can obtain a building permit upon payment of the ordinary building permit fee.
+  
+  v) Finished lots - are fully completed and ready for home construction and occupancy. 
+  All entitlements, incl infrastructure to lot, finished grading, streets, common area improvements, and landscaping, have been completed.
+  All development fees, exclusive of building permit and inspection, have been paid.
+  
+  vi) Broken lots - are situations in which some degree of pre-development occurred, but not fully completed and has since fallen into disrepair.
+
+- Land as an Option
+
+The strike price of the option is the cost of developing or improving the land.
+
+The time to expiration of the option is unlimited.
+
+The receivable asset of the option is the combination of the land and its improvement or development. 
+
+The payoff of the option is the spread between the value of the completed project and the cost of constructing the project.
+
+The cost of construction (i.e. strike price of option) tends to be correlated with the price of improved real estate.
+
+This is because the actions of developers tend to arbitrage relative prices whenever the price of improved real estate substantially increases relative to the cost of development. 
+
+The value of land as an option on development is positively related to the excess of the value of completed real estate projects over the costs of construction.
+
+The volatility of the underlying asset is the volatility of the spread between the costs of construction and the value of the improved property. 
+
+- Example of Land as a Binomial Option
+
+Binomial option pricing is a technique for pricing options that assumes that the price of the underlying asset can experience only a specified upward movement or downward movement during each period.
+
+A risk‐neutral probability is a probability that values assets correctly if, everything else being equal, all market participants were risk neutral. 
+
+A risk‐neutral probability is viewed as being equal to a statistical probability that has been adjusted for risk so it can be used to price risky assets in a risk‐neutral framework.
+
+By assuming riskless interest rate is zero, we enjoy the simplicity of not needing to discount future cash flows. 
+
+So the current value of a comparable property must equal its end‐of‐period expected value based on risk‐neutral probabilities
+$$\text{Current Value} = \text{Expected Value} = (\text{UpValue} \times \text{UpProb}) + (\text{DownValue} \times [1-\text{UpProb}])$$
+
+#### Example 1
+
+Consider a parcel of land that can be improved at a construction cost that depends on the overall health of the economy. 
+If economy improves (the up state), the land can be improved at a construction cost of R100,000 and will create an improved property worth R160,000.
+If the economy falters (the down state), the construction cost drops to R80,000 and the improved property would be worth R70,000. 
+Comparable improved properties now sell for R100,000.
+
+=>
+
+The probabilities:
+$$R100000 = (R160000\times \text{UpProb})+(R70000\times[1-\text{UpProb}]) \hspace{12pt} \rightarrow \text{UpProb} = \frac{1}{3}$$
+Then the value of the option:
+$$\text{Option Price} = ([R160000-R100000]\times \frac{1}{3}) + (R0 \times \frac{2}{3}) = R20000$$
+
+NB: The power of binomial option pricing models emanates from setting or calibrating the probabilities of each path based on market‐observed values of efficiently priced assets and then using those probabilities to price an option.
+
+- Risk and Return of Investing in Land
+
+Land is viewed as a call option.
+The expected return of land depends on its systematic risk. 
+
+The expected return of land is a probability‐weighted average of the expected return of the land if it remains undeveloped and the expected return of the land if it is developed:
+$$\mathbb{E}[R_l] = P_d \times \mathbb{E}[R_d] + (1-P_d) \times \mathbb{E}[R_{nd}]$$
+
+where 
+
+  i) $\mathbb{E}[R_l]$ - expected return on land
+  
+  ii) $P_d$ - probability of development
+  
+  iii) $\mathbb{E}[R_d]$ - expected return conditioned on land being developed
+  
+  iv) $\mathbb{E}[R_{nd}]$ - expected return conditioned on land not being developed
+
+Historical returns of undeveloped land may suffer from a negative survivorship bias.
+
+A negative survivorship bias is a downward bias caused by excluding the positive returns of the properties or other assets that successfully left the database. 
+
+\newpage
+
+### Timber and Timberland
+
+Timber is investment in existing forestland for long‐term harvesting of wood.
+
+- The Structure of Timber and Timberland Ownership and Management
+
+Forests may be owned by public sector or by firms or individuals in the private sector. 
+
+Public ownership refers to the situation in which a government body exercises ownership jurisdiction over lands.
+
+Private ownership describes the situation in which individuals, firms, businesses, corporations, and even non-governmental organizations possess ownership rights to forests.
+
+Timberland investment management organizations (TIMOs) provide management services to timberland owned by institutional investors, and have been a key reason for changes in timberland ownership.
+
+Most institutional investors rely on TIMOs to advise them about their investments in forestland. 
+
+Instead of actually owning the timberland, TIMOs arrange for investors to buy the timberland and then manage the timberland on behalf of those investors. 
+
+TIMOs collect a management fee and a share of the profits at harvest.
+
+Rotation is the length of time from the start of the timber (typically the planting) until the harvest of the timber.
+
+- Four Publicly Traded Ways to Obtain Exposure to U.S. Timber Returns
+
+1) investors can directly own shares in publicly traded timber‐related firms.
+
+2) there are two major ETFs that have been developed to track timber firm values. 
+
+3) retail investors gain exposure to timber through real estate investment trusts (REITs).
+
+4) there's a futures contract that trades on the CME and offers exposure to timber prices, which are part of—but not perfectly correlated—with timberland prices. 
+
+- Benefits and Disadvantages of Timber Investment
+
+Three key potential benefits of timber investment are: 
+
+  i) it has potential for returns that have low correlation with traditional stocks and bonds (i.e. diversification potential)
+  
+  ii) timber offers flexibility in the timing of its harvesting (i.e. timing options that may lessen the risk exposure to short‐term economic fluctuations)
+  
+  iii) timber may serve as an effective inflation hedge.
+  
+Three key disadvantages to timber include:
+
+  i) timber values are tied to cyclical industries
+  
+  ii) timber's long growth cycle makes its value subject to risks of changes in technology and other factors affecting demand that may occur during the long rotation periods
+  
+  iii) the potential for losses due to natural disasters or adverse changes in legal standards
+  
+\newpage
+
+### Farmland
+
+Farmland represents ownership of a real asset (land), yet it generates current cash flow, as crop income is a potentially steady and renewable stream of cash. 
+
+Farmland differs from traditional real estate in that annual cash flow is more closely linked to commodity prices rather than rent.
+
+- Farmland Valuation
+
+The value of farmland is the sum of the discounted future cash flows. 
+
+As a potentially perpetual asset, farmland value can be modeled with the perpetuity formula.
+
+In real estate, the cap rate (capitalization rate) or yield is a common term for the return on assets, i.e. $\frac{\text{Operating Income}}{\text{Assets}}$
+
+The concept is used to value real estate so that the value of a property might be viewed as equal to the property's expected annual net operating income divided by an estimate of an appropriate cap rate
+
+$$\text{Value of Real Estate} = \frac{\text{Annual Operating Income}}{\text{Cap Rate}}$$
+
+
+
+
+
+
+
+
+
