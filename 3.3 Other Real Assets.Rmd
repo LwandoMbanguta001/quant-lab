@@ -1,0 +1,479 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 3: Real Assets
+
+## SubTopic 3.3: Other Real Assets
+
+###  Commodity Producers
+
+Investments in natural resources attract investor interest based on their perceived ability to serve as diversifiers against general economic fluctuations and the risk of unexpected inflation.
+
+- Natural Resource Prices as a Driver of Operating Firm Performance
+
+A key issue is extent to which investments in firms that process natural resources provide similar risk and return characteristics to direct investments in underlying natural resources. 
+
+The correlations between returns of firms and price changes for their associated goods are driven by 3 primary factors: 
+
+  i) price elasticity of demand for the good, 
+  
+  ii) price elasticity of supply of the good, and
+  
+  iii) extent to which an operating firm is exposed to or has hedged changes in its profits.
+
+Accordingly, absent hedging strategies, large price increases in commodity should drive anticipation of higher profits in firms that provide goods and services in production of that commodity.
+
+- Evidence on Commodity Prices and the Equity Prices of Operating Firms
+
+Empirical evidence also provide insight into relationship between commodity prices and equity prices of operating firms.
+
+Share prices of firms related to a commodity depend partially on value of the commodity. 
+
+If firms are publicly traded, their performance is substantially correlated with overall performance of public equity markets.
+
+- Commodity Prices and Operating‐Firm Equity Return Correlations
+
+Rather than the returns of firms being driven entirely by the contemporaneous prices of related commodities, they are also driven by market's anticipation of dynamic supply and demand factors more related to the long‐term profitability of the goods and services directly offered by those firms, which in turn tend to be correlated with overall equity markets.
+
+To the extent that the returns of firms within the ETFs are driven by operational issues, the investments will serve more as traditional equity investments rather than as diversifiers or any other type of alternative investment vehicle.
+
+\newpage
+
+### MLPs – a Real Assets Liquid Alternative
+
+The use of master limited partnerships (MLPs) provides liquid investment access to operationally intensive real assets.
+
+- Structure of MLPs and the MLP Sector
+
+MLPs are limited partnerships in which the limited partnership ownership units are listed (publicly traded).
+
+Limited partners of MLPs are unit holders.
+
+MLPs receive tax treatment predicated on adhering to regulations, including at least 90% of entities’ revenues come from specified businesses.
+
+MLPs are traded on major exchanges, in the same manner as corporate operating firms.
+
+MLPs are not shares in equity of taxable corporations; they are limited partnership units representing direct ownership of firm. 
+
+Many publicly traded securities are investments in natural resources, but this indicates the investment is subjected to substantial development, extraction, and processing operational risks.
+
+Most MLPs are involved in energy sector, although some MLPs invest in real estate, timber, or other assets permitted by regulations.
+
+The oil and gas sector is divided into upstream, midstream, and downstream operations. 
+
+Upstream operations focus on exploration and production; midstream operations focus on storing and transporting oil and gas; and downstream operations focus on refining, distributing, and marketing the oil and gas.
+
+Midstream operations and midstream MLPs are the largest of three segments, process, store, and transport energy and tend to have little or no commodity price risk.
+
+Similar to infrastructure investments, midstream MLPs have been called a toll road for energy.
+
+- Tax Characteristics of MLPs
+
+MLPs have ownership structure distinct from most traditional investments. 
+
+There are three major types of major U.S. business entities: taxable corporations (C corporations), tax‐exempt corporations (investment companies), and limited partnerships.
+
+Investors in equity of traditional operating corporations in United States experience double taxation. 
+
+Double taxation is application of income taxes twice: taxation of profits at corporate income tax level and taxation of distributions at individual income tax level. 
+
+Most investment companies can avoid paying corporate income taxes if they distribute almost all of their profits to the corporation's shareholders. 
+
+The distributions are taxed at individual income tax level.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.2 Im41.png"}
+\end{center}
+
+Limited partnerships in general and MLPs in particular are not directly subject to income taxes at partnership level.
+
+The revenues, expenses, and profits of partnerships flow directly through partnerships and into tax forms of partners.
+
+The limited partners are subject to tax on profits that flow from partnership, whether or not the profits are distributed to them.
+
+MLP structures allow tax benefits to pass through firm level directly to tax forms of limited partners. 
+
+These benefits manifest themselves in the ability of limited investors to enjoy large tax‐free distributions, because it is income that's taxed, not distributions. 
+
+Many of large distributions from MLPs are sheltered in short run as return of capital due to generous rules regarding expensing of costs. 
+
+Return of capital distributions are tax‐free when received. 
+
+Distributions that represent return of capital serve to lower tax basis of MLP investment to investor.
+
+Upon sale of MLP, the lowered tax basis tends to cause more of sales proceeds to be taxable. 
+
+The recaptured gains attributable to the distributions tend to be taxed at full rates rather than preferred capital gain rates. 
+
+Thus, tax‐free distributions of MLPs serve as tax deferrals.
+
+The potential tax benefits of MLPs to U.S. investors need to be weighed against three potential drawbacks:
+
+  i) MLPs report income on K‐1 forms rather than 1099s, which may add substantial complexities and delays to federal tax filing. 
+  
+  ii) MLP income is subject to income taxation in the states in which MLPs operate, which means limited partners with moderate to large holdings are required to file numerous state income tax returns. 
+  
+  iii) MLPs cause unrelated business income tax (UBIT) liability for some pension plans and not‐for‐profit corporations in the United States, as the income generated through businesses unrelated to the tax‐exempt purpose of the organization can be taxable. 
+
+- MLP Valuations and Distribution Rates
+
+There's controversy regarding prospective risks and returns of MLP sector in general and MLPs with high distribution rates in particular. 
+
+MLP investors are taxed on income, not distributions, from MLPs. 
+
+The MLP structures themselves are not required to pay income taxes. 
+
+Whereas mutual funds and REITs generally set distributions to be approximately equal to their income, MLPs are free to make distributions as high as their cash flows allow. 
+
+These distributions are tax‐free and are attractive to investors focused on cash income.
+
+Some MLPs are alleged to make distributions at rates that are not sustainable based on MLP's current and prospective income. 
+
+Its further alleged that market prices of these MLPs are inflated by high demand from brokers and investors who are drawn to high tax‐free distributions and who overestimate the sustainability of distribution rates.
+
+Proponents of high valuations of MLPs with high distribution rates argue the high rates are reasonable and sustainable due to highly profitable transactions and operations underlying the MLPs. 
+
+New acquisitions are financed by issuing new partnership units at high market valuations, which enables attractive future cash flow projections. 
+
+Exceptional prospects for success are captured as present value of exceptional growth opportunities.
+
+Analysts saying MLPs are overpriced argue that high cash flows are being driven by proceeds from secondary offerings of MLP units and eventually the distributions will have to be cut when new financings and acquisitions end. 
+
+One thing is certain: MLP investing, like many other forms of alternative investing, is skill based. 
+
+Even a broad indexation strategy in which an MLP ETF, an MLP exchange‐traded note, or a representative basket of individual MLPs is purchased requires skillful evaluation of whether the entire MLP sector is fairly valued.
+
+\newpage
+
+### Infrastructure Overview
+
+In finance, infrastructure refers to underlying and fundamental assets and systems that facilitate functions necessary to well‐being of an economy.
+
+Not all infrastructure assets are conducive to being privately financed. 
+
+Infrastructure assets are means for ensuring delivery of goods and services that promote prosperity and growth and contribute to quality of life. 
+
+- History of Infrastructure
+
+A public-private partnership (or PPP) is a collaboration between public bodies, governments, and private sector.
+
+In a PPP, a private‐sector party is retained to design, build, operate, and/or maintain a public building in exchange for a lease payment.
+
+The partnership has a finite time horizon.
+Leases run for 20 to 99 years. 
+
+In a PPP, the asset reverts to public ownership at end of lease.
+
+Investors in infrastructure were primarily institutional investors with long time horizons. 
+
+Many of investors were attracted to infrastructure’s long-term nature, stable and inflation-protected cash flows, and downside protection during broader economic downturns.
+
+- Common Attributes of Investable Infrastructure
+
+Some market participants define investable infrastructure based on having risks and returns that are distinct from traditional investments and require specialized tools of analysis.
+
+Other market participants focus on extent to which investments are financial claims on infrastructure assets.
+
+Investable infrastructure is differentiated from other assets with six primary characteristics:
+
+  i) Essential Services - Infrastructure provides basic services for society.
+  
+  ii) Inelastic Demand - Inelastic demand means demand from consumers does not change drastically due to changes in price or other factors. 
+
+  iii) High Barriers to Entry - Infrastructure projects require high fixed investment to develop. 
+  Most assets have monopoly or duopoly in their respective locations. 
+
+  iv) Regulation - Contracts are frequent mechanism that governs revenues, which can vary in length depending on sub-sector or nature of asset.
+
+  v) Long Duration - Many infrastructure assets have long lives, sometimes up to several decades. 
+
+  vi) Stable, Predictable, and Inflation-Protected Cash Flows - there's a form of inflation adjustment attached to revenues, allowing the operator to increase revenues with pace of inflation. 
+  Not only does this provide stability for investor, but provides source of inflation-protected income.
+
+To extent that these elements are satisfied, an asset is more likely to be considered an investable infrastructure asset. 
+
+However, no single element is necessary or sufficient.
+
+\newpage
+
+### Infrastructure Classifications
+
+- Infrastructure Sectors
+
+There are five primary sectors within infrastructure, each of which carries different characteristics:
+
+  i) Transportation
+  
+  ii) Power
+  
+  iii) Energy Infrastructure
+  
+  iv) Social
+  
+  v) Communications
+  
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.4 Im42.png"}
+\end{center}
+
+Investable infrastructure can originate as new, yet‐to‐be‐constructed project, referred as a greenfield project, that was designed to be investable.
+
+Investable infrastructure can also be existing project, or brownfield project, that has history of operations and converted from government asset into something privately investable.
+
+New projects are funded by private capital rather than through government control and financing in order to promote efficiency and enable construction without straining government resources.
+
+Existing projects are converted to investable infrastructure primarily to raise capital for government and earn cash flow for private investors.
+
+The critical property of infrastructure (i.e. most important distinction between investable infrastructure and traditional investments) is the nature of revenues, with investable infrastructure generating a cash flow stream in a monopolistic environment rather than competitive environment.
+
+An investment in infrastructure relies on purchase or long‐term lease of a facility that generates stable cash flows, ideally growing with rate of inflation.
+
+- Economic vs Social Infrastructure
+
+Another way to categorize infrastructure investments: economic and social infrastructure.
+
+Economic infrastructure assets are assets with economic value driven by revenue they generate, with end users paying for services provided by these assets.
+
+Social infrastructure assets are assets that have end users unable to pay for services or used in such a way that its difficult to determine how many services were used by each person.
+
+When necessary services are provided, users do not reduce their usage substantially as a result of price increases; this means service providers have pricing power, which allows price increases to result in revenue increases.
+
+Infrastructure assets are categorized according to who the payer is, with a distinction thats similar to the difference between economic and social infrastructure. 
+
+The end user pays to use the assets.
+Government and taxpayers pay for use of assets. 
+
+In this case, the asset is mostly or partially free for the end users. 
+
+- Public‐Private Partnerships (PPPs) in Infrastructure Investing
+
+Governments have long recognized that investments in infrastructure produce positive externalities, contribute to economic growth, expand market access, and reduce inefficiencies. 
+
+From public policy perspective, improvements in regulation, governance, transparency, ethics, property rights, and external checks are necessary and go a long way in encouraging private‐sector participation in infrastructure projects.
+
+Given extremely high up‐front capital costs in establishing projects, infrastructure assets exhibit natural monopoly characteristics; a single firm can produce essential social service outputs at greater efficiencies and at lower social costs than can multiple competitive firms.
+
+Recognizing this, governments restrict competition and create statutory monopolies.
+
+Many existing infrastructure assets were built with public funds and sold into private sector. 
+
+When a governmental entity sells a public asset to a private operator, this is privatization. 
+
+Although many privatizations take form of outright sale of an asset, in other cases, governmental entity retains a stake in the asset. 
+
+Popular are leases or concessions wherein the government leases an asset to a private operator for 20 to 99 years, with full equity interest in facility reverting to public ownership at end of concession term.
+
+The partnerships extend across a variety of sectors.
+
+PPPs take a wide variety of forms, with varying involvement of private sector and varying degrees of risk transfer from government to private sector.
+
+PPPs and regulated assets (as in economic regulation, with the regulator setting prices) are normally mutually exclusive.
+
+A PPP is a finite concession with a price mechanism agreed to contractually up front. 
+
+Privatized assets are owned by private sector under a license, and prices are periodically set (or at least reviewed) by a regulator to ensure they are appropriate and fair to owner and customers.
+
+In order to enter into a greenfield PPP contract to design, build, operate, and own an infrastructure asset under a long‐term government concession, private‐sector investors form a special purpose vehicle (SPV) to act as concessionaire.
+
+Based on concession contract and projected revenues from usage fees, the SPV receives equity capital from investors and enters into a contract with a design and construction company to build the asset. 
+
+It also enters into separate contract with an operating company for operation and maintenance of infrastructure asset. 
+
+The SPV also raises debt that range from 60% to 90% of total project costs.
+
+Upon completion and commissioning of infrastructure asset, the revenue generated through usage fees after payment of concessionaire at agreed‐upon tariff rate is used to partly pay down debt, with surplus passed on to equity contributors.
+
+PPPs have faced opposition from advocacy groups and public. 
+
+Criticism often takes form of allegations of reduced accountability and profit motive of private sector, which may be at odds with public interest. 
+
+This criticism is more intense in projects in which fees charged to public are highly visible.
+
+There have also been instances of privatization reversals in response to allegations of underinvestment and poor asset upkeep. 
+
+Many issues are driven by public perception. 
+
+Private concessionaires, in contrast, are less reluctant to establish explicit future increases.
+
+The degree of private investment within infrastructure depends on commercial viability of sector or subsector, as well as governmental policy within a given country.
+
+Private‐sector participation in economic infrastructure relies on a government thats content with essential assets being operated by private sector, which charges citizens for its services (within a regulated pricing structure). 
+
+It also relies on customers’ propensity to pay.
+
+In developing countries, users may be unable to pay, resulting in need for government support. 
+
+Private investment in social infrastructure depends both on the government's ability to pay private sector for the service and on the government's political support for the PPP.
+
+- Stages of Infrastructure
+
+Investment in assets under construction is riskier than investment in completed assets; investment in newly completed assets with no operating history (including usage) is riskier than investment in mature assets with established operations and usage history. 
+
+Depending on its phase, infrastructure investment is referred as being in greenfield/brownfield stage.
+
+1) Greenfield phase covers initial stages of infrastructure, from:
+
+  i) building and development (including the design), 
+  
+  ii) to construction of project itself, and 
+  
+  iii) project's ramp‐up period (i.e. its start‐up)
+  
+By their nature, infrastructure assets tend to involve major construction work, in which risk can be high.
+
+The phase is long and complex, requiring coordination of many participants. 
+
+The risks range from technical to political. 
+
+Environmental issues are important at this stage, as investors and lenders are increasingly sensitive to these issues.
+
+2) Brownfield phase involves operations and takes place when assets are already constructed.
+Assets in operating phase have history of operations that provides good visibility into revenue, usage rates, and operating costs. 
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.4 Im43.png"}
+\end{center}
+
+\newpage
+
+### Investing in Infrastructure
+
+Infrastructure investments are accessed indirectly through a number of vehicles: listed stocks, listed funds, open‐end funds, and closed‐end unlisted funds.
+
+Open‐end funds permit further investment or withdrawal of funds by investors, whereas closed‐end funds have fixed size.
+
+Infrastructure stocks are regarded as having higher dividend yields and lower volatility than stocks from other sectors. 
+
+The higher dividend yields can reflect the relatively inelastic demand for infrastructure services or the reduced growth potential for infrastructure assets compared to overall equities. 
+
+The lower volatility can be attributed to monopolistic and regulated nature of infrastructure assets, as well as price‐inelastic demand for goods and services generated by many infrastructure assets.
+
+Investing in listed infrastructure stocks or funds of infrastructure stocks over unlisted funds has advantages of greater liquidity and a clearer valuation process. 
+
+These funds have exhibited higher volatility and greater correlation to equity markets than non‐market‐based valuations on unlisted infrastructure funds. 
+
+Closed‐end infrastructure funds are structured like private equity funds, have a life of typically 10 to 15 years, and draw down investor capital commitments over a stated investment period of four to five years. 
+
+The appraised prices of these unlisted funds have experienced lower volatility and lower correlation to equity markets than market prices of listed funds.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.5 Im44.png"}
+\end{center}
+
+- Infrastructure: Equity Investing
+
+There are four common investment styles for infrastructure equity investments. 
+
+1) Core
+
+are fully constructed assets, provide essential services to society, and have some form of contracted/regulated cash flow. 
+
+Core infrastructure assets are brownfield assets and are regulated through long-term contracts. 
+
+They have little to no operational risk and are already generating cash flow at time of investment.
+
+The income generated from these assets has high correlations to inflation and is immune from economic volatility.
+
+Investors in core infrastructure are primarily looking for inflation-protected income.
+
+2) Core-Plus
+
+are constructed assets that provide essential services to society. 
+
+Core-plus assets have more cash-flow variability or require additional investment to develop further or repair the asset. 
+
+Core-plus infrastructure assets are brownfield assets with a greenfield investment opportunity.
+
+Investors in core-plus infrastructure are primarily looking for income with some room for capital appreciation.
+
+3) Value-Added
+
+are projects that need improvements and are operating without current cash flows. 
+
+Value-add infrastructure assets are greenfield assets that are currently under construction. 
+
+Either way, they require additional investment to expand or update services.
+
+These assets have some operational risk or complexity. 
+
+If these assets do generate income, this income may be more sensitive to economic activity than other infrastructure assets.
+
+Investors in value-add infrastructure are looking for a mix of income and capital appreciation.
+
+4) Opportunistic
+
+are projects that need substantial development or improvement, or assets in developing markets. 
+
+Opportunistic infrastructure assets can be greenfield or brownfield assets but will have high sensitivities to economic growth. 
+
+Their revenue profiles may be volatile.
+
+Opportunistic infrastructure strategies are highest-risk strategies with highest expected returns.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.5 Im45.png"}
+\end{center}
+
+- Expectations for Equity Performance During Inflationary Periods
+
+Infrastructure has generated attractive relative returns during inflationary periods. 
+
+Can help diversify a portfolio during inflationary periods, particularly for portfolios with high bond allocations that tend to underperform.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.5 Im46.png"}
+\end{center}
+
+Not all sub-sector revenues are driven by inflation. 
+
+While many sectors have high sensitivity to inflation but low sensitivity to GDP growth, some sectors have the opposite. 
+
+When allocating to infrastructure, it’s important to pay attention to which role it will play between these two drivers.
+
+Core infrastructure has lowest risk profile and generated lowest relative returns. 
+
+Core infrastructure provide the most stability and inflation-protected income of the four styles. 
+
+As the styles progress from core to opportunistic, the risk and return profile should increase, and the income component often decreases as a proportion of total return. 
+
+The inflation-protection component of cash flows will decrease as profile becomes less contracted or regulated. 
+
+The stability of these assets changes as we move from core to opportunistic.
+
+Core and core-plus assets have low sensitivity to economic growth due to their high barriers to entry and contracted cash flows.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.5 Im47.png"}
+\end{center}
+
+Infrastructure Equity has generated attractive long-term returns relative to global stocks and bonds. 
+
+Listed infrastructure has had higher volatility than unlisted infrastructure equity due to less frequent marks and an appraisal-based valuation methodology.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/3.3.5 Im48.png"}
+\end{center}
+
+\newpage
+
+### Opportunities and Risks in Infrastructure
+
