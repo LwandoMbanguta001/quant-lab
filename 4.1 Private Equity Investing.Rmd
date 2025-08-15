@@ -1,0 +1,714 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 4: Private Equity
+
+## SubTopic 4.1: Private Equity Investing
+
+### Introduction to Private Equity
+
+Private securities can be divided into private equity and private credit. 
+
+The curriculum divides private equity into three major categories (sub-asset classes): 
+
+  1) venture capital (VC), the financing of start‐up companies
+  
+  2) growth equity, non-controlling interests in successfully emerging enterprises
+  
+  3) buyouts, where established companies are purchased for full control.
+
+- Private Equity Strategies
+
+Private equity is a long‐term investment process that requires patience, due diligence, and hands‐on monitoring.
+
+Private equity provides the capital investment and working capital used to help private companies grow and succeed.
+
+Equity investments in privately held companies spans the full spectrum of a company lifecycle. 
+
+Venture capital and buyouts focus on opposite ends of the life cycle of a company.
+
+The earlier in the life cycle of a company, the greater the risk taken on by the investor. 
+
+The payouts to venture capital investments can resemble the payouts to long positions in out‐of‐the‐money calls: The risks are great, but the potential rewards are even greater.
+
+As investors move along the life cycle and invest in more mature companies, the risk of failure declines reducing the potential for extreme outsized reward. 
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.1 Im60.png"}
+\end{center}
+
+The three primary private equity strategies span the full life cycle of a business from launch to decline.
+
+Strategies span a continuum creating overlap as a company moves through the business cycle. 
+
+As the private equity market continues to evolve and grow, the lines between the strategies have further blurred and crossed over. 
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.1 Im61.png"}
+\end{center}
+
+- Venture Capital
+
+Every attempt to start a new business is an example of venture capital, from the smallest retail store to the largest energy exploration.
+
+Most new businesses are financed fully by their founders, with little or no capital from institutional investors and other traditional financing sources.
+
+This process of self-financing a business is referred to as bootstrapping and suggests the capital for the business did not come from institutional sources. 
+
+The founders have received funds from friends and family to help start the business and keep it afloat. 
+
+Venture capital (VC) is a large asset class often listed separately from other forms of private equity by institutional allocators. 
+
+The strategy focuses on early financing for young firms with high potential growth that do not have a sufficient track record to attract investment capital from traditional sources.
+
+Entrepreneurs develop business plans and then seek investment capital to implement those plans, since start‐up companies are unlikely to produce positive cash flow or earnings for several years. 
+
+The equity stakes that venture capitalists initially acquire begin as a substantial but minority position in the company.
+Control by VC investors is not absolute.
+
+A VC project is primarily distinguished by its small size, lack of revenues, and high risk.
+
+The size of the investment can vary substantially, driven in part by the stage of the company’s life cycle, and the current market cycle. 
+
+Venture Capital investors seek a minority investment in the business, as the company grows and progresses along the life cycle, the capital needs increase, however investment becomes increasingly de-risked and the percentage of new ownership declines.  
+
+Each round of financing will be supported by multiple institutional investors.
+
+One or two of those investors act as a lead investor, i.e. they write the largest check of the group and take the main role in negotiating terms of the investment. 
+
+By including multiple investors in the round, the business benefits from a diversified group of owners, while the venture capitalists avoid too large of a concentration in a single investment.
+
+The eventual goal of the VC investor is to work with the original owners to build products, revenues, and income to the point of the firm going public via an IPO and for VC investor to exit the investment through sales of investor’s now‐listed equity stake.
+
+The pathway to an IPO includes additional funding and assistance by the VC investors in management of the firm.
+
+- Growth Equity
+
+Growth equity focuses on companies that have established a reliable base of revenues, an established business model, and have opportunities to expand that require more cash than can be funded by existing revenues. 
+
+Growth equity is provided as additional working capital and/or to facilitate growth by increasing production capacity and developing markets, geographies, or products.
+
+Over the last decade, the upper bounds of the profile of growth equity investments have expanded dramatically.  
+
+Growth equity investors could not meet the capital needs of larger scale businesses, and the primary option for raising additional capital was via the public markets.
+
+As a result of growth in the industry, changing regulator environments, and other factors, many companies are staying private for longer and accessing capital from growth equity investors. 
+
+Growth equity does not involve substantial control by the new investors (as opposed to buyouts).
+
+Growth equity is the last financing round before an IPO or other exit (e.g., a buyout, strategic sale, M&A, etc.).
+
+- Buyout
+
+Buyout investors focus on mature, stable businesses and seek control of the company to have full authority over the decision-making process.
+
+Buyout firms target a wide area of businesses ranging from founder‐owned, to those owned by another buyout firm, to units/subsidiaries of a larger corporation, as well as publicly traded companies.
+
+Buyout investors have been associated with the use of moderate to high leverage in the capital structure.  
+
+This above average leverage, increases the overall risk profile of buyouts relative to public equities. 
+
+The universe consists of a variety of strategies, several of which are not predicated or reliant upon leverage. 
+
+Buyouts involve majority ownership (80%+) by the new investor.
+
+As directors, the firm interacts with the management of the private company on a weekly, if not daily, basis. 
+
+A buyout fund assists the company in developing a new business plan.
+
+This plan entail expansion or contraction, adding new employees or reducing part of the workforce, and introducing new products or cutting off unproductive and distracting product development. 
+
+In a majority of cases, the buyout firm gets the company to streamline its workforce, reduce its expenses, and increase its balance sheet capacity for more leverage.
+
+Buyout managers look to apply their expertise to turn around underperforming businesses, improve profitable businesses, or optimize the companies’ balance sheets and financing.
+
+- Contrasting Venture Capital, Growth Equity, and Buyouts
+
+The major distinctions between the fund managers is summarized as being driven by these three goals:
+
+  i) Venture capitalists look to launch new or emerging companies, whereas growth equity managers support the expansion of existing businesses, while buyout managers focus on leveraging an established company's assets.
+  
+  ii) Venture capitalists back entrepreneurs, whereas growth equity help complete the build out of a sophisticated management team, while buyout managers deal with experienced and established managers.
+  
+  iii) Venture capitalists focus on product, market, and strategy, whereas growth equity focuses on business development, institutionalization, and execution, while buyout is involved in the day‐to‐day details of the company, profitability and financial initiatives, and longer-term strategic plans.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.1 Im62.png"}
+\end{center}
+
+\newpage
+
+### Private Equity Firms
+
+The organized PE market is dominated by PE-style funds. 
+
+PE-style funds utilize a superior governance structure for venture capital (VC), growth equity, and buyouts.
+
+- Private Equity Firms
+
+PE firms serve as fund managers. 
+The managers serve as General Partners (GPs) and attract institutions as Limited Partners (LPs). 
+
+The fund manager's objective is to realize, or exit, all investments before or at the liquidation of the fund.
+
+If successful, the fund managers will launch multiple funds through time.
+
+PE firms obtain additional capital through forming limited partnerships, which attract LPs to invest in a series of ventures.
+
+A major PE firm serves as the general partner for a series of limited partnerships that can span decades and are numbered sequentially to distinguish the historical fundraising lineage.
+
+Large PE firms also manage multiple fund strategies concurrently, based on geographic sectors, market caps, industry sectors, or asset type.
+
+The PE firm (LLC) creates an LLC to serve as general partner (GP) of the partnership.
+
+The general partner makes a minimal investment in the partnership but receives a large share of the profit distributions (forming incentive fee).
+
+The PE firm creates another LLC to serve as the investment adviser to the partnership.
+
+The investment adviser receives the management fee.
+
+The personnel from the PE firm in the LLCs may be overlapping or even identical. 
+
+The structures are used to preserve limited liability, delineate compensation, and provide clarity with regard to responsibilities.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.2 Im63.png"}
+\end{center}
+
+Tax, legal, and regulatory requirements drive the structuring of the entities, as well as goals that include reducing taxation and limiting liability (investors’ liabilities are limited to the capital committed to the fund).
+
+- Private Equity Portfolio Companies
+
+PE securities, portfolio companies, or underlying business enterprises are used to describe the underlying investments in the unlisted businesses seeking growth. 
+
+In all instances, Private Equity include venture capital, growth equity, and buyout. 
+
+Managers of those strategies employ the same structures, entities, and relationships.
+
+- Private Equity Investment by Institutional Investors
+
+Smaller institutional investors may not have internal resources, or adequate scale to invest directly into private equity funds or own a diversified portfolio of private equity fund commitments. 
+
+The investors seek exposure to the strategies via a fund of funds.
+
+The amount committed but not yet called is an undrawn commitment or dry powder.
+
+For institutional investors, direct investment is problematic because many institutions cannot offer adequate performance‐related pay to attract and retain top employees and analysts.
+
+For conservative and seniority‐based institutions like banks, pension funds, and insurance companies, a theoretically unlimited carried interest does not always fit well with the institution's traditional compensation scheme.
+
+While institutional investors do not lack staff with the intellectual caliber to evaluate investment proposals and to structure transactions, generating profitable exits in PE programs requires very hard work over protracted periods of time. 
+
+The lack of incentive to take risks and to find value (or the conflict of interest therein) affect investment decisions.
+
+There is a substantial learning curve, and without performance‐related pay, employees jump ship as soon as they are competent in the area and understand their opportunities better.
+
+For smaller institutions, intermediation through funds of funds allows them to focus on their core businesses.
+
+- Private Equity Funds as Intermediaries
+
+Depending on the strategy, the roles of the PE managers can differ markedly.
+The PE market is evolving.
+
+A few decades ago, the supply of PE capital came through a limited number of large PE firms. 
+
+These PE firms obtained much of their financing from creating PE funds and offering limited partnership investments to institutions and wealthy investors. 
+
+The PE market emphasized relationships. 
+
+PE firms invested capital in deals within a moderately inefficient market and a relatively less competitive environment.
+
+Established PE firms also obtained their external capital within a relatively less competitive environment, wherein institutions wishing to invest in PE faced concerns over whether they would have access to promising deals.
+
+PE funds serve as financial intermediaries by facilitating investment in PE.
+
+- Private Equity Fund Intermediation and Risk
+
+PE funds step into funding process when traditional lenders are not willing or able to provide funding at levels sought by the target business. 
+
+Some of these lenders (banks) are not willing or allowed to take equity positions in these firms.
+
+Thus cannot fully participate in the significant upsides that PE investments could provide.
+
+PE investors take advantage of the inefficiencies in financial markets while satisfying the needs of these borrowers.
+
+PE funds are organized as limited partnerships designed to provide limited liability to the investors.
+
+Limited liability is the protection of investors from losses that exceed their investment.
+
+LPs are not responsible for liabilities beyond the total loss of their commitment, even if the partnership has further losses and unmet liabilities due to the use of leverage or from lawsuits.
+
+To have limited liability, a partner must be a limited partner and not take an active role in the partnership’s management. 
+
+The general partner does not have limited liability and takes an active role in the management of the partnership.
+
+- Private Equity Fund Intermediation and Efficient Incentives
+
+Another reason for existence of PE firms is the presence of certain economic inefficiencies in traditional corporate structure. 
+
+Management may not be given proper incentives to maximize the value to the shareholders of a corporation. 
+
+PE seeks to address this problem by tightly aligning the interests of managers and shareholders to achieve increased efficiency and higher return to shareholders.
+
+- Private Equity Funds Serve the Following Five Primary Functions
+
+  1) Pooling investors’ capital for investing in private companies
+  
+  2) Screening, evaluating, and selecting potential companies with expected high‐return opportunities.
+  
+  3) Financing companies to develop new products and technologies, foster growth and development, make acquisitions, or allow for a buyout or a buy‐in by experienced managers.
+  
+  4) Controlling, coaching, and monitoring portfolio companies. By dedicating personnel from PE fund, the private equity firm has more control, influence, and value creation of the portfolio company.
+  
+  5) Sourcing exit opportunities for portfolio companies.
+  
+\newpage
+
+### Managing Institutional Private Equity Investment Programs
+
+- Forms of Private Equity Fund Investment Programs
+
+There are different routes for investing in PE.
+
+Few institutional investors have the experience, incentive structures, and access that'd allow them to invest directly in non-public companies, so most investors seek intermediation through funds. 
+
+For smaller institutions, the most relevant approaches to investing in PE are through fund‐of‐funds specialists as intermediaries.  
+
+For larger institutions, access is through direct investment in the funds.
+
+Other routes are via publicly quoted PE vehicles, through a dedicated account managed by a PE specialist, or via in-house resources acting as a General Partner and investing in companies directly.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.3 Im64.png"}
+\end{center}
+
+  i) In a fund of funds structure, an institutional PE investor buys LP units of a PE fund of funds, which in turn purchases LP units of a PE fund, which in turn, invests in portfolio companies.
+  
+  ii) In second column, an institutional PE investor buys LP units directly in a PE fund that invests in portfolio companies.
+  
+  iii) In third column, a PE fund adds a co‐investment to process in second column. 
+  The co‐investment leg is where PE fund has additional investment in a certain portfolio company, at preferential management and performance fee terms.
+  
+  iv) In fourth column, direct investment by institutional PE investor who eschews PE fund structures altogether and makes investments straight into a portfolio company (without intermediation), similar to a co‐investment but without the input of a PE fund manager.
+
+- The Life Cycle of a Limited Partnership
+
+A limited partnership is a long‐term investment.
+
+The term of a PE limited partnership locks up investors’ capital for a minimum of 10 years.
+
+A fundraising cycle begins anew each time GPs need to raise capital for another fund. 
+
+Limited partnership agreements do not allow follow‐on funds by the same manager before the end of the initial fund’s investment period or until a large part of initial fund has been invested.
+
+During this long investment period, a limited partnership goes through five stages of development:
+
+  1) fundraising stage -  the firm raises capital from outside investors. 
+  Capital is committed, not collected.
+  Investors sign a legal agreement (subscription) that legally binds them to make cash investments in the fund up to a specified amount.
+  This is committed, but not yet drawn, capital. 
+  The firm/general partner also posts committed capital.
+  Fundraising takes six months to a year. 
+  The more successful funds raise the funds in just a few months.
+  Commitments are drawn down as needed, or just in time, to make investments or to pay costs, expenses, or management fees.
+  Because funds do not retain large pools of uninvested capital, their GPs make capital calls (or drawdowns) once they have identified a company in which to invest. 
+  The main part of the drawdown gets invested immediately.
+  
+  2) Investment Period - the fund manager determines how much capital to commit to each company, at what level of financing, and in what form of investment.
+  At this stage, the fund manager makes capital calls to investors in the fund to draw the committed capital of the LPs.
+  No cash inflow is generated yet; the fund is still in deficit. 
+  Effort is dedicated to sourcing investments, the process of locating possible investments, reading business plans, performing intense due diligence on target companies, and determining attractiveness of each potential investment.
+
+This period begins the moment the fund is closed to investors and takes up the first two (for VC) to five years (for Buyout) of the fund’s existence to complete.
+
+As general partner, the manager has full operating authority to manage the fund, subject to restrictions placed in covenants of the fund’s documents.
+
+During the first two stages, profits are highly unlikely to be generated by the fund.
+
+The reverse happens: The fund generates losses because the manager continues to draw annual management fees based on the total committed capital. 
+
+These fees generate a loss until the manager begins to extract value from the investments of the fund at a later stage.
+
+The year in which the fund first draws down capital from investors for the purpose of investing in a company is the vintage year; some data providers use the year that the fund commences legal operations, while others use the year of first fund closing. 
+
+Its not unusual for all three to be the same.
+
+While every data provider will be consistent in how they define the vintage year of the funds they track, its essential for institutional investor to ensure they select vintage year that aligns with data provider when conducting any performance benchmarking analysis.
+
+Investors should expect the accounting value of their investment in a fund to drop over the first three to five years. 
+
+This is because the organizational expenses of the partnership are deducted immediately.
+
+Management fees are charged on committed capital by fund’s general partner. 
+
+Those investments that fail quickly are posted as losses, while investments showing excellent potential take several years before markups reflect full unrealized value (if not already been sold). 
+
+This means investors must be braced for negative returns on their investments for up to the first five years of a fund’s life. 
+
+Limited partnership is for the long‐term investor.
+
+  3) Harvesting Period - the fund focuses on operation and management of portfolio of companies to grow value in preparation for an ultimate exit.
+  This stage begins after all funds have been invested, and lasts almost to the end of the term of the fund. 
+  During this time, the manager works with portfolio companies in which the fund has invested. 
+  The manager improves each portfolio company’s management team, establish distribution channels for the new product, refine prototype product to generate the greatest sales, and position the start‐up company for an eventual public offering or sale to a strategic buyer. 
+  During this period, the fund manager begins to generate profits for the fund. 
+  These profits initially offset the previously collected management fees and other expenses until a positive cumulative profit is established for the fund.
+
+A substantial portion of committed capital is drawn down during investment period, during which new opportunities are identified. 
+
+During harvesting period, only the existing portfolio companies with highest potential are further supported, with follow‐on funding provided to extract maximum value through exits.
+
+In buyout funds, managers retain 10% of unfunded commitments for follow-on investment to further support existing companies.
+
+For venture capital and growth equity funds, substantially more commitments are set aside to support future financing rounds.  
+
+For some venture capital funds, this means setting aside up to 50% of unfunded commitments, as future financing rounds tend to require larger dollar investment.
+
+For the earliest stage of venture capital investing, the VC manager may set aside twice as much capital as the original investment for the purposes of follow on investing. 
+
+As harvesting phase progresses, each of fund’s portfolio companies faces possible outcomes: 
+
+  i) being sold to a strategic/financial buyer,
+  
+  ii) being brought to public markets in an initial public offering (IPO), or 
+  
+  iii) being liquidated through a bankruptcy liquidation process
+  
+Profits are distributed to LPs, and general partner/fund manager collects the incentive/profit‐sharing fees.
+
+When realizations (sales of portfolio companies) are made, or when interest payments, dividends, or recapitalizations are received, they are distributed to investors as soon as is feasible.
+
+Some funds have reinvestment provision, subject to a cap amount, wherein the proceeds of realizations (associated with original cost basis of investment) within the investment period or a similar time frame may be reinvested in new opportunities and not distributed to investors.
+
+Distributions to investors also take the form of securities of a portfolio company, in‐kind distributions, provided these securities are publicly tradable or distributed when fund gets liquidated.
+
+Legal documentation may also allow for some reinvestment of realizations.
+
+  4) Windup and liquidation - additional capital is not invested, and the fund is now far along the harvesting stage.
+  If the fund continues to hold investments, the GP will have to extend the life of the fund. 
+  Fund life extensions and the mechanics can vary. 
+  Initial extensions may be for two years, followed by one-year extensions.
+  The GP has the power to authorize an initial extension, but need approval from LPs for subsequent extensions. 
+  The LP has little choice but to approve an extension. 
+  The lack of extension triggers events that result in forced sales below market value, and damaged relationships between LP and GP.
+
+LPs must trust that the GP is making best efforts to dispose any remaining portfolio companies.  
+
+In a sign of good faith, the GP will cease charging management fee during this period. 
+
+Once the final investment is divested, the fund can be wound down, the legal structure closed, and any clawbacks calculated and completed. 
+
+The goal for all GPs (and LPs) is for a fund life cycle to complete within 10 or so years of the initial fund commitment.
+
+Exits are unpredictable and be difficult to achieve at fair valuations within that time frame. 
+
+- The Fund J‐Curve
+
+It plots interim IRRs and lifetime IRR of a typical fund.
+
+The J‐curve is the classic illustration of early losses and later likely profitability of a fund. 
+
+The central return measurement for a fund is the IRR method. 
+
+The shape of J‐curve is determined by two factors, Capital Calls and Distributions. 
+
+The life cycle of a fund can be divided into three periods:
+
+  1) investment period - the first two to five years of the fund. 
+  Capital is called for management fees, and for investment into portfolio companies. 
+  There is no distribution from portfolio companies as the GP is just starting to put the cash to work. 
+  The fund IRR is initially negative, as management fee exceeds distributed profits from exits of portfolio company investments. 
+  Losses/write-downs (bad investments) are more likely to manifest early in holding period, while write-ups/unrealized gains accumulate over a longer time period.
+  
+  2) value creation period - from year three to year seven of the fund. 
+  The GP still makes Capital Calls from LPs for management fees and follow-on investments, but most of capital has already been deployed. 
+  The underlying portfolio companies provide distributions allowing the GP to distribute cashflow to LPs.
+  
+  3) harvest period - from year five to seven and onwards depending on the strategy.
+  The GP may exit their investments when conditions are right.
+  When investments are realized, the cash is returned to LPs.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.3 Im65.png"}
+\end{center}
+
+The use of subscription lines may flip the shape of J‐curve.
+
+When the fund uses a subscription line for investments and expenses, no capital is called from LPs.
+
+When an investment is marked upward, this will result in a very high interim IRR since there is very little cash outflow and a significant Net Asset Value increase.
+
+The interim IRR averages down as capital is called from LPs. 
+This results in IRR profile looking like inverted hockey stick.
+
+Other J‐curves can be observed in funds: 
+
+  i) cash flow J‐curve - NAV of fund is calculated by adding value of all investments held in fund and dividing by number of outstanding shares of fund. 
+  A representation of evolution of net accumulated cash flows from investors to the fund, which are negative during early years of existence before making U‐turn and becoming positive in later years of fund’s life. 
+  The net accumulated cash flows last for several years before turning positive.
+  This is explained by standard fund structures, where commitments are drawn down as needed, or just in time, and when realizations are made after having successfully developed these newly founded companies, they are distributed as soon as practical.
+  
+  ii) net asset value (NAV) J‐curve - a representation of evolution of NAV of fund versus net paid in (NPI), which first decreases during early years of fund’s existence and improves in later years.
+
+- Undrawn Capital Commitments
+
+Undrawn capital commitments are a liability of associated investors.
+
+While they are viewed as irrelevant to investment’s value (since calls of capital commitments are used to fund investments that belong to partnership), undrawn commitments caused serious problems for some LPs during global financial crises and global pandemic and led to coining of terms commitment risk or funding risk. 
+
+Commitment risk describes the situation in which LP may become a defaulting investor when they do not have sufficient liquidity to pay the capital calls of newly committed funds.
+
+\newpage
+
+### Subscription Lines in Private Equity
+
+A subscription line of credit (SLOC), referred as a line of credit, is a liquidity management tool used for interim financing needs of PE fund and secured by unfunded capital commitments of investments in the fund. 
+
+The amount of credit availability is based on borrowing up to 90% of unfunded capital commitments of LPs, which are investment‐grade institutional investors.
+
+Subscription lines are structured as senior secured revolving facilities with 2‐ to 3‐year terms.
+
+For GP, the benefits of using a subscription line include:
+
+  i) Improved transaction execution certainty - allow for quick access to capital for acquisitions, allowing GP to better control the timing of closing transactions.
+  
+  ii) Better cash flow management - GPs can smooth out cash flow and make capital calls from LPs in larger batches instead of smaller and more frequent calls. 
+  This result in a reduced J‐curve for LP.
+  
+  iii) Reduced administrative burden - Avoid making capital calls from LPs if timing of closing of investment does not coincide with current cash flow availability.
+  
+  iv) Enhanced IRR performance metric, but slightly reducing multiple‐based performance metric - The use of SLOC can delay capital calls from LPs. 
+  The result is that IRR of fund rises while the fund multiple declines due to cost of financing.
+
+Lenders are attracted to providing such facility because:
+
+  i) Secured - Subscription lines are secured by unfunded capital commitment of investors in the fund. 
+  These investors are institutional investors with significant financial strength.
+  
+  ii) Diversification - The facility provides a more diverse base supporting repayment than corporate credit.
+  
+  iii) Fee earning opportunity - The lender has multiple fee streams from upfront fees, drawn and undrawn fees, and loan margin.
+
+The use of subscription lines is a double‐edged sword for LPs. 
+
+SLOCs help reduce operational burden, as capital calls can be batched together instead of smaller more frequent calls. 
+
+It has potential to enhance IRR, as LP capital calls are delayed, and investment returns are generated on borrowed money. 
+
+This represents an inherent conflict of interest for GP in use of SLOC. 
+
+SLOCs distort performance measures that are sensitive to cash flow timing, and use of SLOCs is common among poorly performing funds.
+
+LPs can continue to invest the uncalled capital in other investments, where the return can exceed the cost of SLOC.
+
+LPs recognize that use of SLOCs could create perverse incentives for GPs.
+
+Depending on subscription agreement, carried interest can be calculated using IRR or multiple‐based metrics.
+
+For an IRR‐based hurdle, the use of SLOCs will enhance IRR.
+For multiple‐based metrics, the use of SLOC will slightly lower the multiple‐based metric.
+
+While higher IRR may be good for LP, it lowers total profit of fund due to the amount of interest and fees incurred to access the SLOC. 
+
+To monitor whether GPs are using subscription lines to enhance fund IRRs, the quarterly disclosure of details of subscription lines, including:
+
+  i) Total size of facility
+
+  ii) Total balance of facility
+
+  iii) Average number of days outstanding of each drawdown
+
+  iv) Net IRR with and without use of facility
+
+\newpage
+
+### The LP and GP Relationship Life Cycle
+
+A key aspect of PE fund investing is that successful management teams that serve as GPs of PE funds oversee multiple funds through time. 
+
+Satisfied institutional investors in those funds seek to invest in the new funds being offered by successful GPs.
+
+- The Relationship between LPs and GPs in Private Equity
+
+The LP–GP relationship is a classic principal‐agent relationship because information in PE markets is incomplete and highly asymmetric, thus problems of moral hazard and conflict of interest arise. 
+
+There is a symbiotic relationship between LPs and GPs. 
+
+An LP's investment strategy is built around a number of relationships with GPs, who focus on specific segments (such as stages/sectors) of market.
+
+This specialized focus can limit the scalability of a particular fund, in which LPs find it difficult to identify and access additional fund managers of comparable quality.
+
+GPs want financially strong, dependable, knowledgeable, and long‐term LPs.
+
+LPs should have industry expertise and familiarity with nuts and bolts (valuations and benchmarking) of PE business. 
+
+Adverse selection exists in PE market: Poor‐quality GPs, lacking experience or falling into decline, will court inexperienced LPs. 
+Because of poor results, both will eventually exit the market.
+
+To maintain continuous investment in new portfolio companies, GPs need to raise new funds as soon as capital from their latest active fund is fully invested (or reserved for follow‐on investments).
+
+Relationships between LPs and GPs follow a life cycle and are forged through various rounds of investment, resulting in a virtuous circle of growing experience and fund size.
+
+Anecdotal evidence suggests that experienced market players profit from these relationships over protracted periods of time. 
+
+Initially, criteria are very stringent, and fund managers cannot get rich through their first funds. 
+
+A favorable track record is an asset in itself. 
+For more reputable funds, fundraising is less costly.
+
+To minimize their expenses, fund managers turn first to those who invested in their previous partnership, provided that the fund's performance was satisfactory.
+
+While its easy to see how fund managers benefit from a loyal and reliable investor community, these long‐term relationships can be advantageous for LPs. 
+
+In the opaque PE market, the search for and due diligence of funds is a costly exercise, and LPs prefer familiar fund managers to unproven investment proposals.
+
+Such long‐term relationships provide access to a quality deal flow of co‐investment opportunities in portfolio companies within an established framework. 
+
+Its desirable for an investor to hold on to good fund managers, as the best teams will have an established investor base, which eliminate the need to seek out new funding sources to detriment of adding value to portfolio companies when making new investments or exits.
+
+- The Three Phases in the Relationship between LPs and GPs
+
+The life cycle of the GP–LP relationship focuses on long‐term pattern of GPs as they create multiple funds through time. 
+
+The GP–LP life cycle can be divided into three phases: 
+
+  1) entry and establish (phase involving initial funds)
+  
+  2) build and harvest (or grow and compete), and 
+  
+  3) the three potential outcomes: decline (lost competitiveness), exit (gave up or made it), or transition to new managers (spinouts)
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.5 Im66.png"}
+\end{center}
+
+During entry and establish phase, substantial entry barriers into the PE market exist for both GPs and LPs. 
+
+Lacking a verifiable track record, new (emerging) teams find it difficult to raise their first fund.
+
+Analysis of historical benchmark data supports the hypothesis that new teams suffer from higher mortality than established or institutional‐quality fund managers.
+
+First‐time funds note the importance of differentiation or innovation as applied to fundraising and often pursue specialized investment strategies.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.1.5 Im67.png"}
+\end{center}
+
+New LPs also face entry barriers, suffering initial informational disadvantages that make it extremely difficult to identify or gain access to best managers, particularly when those funds are oversubscribed. 
+
+For LPs, it takes disciplined execution of long‐term investment strategy to build up a portfolio of funds that gives attractive and sustainable returns (this is true in venture capital universe where access to top tier managers is highly limited).
+
+Since investors are mainly interested in the cash returned, the fund manager–investor relationship is relatively stable throughout the build and harvest phase.
+
+As in most relationships, there is a certain degree of tolerance for mistakes and failures, at least over a limited period of time. 
+
+Its clear that there are limits to disappointing results, but all things being equal, investors go with fund managers they already know or have been referred to them through their network, even if fund's performance has been subpar at times.
+
+Eventually, the relationship ends in the decline, exit, or transition (spinout) phase. 
+
+The terms marriage and divorce are used in the context of relationships between fund managers and their investors.
+
+A gradual decline occur either as a result of past successes, which decrease the financial motivation of senior fund managers, or due to an improperly planned succession, which leads to departure of middle management. 
+
+In addition, the LPs eventually end the relationship if they lose confidence or trust in the team.
+
+Some LPs do not invest in follow‐on funds and be replaced by less deep‐pocketed or experienced investors, or by secondary investors who choose to invest as a one‐off financial play.
+
+\newpage
+
+### Publicly Traded Private Equity GPs
+
+- Publicly Traded Private Equity Firms and Their Governance
+
+There are few publicly traded PE strategies in the liquid alternative space.
+
+Those strategies available use closed‐end fund format, as relatively permanent capital of those structures matches the constrained liquidity of underlying investments. 
+
+Publicly traded PE firms offer investors exposure to PE and earning carried interest from high returns to those firms generated from underlying fund investments.
+
+PE exposure to publicly traded shares of PE asset management companies and others can be achieved through ETFs.
+
+Exposure can also be achieved through open‐end mutual funds and listed companies that hold stakes in a large number of private companies.
+
+The following are among Drury's governance issues raised by publicly held PE firms observations:
+
+  i) Listed PE firms are organized as limited partnerships and LLCs rather than corporations, which can be used to reduce personal liability for managers to LPs and less friendly to interests of non‐insiders.
+  
+  ii) Organizational structures used by listed PE firms retain control of firm by insiders (managers) as opposed to other shareholders.
+  
+  iii) Structures and jurisdictions selected by listed PE firms reduce or waive management's fiduciary duties to its shareholders.
+  
+  iv) Listed PE firms exclude normal corporate controls by shareholders through board of directors and opt out of governance rules promulgated by stock exchanges.
+
+These governance issues can be argued to be attempts to preserve strength of traditional PE firms: strong management that is highly incentivized to take risks in unlocking value. 
+
+On the other hand, the governance structures used by listed PE firms place non‐inside shareholders at uncompensated peril.
+
+- The Battle between Private Equity Governance Structures
+
+One or more legal structures, both private and public, can be inserted between PE investors and underlying private enterprises.
+
+
+On the private end of private‐public spectrum are purely private PE firms.
+
+On the public end of the spectrum are ETFs that invest in listed PE firms that, in turn, invest directly in enterprises.
+
+Three important issues over which private and public access have varying strengths and weaknesses:
+
+  i) Diversification as a double‐edged sword: 
+  
+Diversification reduces risk.
+
+Well‐diversified investors require lower rates of return on capital, thereby offering a competitive advantage to firms with diversified investors.
+
+PE firms seek capital through listing to attract substantial capital at relatively low cost. 
+
+Primary advantages to PE management is that top managers are incentivized to focus their considerable strengths and energies into creating value because their wealth is disproportionately concentrated in investments that they are overseeing.
+
+Private PE structure is successful cause of skill and devotion of its poorly diversified management teams.
+
+  ii) Liquidity (Listing) as a double‐edged sword:
+  
+Liquidity in PE involves not only the ability to exit an investment quickly at a non‐discounted price, but also not having to meet capital calls on committed capital. 
+
+Listed investments offer investors the confidence that market price is likely to be better protected on downside due to ability of short sellers to constrain listed securities from being overpriced. 
+
+The presence of short sellers provides some level of confidence that market prices are deemed to be reasonable by at least some investment professionals.
+
+Prices of private deals do not offer this protection.
+
+Public listing involves substantial fees and has been argued to cause the prices of listed PE to take on the volatility of the entire stock market during times of crisis. 
+
+Public listing provides visibility, which help enterprises market their products and signal positive reputations, building loyalty from customers who are also shareholders. 
+
+Public listing invites scrutiny such as nuisance shareholder proposals and government intrusions.
+
+  iii) Regulation as a double‐edged sword:
+  
+On one hand, strong regulations generate better information revelation by the firm to the public and provide some protection to investors against fraud and other abuses.
+
+On the other hand, regulations can be burdensome, expensive, and constrain top managers from fully unlocking potential value.
+
+\newpage
+
+### Exit Strategies: IPOs and Direct Listings
+
