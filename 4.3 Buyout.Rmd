@@ -1,0 +1,972 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 4: Private Equity
+
+## SubTopic 4.3: Buyout
+
+### An Overview of Buyouts
+
+Buyout is a generic term that denotes a change of ownership.
+
+A buyout occurs when capital, a mix of debt and equity, is used to acquire a controlling stake in an existing (private or publicly traded) company or subsidiary from its current shareholders.
+
+The new owners operate the company as an independent organization as opposed to an acquisition, in which the acquired company is folded into the buyer’s existing company. 
+
+Distinctions between buyouts focus on the purpose of buyout and management team that'll operate the target firm.
+
+A buyout is described as an LBO when, after the buyout, the debt‐to‐equity ratio is much greater than before the acquisition.
+
+The debt‐to‐equity ratio can be as high as 9:1, meaning the capital structure of the company after the buyout is 90% debt and 10% equity.
+
+Regulatory changes and lending practices resulted in LBOs operating with a debt-to-equity ratio no greater than 6:1.
+
+An LBO includes an effort to make fundamental changes in management and/or operations of the target.
+
+- History of Leveraged Buyouts
+
+The 1980s witnessed the rise of a key element of the growth in buyouts: financing of buyouts using bonds with low credit ratings, known as junk bonds. 
+
+Junk bonds are debt instruments with high credit risk, i.e. high‐yield, non‐investment‐grade, or speculative‐grade debt.
+
+- Three Key Economic and Agency Issues of Buyouts
+
+  1. Are Buyout Markets Segmented and Informationally Inefficient?
+
+Buyout activity was previously thought to take place in a segmented market.
+
+Segmentation denotes grouping of market participants into clienteles that focus their activities within specific areas of the market, rather than varying their range of activities more broadly throughout all available opportunities. 
+
+When a market is segmented, the valuations in that market vary based on preferences of clienteles that dominate particular segments.
+
+Buyout activity was also previously thought to take place in an inefficient market. 
+
+Inefficiency refers to informational inefficiency, the idea that transactions take place with relatively large divergences between actual prices of transactions and true underlying values of those transactions, based on all available information.
+
+Segmentation can lead to informational market inefficiency.
+
+An evolution of buyout market has occurred that has been driven by substantial buyout activity and resulted in a less segmented market that has grown into a more efficient, auction‐driven asset market, in which greater competition has reduced abnormal profit opportunities.
+
+  2. Are Management Buyouts a Violation of Fiduciary Duties?
+
+Buyouts have large economic consequences to both managers and shareholders of target firm. 
+
+There is an inherent conflict of interest between shareholders as principals and managers as agents with regard to most buyouts.
+
+That conflict of interest can become important in high‐stakes environment of buyouts. 
+
+The primary conflicts involved in management buyouts are quite distinct from conflicts involved in management buy‐ins.
+
+In an MBO, the existing management team takes over ownership of firm from the firm’s existing shareholders.
+
+Managers owe a fiduciary duty to the shareholders of the firm in which they are employed.
+
+Managers have superior information regarding the firm and its potential value.
+
+In a management buyout, the incumbent managers perceive there are substantial gains that can be unlocked through their actions. 
+
+A critical issue is whether managers choosing to pursue a path of unlocking those gains through a management buyout are violating their fiduciary responsibilities to the firm’s shareholders.
+
+  3. Are Managers Perversely Incentivized with Regard to Management Buyins?
+  
+In an MBI, an external management team replaces the existing management team. 
+
+The outcome of an MBI for incumbent managers can vary depending on the extent to which the managers are compensated upon their departure.
+
+A generous compensation scheme (golden parachute) is given to top managers whose careers are being negatively affected by a corporate reorganization. 
+
+Two primary conflicts of interest emanate from these lucrative compensation schemes:
+
+  i) incumbent managers have a strong incentive to resist any buyout attempt (no matter how lucrative to shareholders) that displaces them as managers if buyout does not provide them with generous compensation. 
+  
+  ii) incumbent managers have a strong incentive to encourage buyouts that offer them generous compensation. 
+  
+Incumbent managers are incentivized to interfere with buyouts or promote buyouts based on the financial implications to themselves rather than based on their duties to serve the interests of the shareholders.
+
+- Buyouts of Private Companies
+
+Buyouts are distinguished from mergers by the extent to which the firm bought out is intended to function as a stand‐alone business rather than be folded into the organization of the purchaser. 
+
+In a buyout of a private company, all equity is acquired and control is absolute.
+
+The terms for purchasing control of a company are not universal or clearly delineated.
+
+- Buyout Objectives
+
+Investors in buyouts target lower internal rates of return (IRRs) than in venture capital, although both are quite high.
+
+The reason VC‐required IRRs are higher is there's more risk funding a nascent company with brand‐new technology than an established company with regular and predictable cash flows.
+
+A buyout of a private company is an alternative exit from an IPO, from the perspective of an early investor. 
+
+The target company has an established product. 
+
+The management of the company going forward is driven not by idea generation but often by improving efficiency. 
+
+Revenues are established, recurring, and fairly predictable. 
+
+With a buyout, capital is necessary not for product or service development (as in VC) but to optimize the company’s efficiencies with the ultimate goal of an IPO exit.
+
+- Buyouts and Capital Structure Optimization
+
+Large capital requirements and lower risk levels relative to VC result in most buyout managers making a smaller number of investments compared to venture capitalists. 
+
+Buyout transactions use both equity and debt financing to acquire companies.
+
+Assets of the acquired company are used as collateral for the debt, and the company’s cash flow is used to pay off the debt.
+
+Buyout managers conduct intensive financial due diligence and rely on sophisticated financial engineering. 
+
+Financial engineering refers to the process of creating an optimal capital structure for a company.
+
+In private equity, the capital structure is made up of different types of financial instruments, such as multiple layers of debt, mezzanine, and equity, each carrying a different risk‐reward profile.
+
+Buyouts use debt financing, either through bank loans or with newly issued debt to purchase the outstanding equity of the target company. 
+
+These loans and bonds are secured by the underlying assets of the company being bought.
+
+Mezzanine financing relates to capital provided through the issuance of subordinated debt, with warrants or conversion rights to finance the expansion or transition capital for established companies (usually privately held or below investment grade, or both). 
+
+While mezzanine financing gives a more predictable cash‐flow profile, its unlikely to provide capital returns comparable to other PE financing forms.
+
+- Buyouts and Operational Efficiency Optimization
+
+A multitude of approaches to improving operational efficiency can be combined in a transaction, such as divestment of unrelated businesses, vertical or horizontal integration through acquisition, and company turnaround. 
+
+Buyout managers need to give extensive advice on strategic and business planning, and focus on consistent rather than outsized returns.
+
+Because they target established enterprises, buyout firms experience fewer outright failures but have upside potential more limited.
+
+The ability to analyze a company’s operations and increase efficiencies, as opposed to implementation of capital structure changes, is the primary driver of a successful transaction.
+
+- Merchant Banking
+
+Merchant banking is closely related to buyouts that its sometimes difficult to distinguish between the two. 
+
+Merchant banking is the practice whereby financial institutions purchase non-financial companies as opposed to merging with or acquiring other financial institutions.
+
+Most major banks have merchant banking units.
+
+These units buy and sell non-financial companies for profits they can generate, much as in the case of buyouts.
+
+In some cases, merchant banking units establish limited partnerships, similar to buyout funds.
+
+Merchant banking started as a way for investment banks and money center banks to establish an equity participation in the enterprises they helped fund. 
+
+If a bank lent money to a buyout group to purchase a company, its merchant banking unit also invested some capital as equity capital and received an equity participation in the deal.
+
+The merchant banking units of investment banks established their own buyout funds and created their own deals.
+
+Whereas merchant banking is designed to earn profits for the bank, it allows the bank to expand its relationship with the buyout company into other money‐generating businesses, such as underwriting, loan origination, merger advice, and balance sheet recapitalization. 
+
+All of this ancillary business translates into fee generation for investment bank.
+
+\newpage
+
+### Buyout Strategies
+
+- Types of Private Equity Buyouts and Resulting Management
+
+A management buy‐in (MBI) is a type of buyout in which the buyout is led by an outside management team. 
+
+Control of the new company is taken over by the new (outside) management team, and the old (incumbent) management team leaves. 
+
+The compensation package, if any, offered to or negotiated by the incumbent managers can be a critical issue.
+
+Buyouts involve bringing in a new management team to replace the firm’s existing management. 
+
+A buyout led by the firm’s existing managers that retains most top members of the management team is referred to as a management buyout.
+
+A management buyout (MBO) occurs when current management acquires the company with the assistance of buyout fund.
+
+A buy‐in management buyout is a hybrid between an MBI and an MBO in which the new management team is a combination of new managers and incumbent managers.
+
+In most large buyouts, a public company was being taken private.
+
+Buyouts are taking the form of a secondary buyout.
+
+In a secondary buyout (SBO), one private equity firm sells a private company to another private equity firm (also know as a sponsor to sponsor deal). 
+
+In effect, a secondary buyout is an ownership change among private equity firms.
+
+Secondary buyouts provide a secondary‐market‐like opportunity for private equity firms to exit a buyout. 
+
+The performance of secondary buyouts in a PE fund depends on when the deal is closed relative to the fund’s investment period. 
+
+A buyout fund that purchases a portfolio company through an SBO in the first half of the fund’s investment period sees that portfolio company perform in line with other investments in the fund. 
+
+SBOs purchased late in the fund’s investment period, when the GP might be racing to close on deals simply to increase invested capital and subsequent management fees, underperform SBOs purchased earlier in the life of the fund as well as underperforming investments directly in portfolio companies
+
+- Categories of LBOs
+
+  1) "Traditional” Leveraged Buyout (LBO) - the private equity firm targeted a stable, cash flow positive firm that could be purchased using significant levels of debt. 
+  So long the company could sustain cash flow, the debt could be serviced throughout the holding period, with any remaining cash flow used to pay down debt early and ultimately distributed dividends to equity holders. 
+  If the company produced modest growth and could achieve an exit multiple in line with or above the entry multiple, the owners could reap massive gains through manipulating the balance sheet (given the negative connotation of financial engineering). 
+  While this model creates substantial value for owners, its questionable whether the company is better off afterwards. 
+  With majority of cash flow diverted to principal and interest payments, the company is unable to invest in capex and other growth initiatives, which result in falling behind industry peers.
+  
+  2) Operational Efficiency buyouts - are LBOs that in addition to using substantial debt, attempt to increase value to firm via operational efficiency improvements.
+  A company is bought out because its shackled with a non-competitive operating structure.
+  For large public companies with widespread equity ownership, management has little incentive to create shareholder value because it has a small stake in the company’s profit. 
+  Under these circumstances, management is compensated based on revenue growth, which result in excessive expansion and operating inefficiencies. 
+  Efficiency buyouts lead to a reduction in firm assets and revenue with the goal of increasing firm profits. 
+  Such a buyout introduces more concentrated ownership and a better incentive scheme to mitigate agency problems. 
+  Management is given a stake in the company with an incentive scheme tied not to increasing revenues but to increasing operating margins and equity value.
+  A high leverage ratio is used to ensure that management has little discretion to invest in inefficient projects. 
+  The buyout firm replaces the diverse shareholder base and provides the active oversight that was lacking with the prior widespread equity owners.
+  At times, this model results in negative headlines for buyout industry, as its associated with layoffs and other cost reductions that are harmful to other stakeholders.
+  The majority of large private equity firms retain in-house operational experts who can work with portfolio companies to boost operations, streamline costs, and increase operating margins.
+  For much of the industry, Operational Efficiency buyouts are the “new” Traditional LBO.
+  
+  3) Carve-outs - occur when a private equity firm purchases a subsidiary or operating division from within an existing corporation. 
+  These purchases produce Entrepreneurship stimulators, meaning the buyout creates value by helping to free management to concentrate on innovations. 
+  The subsidiary or operating division is unwanted or neglected by its parent company, which impede its ability to implement an effective business plan. 
+  A carve-out can free the operating division to control its own destiny.
+  
+  4) Spin-offs/Break-ups - Conglomerates have many different divisions or subsidiaries, operating in completely different industries. 
+  These companies can be misunderstood by the investing public and perhaps undervalued. 
+  Sometimes conglomerates drain profits from profitable divisions within the firm and use them to prop up failing divisions rather than reinvesting them in successful divisions or distributing them to shareholders as dividends. 
+  A spin-off/break-up can be used to dismantle inefficient conglomerates, shut down or sell inefficient operations, and allow profitable divisions to reinvest and meet their growth potential.
+  
+  5) Buy‐and‐build strategy - is a buyout value‐creation strategy involving the synergistic combination of several operating companies or divisions through additional buyouts. 
+  The buyout firm begins with one buyout and then acquires more companies and divisions that are strategically aligned with initial buyout portfolio company. 
+  The strategy seeks to benefit from synergies realized through the combination of several different companies into one. 
+  In some respects, this strategy is the reverse of that for conglomerates. 
+  Rather than strip a conglomerate down to its most profitable divisions, this strategy pursues an assembling approach. 
+  This is also known as a leveraged buildup or roll up.
+  
+  6) Turnaround strategy - is an approach used by buyout funds that look for underperforming companies with excessive leverage or poor management.
+  The targets for turnaround buyout specialists come from two primary sources: (1) ailing companies on the brink of bankruptcy, and (2) underperforming companies in another buyout fund’s portfolio. 
+  The private equity firm does not buy out the complete company but makes a large equity contribution at a price discounted to the public market price of the stock and takes seats on the target company’s board of directors.
+  
+  7) Growth Buyout - the buyout firm targets companies exhibiting above average growth rates, which means the company is earlier in the business life cycle.
+  At this stage, risk is still elevated, and substantial use of debt is not possible, or too risky.
+  Growth buyouts are funded with a majority of equity. 
+  Given the positive trajectory of the company, the owners wish to retain a portion of the equity. 
+  While growth buyouts result in a change in control, its not unusual for the buyout firm to not hold 100% of the equity after the transaction, and the original owners may still retain a 20%-40% ownership stake.
+  
+  8) Buyout-to-buyout (aka Sponsor-to-sponsor) - a private equity firm sells one of its portfolio companies to another buyout firm. 
+  The original buyout fund may be late in the fund life (i.e. liquidation phase) and needs to exit the company. 
+  The initial buyout fund was well suited for certain strategic initiatives while the new buyout owner is well suited for other strategic initiatives.
+
+\newpage
+
+### Buyout Fund Characteristics
+
+The dominant type of buyout in terms of aggregate size is the LBO.
+
+- LBO Target Market by Cap Size
+
+Leveraged buyout (LBO) funds distinguish themselves by size of the companies they take private. 
+
+They classify themselves as investing in small‐capitalization companies, mid‐capitalization companies, or large‐capitalization companies.
+
+The large‐cap category of LBOs includes super‐sized or mega LBOs. 
+
+Investors classify funds within these strategies by evaluating the revenue and/or EBITDA of the target companies, or by looking at fund size. 
+
+\begin{center}
+\includegraphics[width=10cm, height=3.5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.3.3 Im74.png"}
+\end{center}
+
+Almost all LBO funds are structured as limited partnerships.
+
+LBO funds are run by a general partner, an LBO firm. 
+All investment discretion and day‐to‐day operations vest with general partner.
+
+- Total Number, Size, and Implications of Buyout Fund Fees
+
+LBO firms have numerous ways to make money, which include annual management fees, incentive fees, or carried interest.
+
+For arranging and negotiating an LBO, an LBO firm may charge fees of up to 1% of total selling price to the corporation its taking private. 
+
+Some LBO firms (i.e. GPs) keep all these fees for themselves rather than sharing them with limited partner investors.
+
+Other LBO firms split the transaction fees, with LPs receiving 25% to 75%. 
+
+Other LBO firms include all of these fees as part of the profits to be split up among the general partner and LPs. 
+
+Not only do LBO firms earn fees for arranging deals, but also earn breakup fees if a deal fails.
+
+In addition to these fees, LBO firms charge a divestiture fee for arranging the sale of a division of a private company after the buyout has been completed.
+
+An LBO firm may charge directors’ fees to a buyout company if managing partners of the LBO firm sit on the company's board of directors after the buyout has occurred.
+
+When the buyout industry started, the 1% to 2% management fee was necessary to pay the expenses of the PE general partner. 
+
+This fee covered travel expenses, utility bills, and salaries of general partner's staff.
+
+The management fee was originally used to keep the PE manager afloat until the incentive fee could be realized, which took several years. 
+
+Now, PE funds have grown to immense size; the PE manager now earns a considerable amount of profit from its management fees. 
+
+This blunts the incentive of PE manager to seek only the most profitable PE opportunities.
+
+The large, diversified, private equity firms operate multiple funds across multiple strategies and are amongst the largest asset managers in the alternatives investment industry. 
+
+Given the predictability in the cash flow from the management fee, and the level of profits earned from management fee, these firms were well situated to enter the public markets. 
+
+Public investors are attracted to these firms in large part because of the profits generated by the management fee income as opposed to the incentive fee.
+
+While managers of buyout funds offer their investors an 8% preferred return before they take a share of the profits for themselves, this is less common in the case of VC funds.
+
+Its more important as an incentive to properly screen the deal flow.
+Without it, buyout fund managers could pursue a low‐risk, low‐return strategy, by being inactive or by choosing companies that have little potential to generate large returns.
+
+A preferred return forces managers to make riskier investments to generate a return in line with the investor's targets.
+
+In the case of VC funds, investments are always risky, and the high‐risk, high‐reward strategy makes it meaningless to bother about preferred returns.
+
+- Agency Relationships and Costs
+
+The objectives of senior managers of listed corporations are very different from those of corporation's equity owners.
+
+In agency theory, senior corporate managers are agents and shareholders are principals. 
+
+Shareholders, as owners of the company, delegate day‐to‐day decision‐making authority to management with the expectation that management will act in the best interests of shareholders.
+
+In a large company, equity ownership is so widely dispersed that shareholders of the company may not be able to fully align managerial objectives with shareholder objectives or otherwise control management's natural tendencies. 
+
+The separation of ownership and control of corporation results in conflicts of interest and agency costs.
+
+Agency costs come in two forms:
+
+  i) There is the cost to better align management's goals with value‐creation goal of shareholders. 
+  These costs include costs of monitoring management, which include audits of financial statements, shareholder review of management perquisites, and independent reviews of management's compensation structure. 
+  Better alignment is sought via compensation arrangements, which are designed to better align shareholder and management objectives. 
+  
+  ii) Agency costs include erosion of shareholder value from agency conflicts that are too costly to resolve efficiently. 
+  These costs include adverse effect on shareholders of managerial actions that are not in the best interests of shareholders. 
+  The optimal strategy regarding agency conflicts is to implement only those actions that have benefits that exceed their costs, not necessarily to minimize agency costs. 
+  Thus, conflicts of interest and agency costs are realities of doing business using structures that use agency relationships.
+
+LBO firms replace a dispersed group of shareholders with a highly concentrated group of owners. 
+
+The concentrated and private nature of new shareholders helps incentivize managers of the buyout firm to focus on maximizing shareholder wealth.
+
+The management of the now private company is given a substantial equity stake in the company that provides a strong alignment of interests between the management/agents of the company and its principals/shareholders.
+
+As the company's fortunes increase, so do personal fortunes of management team. 
+
+The large incentives to an LBO's management team are vital to LBO's goal of unlocking value.
+
+With a majority of the remaining equity of the once public, now private, company concentrated in the hands of the LBO firm, the interaction between equity owners and management becomes important.
+
+After a company is taken private, LBO firms maintain an active role in guiding and monitoring the management of the company. 
+
+After a transaction is complete, an LBO firm remains in continuous contact with company management.
+
+As the majority equity owner, the LBO firm has the right to monitor the progress of management, ask questions, and demand accountability.
+
+- LBO Auction Markets
+
+In the past, LBO deals were sourced by a single PE firm without any competitive bidding from other PE firms.
+
+The traditional model of PE was one in which a single PE firm approached a stand‐alone public company about going private or approached a parent company with respect to spinning off a subsidiary. 
+
+The lone PE firm worked with the executive management of public company or parent company to develop a financing plan for taking the public company or a subsidiary private. 
+
+Bringing this deal to fruition takes months or years, as the PE firm worked on building its relationship with senior management of the company.
+
+Whenever large sums of capital enter an informationally inefficient market, the inefficiencies begin to erode.
+
+An influx of investment in LBOs led to development of an auction market environment. 
+Single‐sourced deals are a thing of the past.
+
+Now, when a parent company decides to sell a subsidiary in an LBO format, it almost always hires an investment banker to establish an auction process.
+
+An auction process involves bidding among several PE firms, with the deal going to the highest bidder.
+
+This competitive bidding process involves several rounds and results in less upside for the PE investor, yet it reflects the maturation of the PE industry.
+
+- LBOs, Club Deals, Benefits, and Concerns
+
+In the past, LBO firms worked on exclusive deals, one‐on‐one with the acquired company.
+
+The large inflow of capital into the PE market and increasing market capitalization of firms targeted for LBOs have forced LBO firms to work together in so‐called clubs.
+
+In a club deal, two or more LBO firms work together to share costs, present a business plan, and contribute capital to the deal. 
+
+Both sellers of target companies and potential buyers can initiate club deals.
+
+Some have posited that club deals increase the number of potential buyers by enabling firms that could not individually bid on a target company to do so through a club. 
+
+A fund might not have sufficient capital to purchase a target alone because of either restrictions on investing more than a specified portion of its capital in a single deal or the large size of the target. 
+
+Another benefit of club deals is they allow PE firms to pool resources for pre‐buyout due diligence research, which is costly.
+
+Club deals allow one PE firm to get a second opinion about the value of a potential acquisition from another member of the club.
+
+Club deals could depress acquisition prices by reducing the number of firms bidding on target companies, because there may be more competition from numerous individual bidders than from a few clubs of bidders. 
+
+In a club deal, its less clear who'll take the lead in the business plan, which PE firm will sit on the board of directors of private company, who'll be responsible for monitoring performance, and who'll negotiate with outside lenders to provide debt financing for the LBO.
+
+- Buyout Risks Relative to Venture Capital Risks
+
+LBO funds have less risk than VC funds:
+
+  i) LBO funds purchase public companies that are established and mature.
+  Buyouts target successful but undervalued companies. 
+  These companies have long‐term operating histories, generate a positive cash flow, and have established brand names and identities with consumers.
+  The management teams of the companies have an established track record.
+  Assessment of key employees is easier than assessment of a new team in a VC deal. 
+  VC funds face the substantial business risks associated with start‐up companies.
+  
+  ii) LBO funds are less specialized than VC funds.
+  While LBO firms concentrate on one sector from time to time, they are more diversified in their choice of targets. 
+  Although they maintain smaller portfolios than traditional long‐only managers, they have greater diversification than their VC counterparts.
+  
+  iii) The eventual exit strategy of a new IPO is more likely for an LBO than for a VC deal. 
+  This is because the buyout company already had publicly traded stock outstanding.
+  A prior history as a public company, demonstrable operating profits, and a proven management team make an IPO for a buyout firm more feasible than an IPO for a start‐up venture
+
+\newpage
+
+### Leveraged Buyouts
+
+- Overview of Leveraged Buyouts
+
+A leveraged buyout (LBO) is distinguished from a traditional investment by three primary aspects: 
+
+  1) an LBO buys out control of the assets or the firm, 
+  
+  2) an LBO uses substantial leverage compared in particular to publicly traded comparables, and 
+  
+  3) the resulting leveraged firm is not immediately publicly traded. 
+  
+LBOs are distinguished from mergers and acquisitions that fold the structure and operations of the target firm into the acquiring firm.
+
+When a public company is bought entirely and delisted from stock exchange, the transaction is public‐to‐private (P2P). 
+
+Target companies for a buyout are established enterprises with tangible assets and are normally cash flow positive, which allows the use of debt to finance part of the transaction. 
+
+Thus, these buyouts are leveraged buyouts.
+
+Control of new company is concentrated in the hands of buyout firm and target company’s management, and there are no shares retained by prior owner(s).
+
+The goal of buyout is to increase the value of a corporation by unlocking hidden value, maximizing borrowing capacity of company’s balance sheet, taking advantage of tax benefits of using debt financing, and/or exploiting existing but underfunded opportunities.
+
+Private companies state that its easier to make long‐term investments without the oversight of investors in public companies, who focus on short‐term results and quarterly earnings.
+
+- The Appeal and Benefits of a Public-to-Private Leveraged Buyout to Targets
+
+Leveraged buyouts have a number of appealing characteristics to corporate management and investors of target firm.
+
+From the perspective of the shareholders of target firm, LBO offers are accepted because bid price for their shares is at a large premium compared to market price.
+
+LBO firms target companies that have a depressed stock price. 
+Consequently, shareholders welcome an LBO bid. 
+
+From the perspective of target firm’s corporate management, the benefits to those who are retained include:
+
+  i) use of leverage where interest payments are tax deductible
+  
+  ii) Less scrutiny from public equity investors and regulators
+  
+  iii) Freedom from a distracted (and potentially distracting) corporate parent
+  
+  iv) The potential of company management to become substantial equity holders and benefit directly from building the business
+
+The benefit of an LBO to the acquiring LBO investor is the potential for attractive risk‐adjusted returns.
+
+#### Example 1: Valuation of an LBO
+
+A publicly traded firm is viewed by a private equity firm, due to its failure to use its potential to generate earnings.
+The company has equity with market value of R500 million and debt with face value of R100 million. 
+The company is generating earnings before interest, taxes, depreciation, and amortization (EBITDA) of R80 million, which represents free cash flow from operations available for owners and debtors of company.
+This is 13.3% before‐tax return on assets for the company’s shareholders and debt holders.
+
+=>
+
+An LBO fund uses R700 million to purchase equity of the company and pay off outstanding debt. 
+The debt is paid off at face value of R100 million, while R600 million is offered to equity holders to tender their shares to LBO fund (i.e. a 20% premium is offered over current market value). 
+
+Theres R600 million in debt at 10% coupon rate and R100 million in equity. 
+The company must pay R60 million in annual debt service to meet its interest payment obligations. 
+After LBO, the management of the company improves operations, streamlines expenses, and implements better asset utilization. 
+
+The cash flow from operations of the company improves from R80 million to R120 million per year.
+By forgoing dividends and using free cash flow to pay the remaining debt, the LBO fund owns the target company free and clear of debt used to finance the acquisition in seven years. 
+
+After the seven‐year point, assume a forward‐looking long‐term growth rate of 2% per year and a discount rate of 12%.
+The value of unlevered firm in seven years is projected using the constant dividend growth model:
+$$\frac{R120mil}{0.12 - 0.02} = R1.2bil$$
+Thus, the total return on investment for LBO transaction:
+$$\left( \frac{R1.2bil}{R100mil} \right)^{\frac{1}{7}} - 1 = 42.6\%$$
+The total return is the annual compounded return on the equity portion of the LBO fund’s investment. 
+
+The company is financed with a 6:1 debt‐to‐equity ratio.
+This is a very high leverage ratio for any company. 
+The cash flows generated by the company were used to pay down the debt to a point where the company is completely owned by the equity holders. 
+The equity holders receive a very high return because the debt used to finance the transaction is locked in at a 10% coupon rate. 
+
+The total return to the unleveraged equity investment:
+$$\left( \frac{R1.2bil}{R700mil} \right)^{\frac{1}{7}}-1 = 8\%$$
+NB: The larger the leverage multiple, the larger the difference between the levered and unlevered return to equity.
+
+In LBO deals there are three tranches of financing: 
+
+  i) senior debt
+
+Entails financing from banks, credit/finance companies, insurance companies, or public debt offerings.
+  
+  ii) mezzanine debt
+
+is purchased by mezzanine debt funds, insurance companies, and other institutional investors.
+  
+  iii) equity
+
+held by LBO firm that has taken the company private, and includes some form of equity kicker for mezzanine debt tranche.
+
+- Spillovers of Corporate Governance to the Public Market
+
+The principles of corporate governance that LBO firms apply to their private companies have four important benefits for the public market:
+
+  i) the strong governance principles that an LBO implements in its private firms should remain when those firms are taken public again.
+  
+  ii) LBO transactions serve as a warning to the management team of other public companies.
+  If a company has a poor incentive scheme and minimal shareholder monitoring, its ripe for an LBO acquisition. 
+  
+  iii) the incentive and monitoring schemes implemented by LBO firms for their portfolio companies provide guidance to managers and shareholders of other firms searching for more efficient governance methods. 
+  
+  iv) conglomerates are popular targets for LBO firms, and this help stop unnecessary and inefficient diversification of large corporations.
+
+\newpage
+
+### Private Investments in Public Equity
+
+Private investments in public equity (PIPE) transactions are privately issued equity or equity‐linked securities that are placed outside of a public offering, are exempt from registration, and are used as vehicles for publicly traded companies to issue additional equity shares (or other securities) in their firms. 
+
+Investors purchase the securities directly from a publicly traded company in a private transaction.
+
+PIPEs are used as a substitute for secondary offerings of shares that are immediately publicly traded.
+
+- Characteristics and Types of Securities Issued through PIPEs
+
+PIPE issuers can be anything from small companies listed in over‐the‐counter market to large companies listed on NYSE. 
+
+Some PIPE transactions involve small, nascent corporations of the type that interest venture capitalists. 
+
+They are also issued by small to medium‐size firms that face difficulties, expenses, or delays in using public security offerings. 
+
+PIPE deals offer investors a variety of securities that can be issued, including:
+
+  i) Privately placed common stock - The greater the illiquidity, the greater the discount on PIPE's issue price.
+  
+  ii) Registered common stock - The advantage to the investor is it can acquire a block of stock at a discount to the public market price for the registered common stock. 
+  This is appealing for PE firms that have large chunks of cash to commit to companies.
+  
+  iii) Convertible preferred shares or convertible debt - Conversion prices embedded in preferred stock and convertible debt are lower than conversion prices on publicly traded instruments. 
+  The issuer of PIPE commits to register the equity securities within the next six months. 
+  This feature is appealing for PE firms to the extent they are able to purchase cheap equity with a ready‐made exit strategy.
+  
+  iv) Equity line of credit (ELC) - a contractual agreement between issuer and investor that enables the issuer to sell a formula‐based quantity of stock at set intervals of time.
+
+- Buyer and Seller Motivations for PIPEs
+
+The greatest advantages for the issuing company of a PIPE are: 
+
+  1) the company can quickly raise capital (a PIPE transaction is completed in just a few weeks) without the need for a lengthy registration process (which takes up to nine months), and 
+  
+  2) larger companies view PIPEs as cheaper process for raising capital quickly, especially from a friendly investor.
+
+The management of the issuing company does not need to be distracted with the prolonged road show that precedes a public offering of stock. 
+
+Management can remain focused on the operations of the business while receiving an equity infusion that strengthens the balance sheet.
+
+The documentation required for a PIPE is simple, compared to a registration statement. 
+
+All thats needed is an offering memorandum that summarizes the terms of the PIPE, the business of the issuer, and the intended uses of the PIPE proceeds.
+
+Another reason PE firms are interested in PIPEs is they allow the PE firm to gain a substantial stake in the company, even control, at a discount. 
+
+- Traditional PIPEs and Structured PIPEs
+
+The biggest distinction between PIPEs is of traditional PIPEs and structured PIPEs. 
+
+The large majority of PIPE transactions are traditional PIPEs, in which investors buy common stock at a fixed price.
+
+Most traditional PIPE transactions are initiated using convertible preferred stock or convertible debt with a fixed price at which the securities can be converted into common stock. 
+
+The conversion price is the price per share at which the convertible security can be exchanged into shares of common stock, expressed in terms of principal value of convertible security.
+
+The conversion ratio is the number of shares of common stock into which each convertible security can be exchanged.
+
+The conversion ratio and the conversion price are inversely related measures of the same concept.
+
+Having a fixed conversion price or conversion ratio limits the amount of dilution to existing shareholders. 
+
+The convertible preferred stock or debt provides the investor with dividends and other rights in a sale, merger, or liquidation of the company that are superior to the residual claims of the existing stockholders.
+
+Structured PIPEs include more exotic securities, like floating‐rate convertible preferred stock, convertible resets, and common stock resets. 
+
+These PIPEs have a floating conversion price that can change depending on the price of the publicly traded common stock. 
+
+They are referred to as floating convertibles because the conversion price of the convertible preferred stock or debt floats up or down with the company's common stock price.
+
+- Toxic PIPEs
+
+In the past, structuring of PIPEs led to creation of toxic PIPEs and so‐called death spirals.
+
+A toxic PIPE is a PIPE with adjustable conversion terms that generate accelerating levels of shareholder dilution in the event of declining prices in the firm's common stock. 
+
+Floating convertibles received a bad reputation because, unlike standard convertible bonds or preferred stocks, which get converted at a fixed conversion price, the conversion price for toxic PIPEs adjusts downward whenever the underlying common stock price declines. 
+
+The drop in stock price leads to a drop in the conversion price, which lead to a substantial dilution of shareholder value.
+
+Under a structured PIPE, if the stock price of the issuer declines in value, the PIPE investor receives a greater number of shares upon converting the PIPE. 
+
+This leads to a situation thats poisonous to issuing company's financial health. 
+A toxic PIPE generates the following sequence:
+
+  i) A company with a weak balance sheet and uncertain cash flows cannot issue additional publicly traded shares of its common stock.
+  
+  ii) PE investors agree to provide more capital in return for structured PIPEs that are converted into stock at a floating conversion rate and at a discount to common stock price.
+  
+  iii) The stock price of the company falls. 
+  The price decline is triggered by PE investors short selling the publicly traded stock of the company to hedge their purchase of the PIPE, by a decline in the company's profitability, or both. 
+  A large downward movement in the stock price is the catalyst that turn a structured PIPE into a toxic PIPE.
+  
+  iv) The downward pressure on the company's common stock price triggers larger and larger conversion ratios for the PIPE investors (i.e. lower conversion prices), resulting in greater and greater dilution of common stock of company as PIPE investors are granted an ever‐growing number of shares representing an ever‐rising percentage ownership in the firm.
+  
+  v) Prospects for greater dilution of the company's stock drive the market price of stock further downward. 
+  The lower stock price again forces the company to reduce the conversion price for the PIPEs into common stock at lower and lower prices.
+  
+  vi) The process of lower conversion prices, greater dilution, and lower share prices repeats in a downward death spiral.
+  
+  vii) Ultimately, PIPE investors exercise their conversion rights at greatly depressed conversion prices and either sell their converted shares (obtained at large discount) or take control of company using the large number of new shares.
+
+Although this scenario sounds improbable, some PIPE transactions led to poisonous results for issuing company. 
+
+Although structured PIPEs still exist, both investors and companies receiving PIPE financing have become more sophisticated regarding the details and floating conversion rates in toxic PIPEs.
+
+\newpage
+
+###  Private Equity Liquid Alternatives
+
+- Business Development Companies
+
+Business development companies (BDCs) are publicly traded funds with underlying assets consisting of equity or equity‐like positions in small private companies. 
+
+BDCs use a closed‐end structure and trade on major stock exchanges.
+
+BDCs are investment companies with a primary purpose of pooling financial assets and issuing pro rata claims against those assets. 
+
+The key to investment companies is they avoid the double taxation of corporate profits. 
+
+Investment companies holding listed financial assets were authorized in the US by the Investment Company Act of 1940. 
+
+Legislation in the US allowing BDCs to qualify as investment companies and enjoy a pass‐through income tax status originated from amendments to the ’40 Act in 1980.
+
+To be classified as a BDC and enjoy the accompanying benefits, such as avoiding corporate income tax, a BDC must provide significant managerial assistance to the firms that it owns and must invest at least 70% of its investments in eligible assets, as specified by Securities and Exchange Commission (SEC). 
+
+BDCs invest primarily in small firms, maintain no more than moderate leverage, distribute at least 90% of their income, and meet diversification requirements to avoid corporate income taxes.
+
+BDCs enable liquid ownership of pools of illiquid PE, as REITs are used to provide liquid access to illiquid private real estate.
+
+The shareholders are subject to income tax on distributed profits. 
+Any profits retained at BDC level are subject to corporate income tax. 
+
+Most BDCs distribute almost all profits to shareholders to avoid the income tax on retained earnings.
+
+A few largest BDCs fall into mid‐cap category in terms of total market capitalization. 
+Over 90% of BDCs fall into small‐cap category.
+
+BDCs are tracked by several indices and ETFs, including at least one ETF thats leveraged. 
+
+The indices and ETFs use market weights or modified market weights and cover virtually all listed US BDCs. 
+The market prices of BDCs reflect their underlying closed‐end fund structure.
+
+- Business Development Companies as Closed‐End Funds
+
+BDCs use a closed‐end fund investment structure that transforms ownership of underlying fund assets into shares (tradable pro rata claims). 
+
+A major attribute of a closed‐end structure is that it facilitates liquid ownership of illiquid pools of assets much better than an open‐end structure.
+
+Closed‐end funds are popular in facilitating ownership of municipal bonds, international stocks, and illiquid instruments.
+
+An open‐end mutual fund has serious flaws with regard to providing liquid access to investors when the fund holds large quantities of highly illiquid pools of assets.
+
+Open‐end funds redeem shares on a regular basis, which is difficult when holding illiquid assets, such as those held by BDCs. 
+
+The primary distinction of closed‐end funds relative to open‐end funds is the closed‐end investment company does not regularly create new shares or redeem old shares in order to meet the desire of investors to invest in the fund or divest from the fund. 
+
+Closed‐end funds avoid the problems caused in open‐end funds by using inaccurate net asset values (NAVs), as measured by investment company, to create and redeem shares. 
+
+Closed‐end funds introduce another problem: When investors transact in secondary market, the price per share they receive from or pay to another investor is highly subject to short‐term supply and demand factors in the secondary market and can diverge from the fund's NAV.
+
+When there's a surge in demand for closed‐end fund shares from investors who wish to establish or expand positions in a particular closed‐end fund, the market price of the closed‐end fund must rise until the supply of shares meets the demand.
+
+The price rises to encourage increased supply of shares from sales by existing shareholders and to discourage demand for shares from prospective shareholders. 
+
+When there is a surge in supply of closed‐end fund shares from investors who wish to exit their holdings, the market price decrease to restore a balance between supply and demand for fund's shares in the secondary market.
+
+Closed‐end fund share prices are viewed relative to net asset value per share reported by investment companies.
+
+The formula for premium (or discount if negative) of closed‐end fund share price is:
+$$\text{Premium (or Discount)} = \frac{\text{Market Price}} {\text{Net Asset Value}} - 1$$
+is expressed as a percentage.
+
+#### Example 2
+
+Shares of closed‐end fund ABC were selling at a premium of 10% and fell to R44 per share while ABC’s net asset value held constant at R50 per share.
+What were the previous market price, subsequent discount, NAV‐based return, and market‐price return for ABC?
+
+=>
+
+1) Market Price = (Premium + 1)$\times$ Net Asset Value = (10% +1) $\times$ R50 = R55
+
+2) $\text{Discount} = \frac{R44}{R50} - 1 = -12\%$
+
+3) The NAV‐based return was 0%, since the NAV was assumed unchanged.
+
+4) $\text{Market-price return} = \frac{R11}{R55} = -20\%$, assuming no dividends/other distributions.
+
+
+Large temporary changes in supply and demand can cause substantial dislocations of market price of closed‐end fund.
+
+Investors with positions in closed‐end funds bear the risk they'll need to liquidate their shares at a time when the market price of the shares has been substantially reduced by selling pressures. 
+
+Returns from investing in closed‐end fund structures are driven both by returns of underlying assets and premiums/discounts of fund shares when positions are established and closed.
+
+During periods of severe illiquidity caused by financial crisis or another major event, closed‐end fund discounts reach extreme levels. 
+
+Owners of closed‐end fund shares needing to exit their investment in a liquidity crisis experience the double loss of selling not only when NAVs are down but also when the market price of closed‐end fund is at an extreme discount to its NAV. 
+
+Investors in BDCs are exposed to large losses in the event of liquidations during periods of severe illiquidity. 
+
+An open‐end mutual fund with listed equities as underlying assets would allow liquidation at NAVs based on market prices.
+
+For many closed‐end fund structures, the underlying assets are market traded, and the computation of the fund’s NAV is straightforward. 
+
+The premium/discount of such funds are a simple and effective indicator of attractiveness of the fund’s market price. 
+
+In the cases of BDCs, REITs, and other funds with unlisted underlying assets, the reported NAVs are based on non‐market valuations, such as professional appraisals or accounting standards. 
+
+Listed PE securities such as BDCs, closed‐end funds, and publicly traded PE firms are like REITs: They offer liquidity of public trading with underlying assets that are illiquid and when held directly are presumed to offer premiums for illiquidity. 
+
+When NAVs are based on subjective valuation methods rather than current market prices, the premiums or discounts of closed‐end fund shares are poor indicators of attractiveness of fund’s shares, because the NAVs themselves are flawed indicators of actual underlying values.
+
+- Extending Closed‐End Fund Pricing to Illiquid Alternatives
+
+The premiums and discounts of closed‐end fund share prices are perceived as varying through time, based on both large purchases by entities attempting to enter positions and large sales by entities attempting to exit positions. 
+
+The direct application of these supply and demand pressures to BDCs is straightforward, since BDCs use a closed‐end fund structure. 
+
+The principles are more applicable to the transaction prices of illiquid alternatives.
+
+Careful observation and understanding of behavior of closed‐end fund share prices provide indications of the effect of illiquidity on transaction prices. 
+
+Although transaction prices and underlying net asset values of private partnerships are not quoted on a daily basis, the concept of illiquid assets trading at premiums and discounts applies. 
+
+Privately traded PE may also be exchanged at depressed prices when there are numerous partners wishing to exit. 
+
+The realized returns of PE investors who must liquidate their positions may be low when liquidity is poor, whether or not the investment uses a closed‐end structure.
+
+- Are Liquid Private Equity Pools Diversifiers?
+
+Most PE is not directly listed or publicly traded.
+PE is described as offering substantial diversification benefits.
+
+The lack of market prices on PE makes substantiation of such claims difficult.
+Prices for PE based on illiquid trading data or professional judgment is argued to be smoothed, and analysis based on those data is expected to underestimate true volatilities and correlations.
+
+Listed BDCs provide an opportunity to observe market prices of PE. 
+
+As in the case of real estate and REITs, the market data on liquid alternatives is analyzed to provide evidence regarding the correlations and volatilities of underlying illiquid assets.
+
+A critical underlying issue is how the returns of liquid PE compare to the returns of illiquid PE when underlying assets are similar.
+
+Listed liquid alternative investment companies exhibit return performance highly correlated with listed equities.
+
+Performance is most highly correlated with equities of similar capitalization size.
+BDCs do not serve as effective diversifiers relative to listed equities.
+
+PE accessed through private limited partnerships is subject to substantial management fees, including incentive fees. 
+
+The critical determinant of long‐term PE performance is the quality of management teams. 
+
+A key issue in determining whether liquid PE funds such as BDCs can provide return enhancement is whether the BDCs offer superior management teams that can successfully acquire and manage underlying business enterprises.
+
+\newpage
+
+### Long‐Hold Buyout Funds
+
+Long‐hold private equity funds (long‐hold PE funds) have a stated fund life of 15 years or longer, with some exceeding 20 years. 
+
+This contrasts with traditional PE-style fund with a fund life of 10 years with multiple one‐year extensions.
+
+Long‐hold PE funds improve some of shortcomings in traditional PE fund model:
+
+  i) GPs are forced to sell because of expiration of fund life instead of business rationale or market conditions.
+  While this is problematic for many reasons, it dissuade the GP from targeting certain investments that have a high likelihood of requiring a long hold. 
+  Certain investment opportunities/strategies may only be feasible (or best suited) in a long-hold fund structure. 
+  
+  ii) GPs who are raising a new fund are under pressure to sell strong performers prematurely to demonstrate a verifiable track record or to provide distributions to existing LPs for reinvestment. 
+  
+  iii) Instead of holding good assets for as long as possible, GPs are incentivized to exit in a short time frame to post a high IRR and crystalize their carry.
+
+Another consideration is the trend of increased secondary buyouts (SBOs), where PE firms are increasingly selling companies to each other. 
+
+For a large LP who has stakes in funds offered by numerous general partners, they are subject to LP overlap where investors find themselves on both the buying and selling side of a SBO transaction. 
+
+In such LP overlap, the SBO does not generate extra transaction costs despite the LP being represented on both sides of the transactions. 
+
+This is because the LP would've incurred those transaction costs anyway if the transaction involved a third party. 
+
+They highlighted that SBO transactions between firms with complementary skill sets generate higher returns for buyers than SBOs between firms with similar skill sets.
+
+A large LP, who has a higher chance of LP overlap, is better off investing with a smaller number of buyout GPs instead of many GPs with similar skillset and strategy. 
+
+They could consider diversifying their GP base when new GPs offer complementary skill sets or strategies in the buyout space.
+
+Investing in long‐hold buyout fund allows LPs to invest for long term with a smaller set of GPs, and allows LPs to not worry about reinvestment as capital will be continuously deployed for a longer period.
+
+The performance of long‐hold PE funds is yet to be seen.
+
+While some managers successfully raised a second series of long‐hold funds, there are not many realizations to support the performance of long‐hold PE funds. 
+
+Long‐hold PE funds potentially outperform traditional PE-style funds on an after‐tax basis, provided the fund’s portfolio companies perform in an equivalent period during the long‐hold period. 
+
+The outperformance is driven by eliminating transaction fees, deferring capital gains, and keeping the fund fully invested. 
+
+Below shows where the modeled return of long‐hold PE-style fund that sells investment after 24 years compared to traditional PE fund selling four successive companies over that period. 
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/4.3.7 Im72.png"}
+\end{center}
+
+Long‐hold PE funds are a nascent concept, thus there are no established standard terms, and some funds are customized for specific LPs. 
+
+There are two main types of long‐hold PE funds:
+
+  i) "Core" funds target portfolio investments with lower risk and lower return. 
+  
+  ii) Long‐hold funds target risk/return profiles, as well as fees, in line with traditional funds.
+  
+Other notable differences with traditional PE-style funds include:
+
+  iii) Carry - For long‐hold funds, where exits happen 15 years later, there are various approaches to calculation of incentive fees. 
+  Fees are calculated on revaluation from year 7 onwards, or replace carry with stock options for listed PE firms.
+
+Not all investments are suited to the long‐hold strategy. 
+Distressed, turnaround, and cyclical plays are some examples. 
+
+Businesses that may be disrupted by new technologies may not be suitable for such strategy. 
+
+The ideal portfolio companies for long‐hold funds are high‐quality companies that are well positioned to compound earnings over a long timeframe and across business cycles. 
+
+These are businesses taking market share over a long period, or have long tailwinds based on macro factors such as demographics.
+
+Investors looking for a lower‐risk strategy to match their multi‐decade investment horizon find long‐hold funds worth considering. 
+
+Investors using illiquid investments primarily for return enhancement and expect a high level of distributions in 5 to 10 years may not find long‐dated funds suitable.
+
+Its important for investors who are considering long‐hold funds to weigh the potential benefits and drawbacks.
+
+The potential benefits of long‐hold PE funds include:
+
+  i) Lower transaction costs - include legal, advisory, and due diligence costs, which are incurred each time a company is bought and sold. 
+  This happens less frequently in a long‐hold fund.
+  
+  ii) Fully invested capital over longer periods and with less time waiting to be reinvested - LPs will expend due diligence effort on fewer funds due to the lower turnover between funds.
+  
+  iii) Deferred taxation of capital gains - allowing capital to compound over time.
+  
+  iv) Greater flexibility on exit timing.
+  
+The potential drawbacks include:
+
+  i) Increased illiquidity - Unlike the fund secondary market, where LPs increase liquidity by selling a fund stake early, long‐hold funds are the opposite, as they prolong the hold period beyond that of traditional PE-style fund.
+  
+  ii) Lower IRR return profile - While long‐hold PE funds enjoy higher after tax and after fee returns on both multiple and dollar bases, the IRR return profile is lower than traditional PE-style fund because of longer time horizon.
+  
+  iii) Issues around incentivizing investment professionals - With longer fund life, theres a delay in realizations, which delays carried interest. 
+  The longer fund life increase key person risk as longer fund life makes it more likely that personnel retire or change firms.
+  
+  iv) Limited scope for value‐add - The target companies for long‐hold PE funds are stable, mature, and fundamentally good businesses. 
+  Its unclear how much growth and operational improvements can be added to these companies after they reach a mature stage of development. 
+  Its likely GPs have to pay up for these high‐quality companies and need to ensure theres further scope to grow the business to ensure a profitable exit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
