@@ -1,0 +1,122 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 5: Private Debt
+
+## SubTopic 5.1: Private Credit and Cash Based Strategies
+
+### Private Credit Strategies
+
+Four primary types of debt are: leveraged loans, direct lending, mezzanine debt, and distressed debt.
+
+Some analysts believe the global financial crisis and subsequent regulations led directly to the growth of private credit market.
+
+During the global financial crisis of 2008, there were a number of bank bailouts, leading to increased regulations, such as the Basel III framework in Europe.
+
+These new regulations require banks to comply with stress tests and capital adequacy requirements, making banks more accountable for the types of loans they make and for types of risks they take.
+
+As these regulations took effect, European banks reduced their balance sheets, leading to five years of a decline in the amount of lending by banks to small and medium enterprises.
+
+If small companies aren’t allowed to access bank credit, they need to have access to alternative lending or marketplace financing in order to run their firms, hedge funds, private equity funds, and private credit funds stepped in to make these loans.
+
+Over $200 billion of private debt investments are held in dry powder.
+
+The level of dry powder is impactful on the opportunity set for private credit investors.
+
+An oversupply of dry powder reduce credit spreads and weaken covenant protections. 
+An undersupply of dry powder could not be enough private credit available if theres a surge of buyout and merger activity, combined with a continued need for borrowings at small and medium enterprises.
+
+Because of illiquid nature of private credit, theres a limited opportunity to access these investments through funds containing mostly liquid assets such as open‐end mutual funds.
+
+Private credit investments are made predominately through private equity-style funds, however some strategies (i.e. distressed debt) are suitable for vehicles such as hedge funds. 
+
+Business development companies (BDCs) are a public market vehicle that partakes in private credit strategies.
+
+One of the downsides to investing in publicly traded BDCs is they are subject to wide swings in their premium or discount to net asset value.
+
+BDCs exhibit high price volatility, especially compared to other vehicles evaluated using monthly NAVs.
+
+- Funds with a Loan‐to‐Own Objective
+
+Some private credit strategies underwrite debt with a loan‐to‐own objective. 
+
+A loan‐to‐own investment occurs when investor focuses on the value of the borrower’s assets and the value of the company could be repossessed if the borrower was unable to service the loan, not necessarily evaluating the ability of company to pay back principal and interest as scheduled. 
+
+The lenders may prefer the company default in order for the loan to turn into an ownership stake in the firm or its assets.
+
+- Fulcrum Securities and Reorganization
+
+A private credit firm may seek to invest in a fulcrum security.
+
+A fulcrum security is the senior‐most debt security in a reorganization process that is not paid in full with cash but rather is the security most likely to be repaid with equity in the reorganized firm. 
+
+Some of the largest gains in private credit investing occur from converting a debt security into equity security. 
+
+The equity in the newly reorganized firm is substantially undervalued during its first year, for several reasons. 
+
+Many investors may not be legally allowed to hold equity recovered in the reorganization process.
+
+As such, they'd quickly sell the equity holdings, which initially depress the stock price. 
+
+Outside investors are slow to warm up to the new stock, as they're focused on negative headlines of recently completed bankruptcy process, and perhaps underestimate the reduced risk and increased cash flow of the firm that just reduced or eliminated its liabilities.
+
+After a few quarterly reports as a new company, the lower‐risk and higher‐return nature of the stock reveals itself, leading to enhanced profits for long‐term investor in fulcrum security that morphed into highly successful stock holding.
+
+While a private credit fund has a longer‐term investment in the debt or equity of the firm, hedge funds have a shorter‐term trading‐oriented view, where they profit in the role of a liquidity provider. 
+
+- Private Credit Performance
+
+As with any investment, investors are concerned with how private credit and distressed investments will alter risk and return of their portfolio. 
+
+Its imperative to understand how the asset allocation will change when new investments are made in alternative credit vehicles.
+
+i) reported valuations of mezzanine, distressed, and direct‐lending strategies excluding mezzanine exhibit relatively low price volatility.
+This perception is due to smoothing effects of a lack of liquidity on valuations of these strategies, where either the loans were not regularly traded or were held to maturity by originator of loan. 
+Thus adjust for smoothing of illiquidity using autocorrelation techniques.
+
+ii) there were relatively high correlations between distressed debt, BDCs, high‐yield bonds, and leveraged loans. 
+In contrast, direct lending strategies ex‐mezzanine had lower correlations.
+
+iii) mezzanine, leveraged loan, and high‐yield investments had lower levels of return. 
+Distressed and direct‐lending ex‐mezzanine investments had higher returns.
+
+While it appears that mezzanine, direct‐lending ex‐mezzanine, and distressed funds have lower risk, its not accurate to compare volatility and correlation of returns of these less liquid investments to the seemingly higher volatility and correlation of returns of high‐yield, BDC, and leveraged loan strategies. 
+
+It appears that over the given time period (including global financial crisis), distressed and direct lending strategies, the most complex and illiquid investments in this sector, exhibit sustained outperformance relative to more liquid fixed‐income strategies.
+
+In alternative credit strategies, it appears illiquid strategies performed well. 
+
+Investors who avoided being forced sellers and had cash to buy at bottom of last credit cycle profited from this strategy, especially if they had expertise to work through bankruptcy process and hold equity assets at the end of restructuring process. 
+
+Hedge funds with shorter holding periods and less willingness to work through restructuring process may be able to profit simply by buying from forced sellers such as pensions and insurance companies subject to regulations that prohibit the holding of distressed paper, open‐end funds that have significant investor redemptions, and investors with too much leverage who are forced by a counterparty to quickly reduce their degree of leverage. 
+
+Each scenario has led investors to sell more than half of their illiquid fixed income holdings in less than a month.
+
+History shows its much better to be a buyer than a seller at the bottom of a fire sale.
+
+\newpage
+
+### Credit Risk Analysis and the Bankruptcy Process
+
+
+
+
