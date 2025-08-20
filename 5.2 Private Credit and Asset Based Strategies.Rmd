@@ -1,0 +1,176 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 5: Private Debt
+
+## SubTopic 5.2: Private Credit and Asset Based Strategies
+
+### Asset-Based Lending
+
+An asset-based loan (ABL) is a secured loan backed by various types of collateral pledged by borrower. 
+
+The value, type, and quality of collateral determine amount of loan that can be extended, advance rate, and interest rate of loan.
+
+Hedge funds and private equity funds making these loans are part of shadow banking system. 
+
+The shadow banking system consists of various non-traditional lenders who fill void in lending created when traditional lenders reduce credit availability due to increased capital requirements or other governmental policies.
+
+- A Typical Borrower in Asset-Based Lending
+
+The typical borrower using asset-based loan is small or midsize company, and typical size of ABL ranges from R10 million to R50 million, although there are loans larger. 
+
+Borrowers are in various industries and sectors.
+A typical ABL candidate has asset-rich balance sheet, with significant amount of its total assets in working capital. 
+
+These assets are in form of inventory or accounts receivable.
+
+Similar to other types of lending, asset-based lender looks for borrower with strong management team with proven track record of managing operational complexities of its business, strength (if not market leadership) within its industry, and strong ability to service its debt. 
+
+Given the nature of ABL, its important that borrowers have strong financial accounting and information technology (IT) systems that enable reliable data on asset performance and operational results.
+
+Unlike cash flow-based lending market, ABL market relies far less on external credit ratings.
+
+Given the collateralized, secured nature of asset-based lending, this type of lending is done with borrowers whose credit risk is similar to noninvestment-grade borrowers.
+
+Lenders extended credit to multi-national companies with assets residing in other geographies, with certain caveats.
+
+Lenders are able to get security interest in underlying collateral, and gain comfort in event of restructuring, there's precedent on how creditors get recovery on their loan.
+
+Practically speaking, structures such as special purpose vehicle are formed to own the collateral. 
+
+Lenders also utilize a lockbox, which is a bank account set up to protect lender by receiving collections of accounts receivable so proceeds are used to support debt.
+
+- Why Borrowers Select Asset-Based Lending
+
+In corporate credit arena, a lender can lend to corporation based on two different frameworks: asset-based lending or cash flow-based lending. 
+
+In cash flow-based lending model, a cash flow-based lender provides unsecured loans and looks at prospective cash flows to support loan. 
+
+Prospective cash flows are estimated through analysis of earnings before interest, taxes, depreciation, and amortization (EBITDA) adjusted for cash as proxy.
+
+EBITDA or similar measure is then combined with multiplier to determine how much leverage is prudent to extend to prospective borrower.
+
+During business and economic downturns, many businesses see their earnings (and cash flows) contract. 
+This translates into difficulty accessing financing. 
+
+To make matters worse, during difficult economic conditions, lenders become more bearish and adjust their leverage multiple downward, further shrinking amount of credit available to particular borrower.
+
+For asset-based lender, the loan is secured by specified assets, and many asset-based lenders feel asset valuation tends to be less volatile than earnings multiples when it comes to determining available credit to borrower. 
+
+This also benefits some types of borrowers because availability of credit remain more stable over different business and economic environments.
+
+- Features of Asset-Based Lending
+
+ABL begins with examination of collateral assets available to support additional loans. 
+
+The collateral amount is sum of available assets to support debt.
+
+Lenders do not extend credit equal to collateral amount considering likely reductions that'd occur in event of forced liquidation.
+
+The collateral amount is reduced in process called margining to estimate a borrowing base. 
+
+The borrowing base is therefore the maximum potential quantity of credit the lender is willing to extend after reducing collateral values considering level of outstanding debt that'd be senior to loan.
+
+Collateral amounts are reduced to borrowing base either through reduction by discount factor or by application of advance rate. 
+
+An advance rate is ratio of credit extended for every dollar of collateral (borrowing base). 
+
+The two terms, discount factor and advance rate, describe same concept.
+
+The reduction of collateral amounts to borrowing bases depends on type of collateral and mix of assets within collateral package. 
+
+Assets easier to value and better liquidity are deemed more attractive as collateral by lenders, who apply higher advance rate in calculating borrowing base.
+
+The specific terms involving valuation of underlying collateral and advance rate are highly negotiable and vary across borrowers. 
+
+Seasonal overadvance is temporary allowance by which lender allows for higher advance rate to account for seasonal effects in which working capital need of borrower is higher.
+
+Traditional overadvance is used for corporate transaction, such as acquisition or leveraged buyout (LBO).
+
+In traditional overadvance, lenders allow for greater advance rate, and additional borrowing is then amortized over several years and added to existing term loan or as separate facility.
+
+In connection to amount of borrowing in excess of regular advance rate, there is excess cash flow sweep (i.e. additional cash flow is redirected to repay additional borrowing) to bring loan back to regular advance rate. 
+
+The metrics used to analyze an overadvance are closer to traditional cash flow lending as lender looks at expected ability to service debt, historical performance of company, and total leverage of borrower.
+
+- Discount Rates for Various Assets in Asset-Based Lending
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
