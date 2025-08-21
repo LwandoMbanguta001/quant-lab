@@ -1,0 +1,871 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 5: Private Debt
+
+## SubTopic 5.2: Private Credit and Asset Based Strategies
+
+### Asset-Based Lending
+
+An asset-based loan (ABL) is a secured loan backed by various types of collateral pledged by borrower. 
+
+The value, type, and quality of collateral determine amount of loan that can be extended, advance rate, and interest rate of loan.
+
+Hedge funds and private equity funds making these loans are part of shadow banking system. 
+
+The shadow banking system consists of various non-traditional lenders who fill void in lending created when traditional lenders reduce credit availability due to increased capital requirements or other governmental policies.
+
+- A Typical Borrower in Asset-Based Lending
+
+The typical borrower using asset-based loan is small or midsize company, and typical size of ABL ranges from R10 million to R50 million, although there are loans larger. 
+
+Borrowers are in various industries and sectors.
+A typical ABL candidate has asset-rich balance sheet, with significant amount of its total assets in working capital. 
+
+These assets are in form of inventory or accounts receivable.
+
+Similar to other types of lending, asset-based lender looks for borrower with strong management team with proven track record of managing operational complexities of its business, strength (if not market leadership) within its industry, and strong ability to service its debt. 
+
+Given the nature of ABL, its important that borrowers have strong financial accounting and information technology (IT) systems that enable reliable data on asset performance and operational results.
+
+Unlike cash flow-based lending market, ABL market relies far less on external credit ratings.
+
+Given the collateralized, secured nature of asset-based lending, this type of lending is done with borrowers whose credit risk is similar to noninvestment-grade borrowers.
+
+Lenders extended credit to multi-national companies with assets residing in other geographies, with certain caveats.
+
+Lenders are able to get security interest in underlying collateral, and gain comfort in event of restructuring, there's precedent on how creditors get recovery on their loan.
+
+Practically speaking, structures such as special purpose vehicle are formed to own the collateral. 
+
+Lenders also utilize a lockbox, which is a bank account set up to protect lender by receiving collections of accounts receivable so proceeds are used to support debt.
+
+- Why Borrowers Select Asset-Based Lending
+
+In corporate credit arena, a lender can lend to corporation based on two different frameworks: asset-based lending or cash flow-based lending. 
+
+In cash flow-based lending model, a cash flow-based lender provides unsecured loans and looks at prospective cash flows to support loan. 
+
+Prospective cash flows are estimated through analysis of earnings before interest, taxes, depreciation, and amortization (EBITDA) adjusted for cash as proxy.
+
+EBITDA or similar measure is then combined with multiplier to determine how much leverage is prudent to extend to prospective borrower.
+
+During business and economic downturns, many businesses see their earnings (and cash flows) contract. 
+This translates into difficulty accessing financing. 
+
+To make matters worse, during difficult economic conditions, lenders become more bearish and adjust their leverage multiple downward, further shrinking amount of credit available to particular borrower.
+
+For asset-based lender, the loan is secured by specified assets, and many asset-based lenders feel asset valuation tends to be less volatile than earnings multiples when it comes to determining available credit to borrower. 
+
+This also benefits some types of borrowers because availability of credit remain more stable over different business and economic environments.
+
+- Features of Asset-Based Lending
+
+ABL begins with examination of collateral assets available to support additional loans. 
+
+The collateral amount is sum of available assets to support debt.
+
+Lenders do not extend credit equal to collateral amount considering likely reductions that'd occur in event of forced liquidation.
+
+The collateral amount is reduced in process called margining to estimate a borrowing base. 
+
+The borrowing base is therefore the maximum potential quantity of credit the lender is willing to extend after reducing collateral values considering level of outstanding debt that'd be senior to loan.
+
+Collateral amounts are reduced to borrowing base either through reduction by discount factor or by application of advance rate. 
+
+An advance rate is ratio of credit extended for every dollar of collateral (borrowing base). 
+
+The two terms, discount factor and advance rate, describe same concept.
+
+The reduction of collateral amounts to borrowing bases depends on type of collateral and mix of assets within collateral package. 
+
+Assets easier to value and better liquidity are deemed more attractive as collateral by lenders, who apply higher advance rate in calculating borrowing base.
+
+The specific terms involving valuation of underlying collateral and advance rate are highly negotiable and vary across borrowers. 
+
+Seasonal overadvance is temporary allowance by which lender allows for higher advance rate to account for seasonal effects in which working capital need of borrower is higher.
+
+Traditional overadvance is used for corporate transaction, such as acquisition or leveraged buyout (LBO).
+
+In traditional overadvance, lenders allow for greater advance rate, and additional borrowing is then amortized over several years and added to existing term loan or as separate facility.
+
+In connection to amount of borrowing in excess of regular advance rate, there is excess cash flow sweep (i.e. additional cash flow is redirected to repay additional borrowing) to bring loan back to regular advance rate. 
+
+The metrics used to analyze an overadvance are closer to traditional cash flow lending as lender looks at expected ability to service debt, historical performance of company, and total leverage of borrower.
+
+- Discount Rates for Various Assets in Asset-Based Lending
+
+There are four major categories of assets pledged for ABL: accounts receivable, inventory, equipment, and real estate.
+
+Accounts receivable collateral is measured by various factors, such as diversification of client base, length of term, collection period, and dilution in determining advance rate. 
+
+Advance rates on portfolios of accounts receivable range from 70% to 85%. 
+
+It makes sense for borrower to provide credit insurance and boost advance rate of accounts receivable to 90%.
+
+The advance rates seen for inventory range widely depending on type of inventory and expected ease of liquidation. 
+
+Common industry practice is set value of inventory as percentage (80–90%) of liquidation value, net of cost of liquidation. 
+
+In evaluating value of inventories, the lender hires a third party who's a professional appraiser. 
+
+The appraiser will have experience in handling liquidation of particular type of inventory. 
+
+Measures such as how quickly inventory is converted into sellable merchandise, profit margin, whether inventory is commodity, and mix of inventory, all factor into appraisal value and into borrowing base.
+
+Equipment and real estate are similarly discounted based on perceived liquidity of each asset and availability of ready buyers.
+
+- Use of Asset-Based Lending Proceeds
+
+The use of proceeds of ABL varies depending on type of borrower.
+
+Larger, higher-quality borrowers use asset-based loans to finance working capital.
+
+Because of their size and credit quality, these are borrowers that finance most their liabilities through public or private credit markets. 
+
+These borrowers use ABLs either to fund seasonal changes in their working capital (i.e. borrow to finance higher inventory during restocking, and inventory collateralizes borrowing) or to finance certain corporate actions, such as opportunistic asset purchases, share repurchases, or special dividends.
+
+Smaller and midsize borrowers use ABLs more extensively in their overall capital structure. 
+
+For these borrowers, asset-based borrowing include longer-term loans backed by hard assets, such as real estate or equipment. 
+
+Companies in active acquisition mode also use ABLs as part of their acquisition financing in addition to other, more junior debt. 
+
+Borrowers in stress or distress also rely on ABLs, since their credit profiles render them unsuitable for cash flow-based lending. 
+
+These types of borrowers need capital they can rely on as management restructures business or weathers current situation.
+
+In this scenario, ABL act as bridge loan that provides some temporary liquidity and operational and financial flexibility as owners execute turnaround. 
+
+As turnaround is completed, the company may repay ABL and go back to financing its liabilities in cash flow market.
+
+- Asset-Based Loan Structures and Collateral
+
+ABL credit facility is composed of revolver and term loan.
+A revolver, or revolving line of credit, is credit line with pre-approved limit that’s available for pre-specified period. 
+
+As borrower takes out some capital, the amount of available credit is reduced by that amount. 
+
+Unlike term loan, borrower can repay amount of borrowing at any time before end of period, and same amount will again become available for future borrowings.
+
+The borrower uses revolver to finance working capital needs. 
+As need for working capital fluctuates over time, revolver structure allows borrower to access more credit as business needs grow and to repay loan (and free up future capacity) as cash comes in or business slows down. 
+
+A term loan has either an amortizing or bullet structure to reduce and terminate loan, and is secured against longer-term assets (real estate, or machinery).
+
+Term loans are provided against capital expenditures such as new machinery. 
+A term loan makes up a third or less of total ABL facility. 
+
+Tenors for ABLs range from 3 to 5 years; the terms of these deals are highly customizable and involve significant negotiation between borrower and lender.
+
+The most common assets to back an ABL facility are inventory and accounts receivable. 
+These assets are fairly liquid with easy-to-determine values. 
+
+Longer-term assets (real estate or equipment) are used to back term loans.
+
+An important part of negotiation is determining what types of assets are not eligible for inclusion in collateral package of ABL. 
+
+As ABL market matures, lenders acknowledge borrowers are able to offer valuable collateral in form of intangible assets, such as brand name and intellectual property.
+
+As expected, valuation of intangible assets is more complex than for tangible assets such as inventories. 
+
+Third parties with particular expertise in evaluating value of specific intangible assets are involved, and legal counsel (likely with specific expertise, such as expertise in intellectual property law), to make sure the relevant asset comes with perfected security interest.
+
+Market practice shows borrowers able to borrow against intangible assets are more creditworthy borrowers whose brand name is well established in market and/or have intellectual property sold or monetized separately from physical products of company.
+
+- Asset-Based Lender Protection and Covenants
+
+For a cash flow-based loan, one of key covenants is net leverage covenant, which is restriction on maximum leverage calculated as amount of senior or total debt, net of cash, as multiple of EBITDA. 
+
+For asset-based loan, there is no leverage covenant. 
+The ABL borrower has more flexibility in amount of borrowing it can incur, especially if business has volatile earnings stream.
+
+ABL lenders are more focused on ensuring the borrower has enough liquidity in order to meet its cash needs. 
+
+Liquidity is measured as either available cash or unused capacity under existing facility given borrowing base.
+
+An ABL lender is focused on analyzing cash flow from underlying operations of business relative to cash needs, such as interest payments on loan (and other debts, if they exist), taxes, any dividends or distributions to shareholders, and capital expenditures. 
+
+The one credit metric ABL lenders are most focused on is fixed charge coverage covenant.
+
+The fixed charge coverage ratio is:
+$$\frac{\text{EBIT} + \text{fixed charge}}{\text{interest} + \text{fixed charge}}$$
+
+where fixed charges include rent/lease payments, utilities, insurance, and salaries.
+
+The key to this calculation is determining what constitutes a fixed charge.
+
+Fixed charges are inserted into formula as positive number which in case of numerator means adding back in fixed charges to EBIT that were subtracted out of revenue to calculate EBIT. 
+
+The fixed charge coverage covenant is restriction on minimum amount by which measure of cash flow in numerator covers fixed charges (plus interest) in denominator. 
+
+A ratio of less than one means the firm is not generating enough cash to pay fixed costs, while ratio of greater than one indicates more than enough cash to pay fixed costs.
+
+In practice, some asset-based facilities are structured such that fixed charge coverage covenant does not come into play until borrower’s unused loan capacity falls below certain limit. 
+
+This gives borrower additional flexibility, as liquidity limit does not kick in until point at which lender indicates the borrower’s access to liquidity has fallen below specified level (10% to 20% of asset-based facility). 
+
+Larger and more creditworthy corporate borrowers have better terms regarding this type of feature, also known as springing covenant.
+
+Another feature for some asset-based facilities is limiting lender’s recourse ability if borrower fails to meet liquidity test by blocking borrower from accessing a portion of loan.
+
+This seems to make asset-based loans less attractive to borrowers, the borrower benefits from not having to accept financial covenant tests that lead to default on loan if borrower breaches a specified covenant.
+
+For cash flow-based loans, there are negative covenants.
+These non-financial covenants prohibit borrowers from undertaking certain actions seen as detrimental to lenders. 
+
+Without this type of negative covenant, a borrower such as family-owned business is able to distribute cash to owners as long as liquidity test is met.
+
+\newpage
+
+### Risks of Asset-Based Loans
+
+The five specialized or unique risks regarding asset-based lending:
+
+- Collateral Valuation Risk of Asset-Based Loans and Lender Remedies
+
+The nature of underlying assets backing the loan changes on a day-to-day basis. 
+
+Inventories change as finished goods are sold and new materials are purchased. 
+
+The mix of inventory changes as raw materials enter production and work-in-process converts parts into finished products, sometimes within span of a day.
+
+These changes in assets and value at which these assets are liquidated, is not always reflected in periodic financial statements.
+
+Asset-based lenders bear the risk the value of collateral backing the loan is different from expected. 
+
+Lenders mitigate this risk by closely monitoring collateral. 
+Periodic reports on inventory composition, third-party valuation, and accounts receivable aging are examples of how lenders manage valuation risk.
+
+These periodic reports provided by borrower in frequencies ranging from monthly to weekly or even daily.
+
+Most creditworthy borrowers are able to report inventory composition or accounts receivable aging on monthly basis, but in extreme scenarios lenders require daily reporting. 
+
+Third-party valuation reports are costly, and, in terms of balancing risk mitigation and cost, these reports are done on semiannual or quarterly basis rather than more frequently.
+
+- Risks Regarding Process and People in Asset-Based Loans
+
+Given data and labor-intensive monitoring required regarding underlying assets, lenders need a fairly sophisticated system that enables easy reporting by borrowers and easy information retrieval for lending team. 
+
+But systems alone are not sufficient.
+Lender needs dedicated team with right skill set to collect and analyze data from borrower. 
+
+This is particularly true for borrowers that submit data daily.
+Monitoring of information and ability to detect signals of deteriorating liquidity is key in mitigating losses. 
+
+If lender does not have right processes and people, data collection alone is not entirely useful. 
+
+Having more data can backfire, as systems are overwhelmed and lender is not able to get useful information from borrower data.
+
+- Risks Regarding Hedging of Asset-Based Loans
+
+Asset-based lending is a long-only strategy. 
+Given smaller nature of borrower, the highly idiosyncratic nature of small businesses, and unique features of specific ABL facilities, hedging is difficult. 
+
+Hedging a long portfolio filled with small issuers with a short portfolio composed of larger bond issuers (because its difficult to find borrowers for shorting middle-market bonds) introduces basis risk, in which lender is betting on health of small businesses vs larger businesses.
+
+Historical data indicates smaller businesses are more negatively affected by business cycle downturns, larger businesses have more levers to pull, including more diversified business lines and more ways to access capital
+
+- Legal Risks of Asset-Based Loans
+
+One of risks, in event the lender needs to collect collateral, is it finds itself in position where its unable to exercise ownership of collateral. 
+
+In secured transaction, attachment of security interest is vital. 
+
+Attachment of security interest under US law consists of important steps needed to make sure the lender has necessary legal rights to take possession of collateral in event of default.
+
+Lenders need to perfect security interest.
+Perfecting security interest occurs when party seeking to establish ownership of asset takes necessary actions in order to assure no other party, such as another creditor or bankruptcy trustee, are able to claim the same asset as collateral in event the debtor becomes insolvent.
+
+There are various methods for perfecting security interest. 
+
+Lenders need to have access to right legal expertise and representation to make sure they do not find themselves stripped of collateral that's expected to be theirs in event of default.
+
+- Risks Regarding Timing of Exits from Asset-Based Loans
+
+In the event the borrower gets into financial distress and lender needs to seize collateral backing the loan, there's risk the collateral value has fallen below what lender is owed. 
+
+If merchandise does not get sold quickly and consumer tastes and preferences change, that'd further harm cash value of collateral.
+
+Not all risk is removed just because lender is able to take control of collateral, as time taken to liquidate collateral and changing market conditions translate into significant exit risk for lender.
+
+\newpage
+
+### Asset-Backed Securities
+
+Financial structuring is practice of engineering unique financial opportunities from existing asset positions.
+
+This process enables diverse investors to hold claims with different risk exposures (or other characteristics) from same assets.
+
+- The Creation of Asset-Backed Securities
+
+To create asset-backed securities (ABS), an entity creates special purpose vehicle (SPV) to which it sells respective assets. 
+
+The SPV is funded by issuing financial securities to investors.
+Most asset-backed securities are issued in three separate classes of tranches (classes A, B, and C). 
+
+The highest tranche (class A, or senior tranche) is largest tranche, has highest credit rating, and supported by junior tranches. 
+
+The B and C tranches have lower credit ratings (or no credit ratings) and offer higher prospective yields to compensate investors for added risk.
+
+The lower tranches suffer most or all of initial losses when a credit event occurs. 
+
+If losses are large enough, the A tranche will also experience losses.
+
+Principal payments are distributed to each tranche according to pre-determined priority scheme. 
+
+In sequential-pay tranche structure of fixed income securities, senior tranche receives all initial principal payments (both scheduled and prepaid) until all tranche holders are completely paid off. 
+
+After, next most senior tranche is entitled to receive all principal payments, and so on.
+
+Each tranche collects interest (coupon) payments as long as tranche’s principal has not been paid off. 
+
+Each tranche has different average maturity to adapt to different investor clienteles.
+
+- Growth of Various Types of Asset-Backed Securities
+
+Asset-backed securities collateralized by credit card loans shrank markedly due to global financial crisis. 
+
+The post-crisis regulatory environment accentuated market decline, as ABS products were blamed for creating and amplifying the crisis. 
+
+In post-crisis period, new and stricter capital requirements became mandatory for issuance of new ABS.
+
+There are two types of ABS: auto loans and credit card receivables. 
+
+Credit cards and auto loans are recourse loans, where borrower is personally liable for repaying any outstanding balance on loan. 
+
+This implies lenders are allowed to garnish wages or levy accounts to collect what's owed, even after they've taken collateral.
+
+On other hand, in non-recourse loan, lender collects only collateral at hand.
+
+From investor’s perspective, shorter duration and amortizing plans of asset-backed securities facilitate reduction in portfolio’s interest rate and possibly credit risk.
+
+- Auto Loan-Backed Securities
+
+Auto loan-backed securities (ALBS) receive cash flows from customer payments assembled from specific pool of automobile loans or leases. 
+
+The loans is issued by commercial banks, financial subsidiaries of auto companies, independent finance companies, or small financial companies dedicated to auto loans.
+
+Auto loan-backed securities do not have government backing and are subject to credit risk. 
+
+Auto loans are classified as prime, near-prime, or subprime. 
+The credit risk and performance of ALBS depend on structure of ABS and performance of underlying auto loan collateral.
+
+Auto loan-backed securities based on subprime loans include provision that protects either investors in senior ABS tranches or entire structure.
+
+In the case of subprime auto loan-backed securities, one common credit enhancement is overcollateralization.
+
+Most subprime ALBS contain credit enhancement provision that redirects any interest received on underlying auto loan portfolio in excess of interest payments on junior ABS tranches to a reserve account, which offers additional credit safeguard planned to benefit senior tranches.
+
+The quality of originator's underwriting standards influences an investor's decision to invest in specific ALBS.
+
+The interest rates on underlying auto loans are affected by borrowers’ income, employment history, credit scores (categorized as prime, non-prime, or sub-prime), and other variables. 
+
+The cash flows of auto loan-backed securities are managed by servicers, which are paid fixed fee (0.5% to 2.0% of pool’s remaining collateral balance). 
+
+Servicers collect and process borrowers’ payments to loan pool and then pay investors in this asset-backed security. 
+
+They endeavor to collect payments due from delinquent borrowers. 
+
+The credit rating of auto loan-backed securities is affected in part by creditworthiness of servicer and by its experience.
+
+- Auto Loan-Backed Securities and Prepayments
+
+Throughout fixed income structured products, unscheduled principal payments (prepayments) are extremely important. 
+
+Auto loan-backed securities receive cash flows not only from monthly loan payments (interest and scheduled principal repayments) but also from prepayments made by borrowers. 
+
+Predicting prepayment speeds is vital process in valuing auto loan-backed securities, and in understanding and managing associated risks. 
+
+A fully prepaid loan provides investor in corresponding asset-backed security with early return of principal but takes away investor's ability to earn original interest rate on old loan.
+
+If borrower does not fully prepay loan but makes additional (unscheduled) partial principal repayments, investors in auto loan-backed securities experience effects similar to full prepayment scenario but at smaller magnitude. 
+
+Prepayments affect not only cash flows relating to principal but reduce expected subsequent interest payments.
+
+The rate of prepayments on auto loan asset-backed securities is affected by number of factors. 
+
+A key factor is current level of interest rates relative to rates being charged on loans in pool.
+
+Borrowers will have greater incentive to refinance when current loan rates are low relative to rates on existing loans. 
+
+Refinancing is not important factor explaining prepayments in the case of auto loans. 
+
+This is because auto loans are small and because value of vehicle depreciate at faster pace than outstanding balance of loan in first few years. 
+
+Prepayments can also originate due to following factors: sales and trade-ins involving full loan payment, loss or destruction of automobile, repossession and subsequent resale of vehicle, and payoff of loan by borrower with cash.
+
+Analysts build fundamental models of prepayment speeds and analyze past prepayment rates and macroeconomic factors in effort to predict future prepayment rates. 
+
+Its important investors consider speed of prepayments, which is measured by conditional prepayment rate (CPR).
+
+- Credit Card Receivables
+
+When customer makes purchase on credit card, issuer of credit card (i.e. lender) provides credit to cardholder (i.e. borrower). 
+
+The sum the cardholder owes lender is receivable to credit card issuer.
+
+A credit card receivable (CCR) is asset-backed security where a pool of credit card receivables is used as collateral.
+
+The cash flows received by CCRs consist of annual fees, interest, and principal payments.
+
+CCRs are structured differently than other asset-backed securities.
+
+This is because credit card receivables have short-term life span and are paid off within a year (i.e. much faster than auto loan or mortgage), support outstanding certificates issued by trust, which have maturities of 3, 5, or 10 years.
+
+Credit card debt does not have actual maturity date, because principal repayment is not scheduled (i.e. its regarded as non-amortizing loan). 
+
+This characteristic led to development of a structure, master trust, which is better adapted to short-term nature of CCRs because it allows issuers to sell more than one series from same pool of credit card receivables. 
+
+This is accomplished by including more receivables every time a new series is sold.
+
+Because of ongoing series of credit card receivables being added to trust, CCRs are structured to pay periodic interest to their holders, but no principal is paid during prespecified lockout period (which last from 1.5 years to 10 years).
+
+If credit card users make principal payments during lockout period, these cash flows are used to pay for new credit card receivables, with aim of maintaining constant overall value of receivables.
+
+Once lockout period is over, principal payments are channeled to CCR holders in what's termed principal amortization period.
+
+Credit risk of underlying collateral in master trust change over time because credit card issuers add receivables to trust and change terms on existing receivables. 
+
+This requires rating agencies to constantly examine performance of receivables in trust.
+
+- Credit Card Receivables Credit Enhancements
+
+Credit enhancements of credit card receivables are internal, external, or combination of both, and are required if structure is to receive higher credit ratings. 
+
+The three external credit enhancements from credit card receivables are: 
+
+  1) cash collateral accounts - are accounts funded when a series is issued and created by securitization trust, which is used to fund principal and/or interest on certificates and other trust expenses when excess spread turns negative.
+  
+  2) third-party letters of credit - are backed by external institutions that provide protection against losses from defaults.
+  
+  3) collateral invested amounts (CIAs) - consist of privately-placed ownership interests in securitization trust, and are subordinate in payment rights to all investor certificate holders.
+
+The four internal credit enhancements from credit card receivables are: 
+
+  1) senior/subordinated certificates - refer to internal credit enhancement to more senior tranches from existence of less senior tranches that incur losses first.
+  
+  2) spread accounts - if certain performance indicators fall below specific thresholds, any “excess spread” earned on collateral will be deposited into account for benefit of CCR holders.
+  
+  3) excess finance charges - the difference between gross yield on pool of securitized receivables and cost of financing those receivables and serve to strengthen credit.
+  
+  4) overcollateralization - occurs when total quantity of receivables (assets) is greater than sum of non-equity tranches which strengthens credit of non-equity tranches.
+
+\newpage
+
+### Mortgage‐Backed Securities
+
+Mortgage‐backed securities (MBS) are type of asset‐backed security that's secured by mortgage or pool of mortgages. 
+
+MBS have facilitated cost‐efficient real estate financing but also blamed for facilitating destabilizing speculation. 
+
+Most attention is focused on residential mortgage‐backed securities (RMBS), which are backed by residential mortgage loans.
+
+There are two basic types of MBS differing by extent, if any, to which they partition risk within different classes of securities. 
+
+A pass‐through MBS is simplest MBS and consists of issuance of homogeneous class of securities with pro rata rights to cash flows of underlying pool of mortgage loans. 
+
+Collateralized mortgage obligations (CMOs) extend this MBS mechanism to create different security classes, called tranches, which have different priorities to receiving cash flows and different risks.
+
+- Residential Mortgage Prepayment Options
+
+Residential mortgage markets are dominated in size by insured mortgages for which there's little or no risk of default to lender.
+
+Most mortgages have scheduled principal repayments that amortize mortgage's principal value from initial mortgage amount to zero over mortgage's scheduled lifetime.
+
+Most mortgages allow borrower the option to make additional and unscheduled principal payments without penalty. 
+
+Future unscheduled prepayments are key unknown variable in determining values of insured mortgages and mortgage pools.
+
+Residential mortgages are callable bonds. 
+The lender is short a call option on value of loan, which is viewed as being short a put option on mortgage rates. 
+
+Borrowers exercise this option by refinancing if interest rates decline.
+
+Exercise of this prepayment option when interest rates fall acts to detriment of lenders, which presumably reinvest prepaid principal at lower rates.
+
+Unscheduled mortgage principal payments include full mortgage prepayments and partial repayments, when borrowers decide to make one or more mortgage payments that exceed minimum required payment.
+
+The main problem with unscheduled principal repayments is mortgage investor cannot predict size of prepayments or rate at which unscheduled principal repayments is received and reinvested. 
+
+Unscheduled repayments on mortgage issued at interest rate of 6% cease earning 6% to mortgage investor and begin earning current interest rates, which is higher or lower than 6%.
+
+The option to make or not make unscheduled principal repayments rests with borrower. 
+
+Mortgage borrowers have incentive to make unscheduled mortgage payments when interest rates are low:
+
+  i) borrowers are more likely to refinance when rates are low. 
+  ii) borrowers are more likely to move and fully prepay mortgages when rates are low. 
+  
+  iii) borrowers are more likely to use excess cash to prepay mortgages when interest rate on their mortgages exceeds rate at which excess cash is invested. 
+  
+The same incentives reverse when interest rates are high, making borrowers less likely to prepay mortgages. 
+
+Borrowers have prepayment option, and exercise that option in their favor based on interest rates. 
+
+There are also idiosyncratic factors related to borrower, such as ability to make prepayments and decision to sell a house, that affect prepayment decisions. 
+
+These factors are not fully driven by interest rates, and cause or prevent otherwise optimal exercise of prepayment option based on interest rates. 
+
+Mortgage prepayments are difficult to predict even under specific interest rate scenarios.
+
+Mortgage lenders write prepayment options at initiation of mortgage, and the lenders, and any subsequent mortgage investors, are short those options until mortgage is fully repaid.
+
+Mortgage investors suffer losses when borrower's prepayment option moves into‐the‐money relative to investor in a similar fixed‐income security without prepayment option.
+
+The borrower harvests gains by exercising prepayment option. 
+Rational exercise of prepayment option by borrowers generate higher unscheduled prepayments to lenders when interest rates are low and reinvestment opportunities are least desirable.
+
+Unscheduled principal payments to lenders when interest rates are high and reinvestment opportunities are most desirable is made only due to borrowers’ idiosyncratic factors. 
+
+Although they'd work to advantage of mortgage investor, such unscheduled principal payments are relatively less likely.
+
+Each long‐term mortgage has hundreds of scheduled future payments and hundreds of future potential prepayment options. 
+
+The cash flows, or payments, of individual mortgages are aggregated and form available cash flows of mortgage pools underlying RMBS. 
+
+These cash flows include unscheduled principal payments passed from mortgage pool to RMBS investors. 
+
+The main risks of RMBS with insured underlying mortgages involve prepayment behavior of underlying pool and its relationship with reinvestment opportunities. 
+
+These unscheduled payments create uncertainty on part of investors regarding both timing of principal repayments they'll receive and longevity of interest payments they'll receive.
+
+- Measuring Unscheduled Prepayment Rates
+
+Mortgage returns not driven by default risk are primarily driven by interest rate risk inherent in prepayment risk. 
+
+Mortgage investors focus on unscheduled principal payments and forecasted speed of prepayments.
+
+The market value of each mortgage or pool of mortgages is a function of its anticipated rate of prepayment. 
+
+Attempts to earn superior rates of return are exercises in predicting prepayment rates and investing in those mortgages or pools of mortgages that'll experience more desirable rates of prepayment than reflected in current price.
+
+With stable interest rates, high rates of prepayment are beneficial to mortgage investor because they reduce expected longevity of cash flow stream.
+
+When mortgages have interest rates higher than prevailing market interest rates, slower prepayment rates are desirable to mortgage investor.
+
+More sophisticated insured mortgage analysis focuses on models that combine interest rate behavior with unscheduled principal payment rates. 
+
+The secondary mortgage market has developed models for deriving interest rate scenarios, correlating those interest rate scenarios with prepayment scenarios, and using framework to price MBS.
+
+The annualized percentage of mortgage's remaining principal value that's prepaid in particular month is known as conditional prepayment rate (CPR).
+
+The exact computation of CPR involves principal balances and specifies such details as use of monthly compounding.
+
+The CPR for particular month is clearly intuitive: It roughly reflects annual reduction in mortgage principal that'd be anticipated if same percentage of principal were repaid each month for 12 consecutive months. 
+
+The Public Securities Association (PSA) established PSA benchmark, a benchmark of prepayment speed based on CPR and has become standard approach used by market participants.
+
+The key to benchmark is that it's used as standard against which each mortgage or mortgage pool is indexed.
+
+- Pricing RMBS with PSA Rates
+
+The cash flows of insured residential mortgage pools is projected, assuming a given PSA speed. 
+
+Those cash flows are then discounted to form estimated present value or price to the pool. 
+
+The selection of appropriate discount rate is complicated by interest‐rate‐related options of mortgages.
+
+Expected cash flows cannot be discounted at expected interest rates, since larger cash flows (i.e. higher unscheduled principal repayments) occur when interest rates are lowest. 
+
+RMBS pricing models is based on option pricing technology.
+Mortgage prepayment options are not exercised based purely on interest rates. 
+
+Some mortgage borrowers prepay mortgages during high‐interest rate environments due to personal circumstances, and some mortgage borrowers fail to prepay mortgages when interest rates are low and refinancing appears beneficial.
+
+Factors affecting prepayment decisions other than interest rates or other systematic factors are idiosyncratic prepayment factors.
+
+Idiosyncratic prepayment factors prevent specification of precise relationship between unscheduled prepayments and interest rate levels, and option pricing models that include this behavior is used.
+
+Mortgage prepayment rates also vary due to systematic prepayment factors other than interest rates.
+
+Changes in prepayment rates from systematic factors are due to interest‐rate‐related factors other than current interest rate levels, including path that mortgage rates have followed to arrive at current level. 
+
+When mortgage rates drop further after having declined substantially in recent past, refinancing may not occur at rapid rate, since those who ascertain a benefit from refinancing at lower interest rates will probably have done so when mortgage rate first dropped.
+
+Reduced refinancing speeds due to high levels of previous refinancing activity is known as refinancing burnout.
+
+Prepayment rates experienced by mortgage pools vary based on factors as characteristics of underlying mortgage pool.
+
+These factors include maturities of mortgages, rates of fixed‐rate mortgages, and terms of any variable‐rate mortgages.
+
+Another factor is geographic location of pool. 
+There are regional prepayment tendencies, regional economic performance levels, and regional impacts on prepayment speeds even within same country. 
+
+Geography comes into play in relation to factors such as risk of destruction of properties. 
+
+Analysts build fundamental models of prepayment speeds based on these characteristics and include analysis of past prepayment rates to predict future prepayment rates.
+
+Ownership of mortgage pools is divided or structured into investment products that have widely varying exposures to prepayment risks.
+
+- Commercial Mortgage‐Backed Securities
+
+Commercial mortgage‐backed securities (CMBS) are mortgage‐backed securities with underlying collateral pools of commercial property loans.
+
+CMBS provide liquidity to commercial lenders and to real estate investors.
+
+Commercial lenders sell commercial loans that they've issued into CMBS pools. 
+
+Real estate investors purchase CMBS and enjoy higher liquidity and diversification than they woud through direct ownership of commercial loans.
+
+Compared to insured RMBS, a CMBS provides lower degree of prepayment risk because commercial mortgages are set for shorter term. 
+
+Fixed‐rate commercial mortgages charge a prepayment penalty,  making commercial borrowers less likely to refinance than residential borrowers. 
+
+CMBS are more subject to credit risk, because they're not standardized, there are lots of details associated with CMBS that make default risks difficult to ascertain and make these instruments difficult to value. 
+
+Many of these differences relate to more heterogeneous nature of CMBS issues relative to RMBS issues and to their underlying real estate properties.
+
+Default risks are complex and heterogeneous due to unique risks of commercial real estate assets. 
+
+Factors that affect CMBS default probabilities include property type, location, borrower quality, tenant quality, lease terms, property management, property seasoning, and year of origination.
+
+Given the large size and indivisible nature of properties, CMBS issues contain fewer loans. 
+
+Thus investors in CMBS market have concentrated risk to small number of potential defaults.
+
+Credit risk or default risk is mitigated via covenants.
+One type of covenant included in many commercial mortgages but not included in residential mortgages is restriction on distribution of rental income from property, with specified proportion being redirected to reserve account rather than paid straight to owner.
+
+A lender also insist on minimum deposit or balance to be maintained in account with lender.
+
+In addition to explicit covenants with regard to debt, commercial mortgages come attached with a proviso (i.e. condition or limitation) relating to management and operation of property. 
+
+Lenders insist minimum levels of cash flow, net operating income, and earnings before interest and taxes need to be achieved or rental levels not fall below previously specified level.
+
+Such provisions are designed to ensure the property is able to generate sufficient income on ongoing basis for borrower to service loan. 
+
+Lenders even insist on having some form of either control or consultation with regard to leasing policies, such as examination of new lease terms or credit checks on potential tenants.
+
+The risk of default is constantly monitored by mortgage investors. 
+
+Default rates of commercial mortgages are highly cyclical and explained by both market conditions and lender policies.
+
+A major difference between residential and commercial lending is its far more likely that defaulting commercial loans are restructured rather than moved directly to foreclosure, due in part to size of individual loans. 
+
+LTV ratios and debt yields (cash flow divided by amount of loan) play a big role in analysis of CMBS issues, as they do for underlying commercial mortgages. 
+
+The risk of CMBS is also driven by level of diversification in pools’ mortgages. 
+
+\newpage
+
+### Residential Mortgages
+
+The primary issues regarding residential mortgage investments are timing and safety of payments.
+
+A mortgage loan is defined as a loan secured by property. 
+The property serves as collateral against amount borrowed. 
+
+If borrower defaults on loan, then lender takes possession of property. 
+
+The borrower can partially or fully prepay mortgage before contractual due date. 
+
+These partial prepayments are made by borrowers to save on future interest payments. 
+
+Lenders add prepayment penalties to mortgages to discourage borrowers from refinancing prior to maturity.
+
+A major distinction between mortgages is whether interest rate used to determine mortgage payments is fixed or variable.
+
+A fixed‐rate mortgage has interest charges and interest payments based on single rate established at initiation of mortgage. 
+
+A variable‐rate mortgage has interest charges and interest payments based on rate allowed to vary over life of mortgage based on terms established at initiation of mortgage.
+
+Another major distinction between mortgages is residential vs commercial. 
+
+Residential and commercial mortgages and their markets differ, such as in structure of actual loans and with regard to characteristics of securitized markets.
+
+Residential mortgage loans are taken out by individual households on properties that generate no explicit rental income, since houses are owner occupied. 
+
+The credit risk of residential mortgages depends on borrower's income and financial position, in addition to characteristics of property. 
+
+In contrast, commercial mortgage loans are taken out by corporations or other legal entities.
+
+The risk of mortgages on commercial properties focuses on rental income generated by property, which is used to make mortgage payments. 
+
+Another feature of residential mortgage loans is their tendency of homogeneous price behavior than commercial loans.
+
+- Fixed‐Rate Mortgages
+
+A fixed‐rate, constant payment, fully amortized loan has equal monthly payments throughout life of loan. 
+
+These loans give residential mortgage market some of its unique characteristics. 
+
+The fixed‐rate and constant payment nature of these loans make value of loans subject to interest rate risk and inflation risk. 
+
+The monthly payments of fixed‐rate loan is calculated using formula for present value of constant annuity, with payment amount factored:
+$$\text{MP} = \text{MB} \times \frac{i}{1 - (1+i)^{-n}}$$
+
+where MP - constant monthly payment, MB - mortgage balance or total amount borrowed, i - monthly interest rate (defined as stated annual rate divided by 12), and n - number of months in term of loan.
+
+An important feature of fixed‐rate mortgage is proportion of monthly payments applied against principal and proportion that consists of interest charges change over lifetime of loan, as outstanding principal balance declines. 
+
+In early years of mortgage, the largest portions of payments represent interest payments rather than principal repayments. 
+
+The interest component is equal to monthly interest rate multiplied by outstanding loan amount from beginning of current month or end of previous month.
+
+The principal repayment component of monthly mortgage payment is residual between total payment and interest portion. 
+
+Reduction in principal due to payments is amortization. 
+
+#### Example 1
+
+A R100,000 mortgage with fixed‐rate (0.5% a month) constant payment (R644.30 per month) is fully amortized.
+An asset is fully amortized when its principal is reduced to zero.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/5.2.5 Im81.png"}
+\end{center}
+
+Fixed‐rate residential mortgages are valued similarly to bonds.
+As market level of interest rates increases, the present value of future payments declines. 
+
+At a new and higher market interest rate, the value of mortgage would drop below principal balance.
+
+If borrower makes unscheduled principal payments, which are payments above and beyond scheduled mortgage payments, the mortgage's balance will decline more quickly and mortgage will terminate early. 
+
+In traditional mortgages, payments that exceed required payment reduce principal payment but not lower required subsequent payments until mortgage is paid off.
+
+Unscheduled principal payments cause a wealth transfer between borrower and lender, depending on relationship between mortgage's interest rate and current market interest rates. 
+
+When market rates are lower than mortgage rate, unscheduled principal payments benefit borrower and harm lender. 
+
+The lender receives additional cash flows that, if reinvested at prevailing interest rates, will earn less return than mortgage offers. 
+
+Borrowers make unscheduled prepayments to reduce total interest costs of their mortgage by amount greater than amount they'd earn from interest income in market.
+
+Borrowers have incentive to make prepayments on mortgages when interest rates decline below mortgage's rate.
+
+When market rates are higher than mortgage rate, unscheduled principal payments benefit lender and harm borrower. 
+
+The lender receives additional cash flows reinvested at prevailing interest rates earn more return than mortgage offers.
+
+Borrowers are harmed by prepaying low‐rate mortgage when they'd earn more by investing in market at new and higher rates. 
+
+Borrowers make such payments due to idiosyncratic reasons, such as selling the property, refinancing due to liquidity problems, or other personal reasons.
+
+The ability of borrower to make or not make unscheduled principal payments is option to borrower: the borrower's prepayment option.
+
+The option is a call option in which mortgage borrower, much like corporation with a callable bond, can repurchase its debt at fixed strike price. 
+
+A mortgage borrower benefits from increased interest rate volatility.
+
+The lender, on other hand, has written the call option and suffers from increased interest rate volatility. 
+
+The key point is that fixed‐rate mortgage investing has interest rate risk that includes interest rate risk of borrower's prepayment option.
+
+While prepayment option is viewed as call option on value of debt, the option is viewed as put option on interest rates. 
+
+Just like a call option on price, a put option on rate rises in value when rates fall and prices rise.
+
+Both option views illustrate that during times of declining interest rates and rising fixed‐income prices, its borrower's advantage to refinance the loan, replacing current high‐interest‐rate, high‐priced debt with new loan at lower interest rate.
+
+Options are not free, lender demands compensation for writing prepayment call option to borrower.
+
+Although option is not explicitly priced as part of loan, its implicitly priced in form of higher interest rate on mortgage loan or in up‐front points, or fees, charged to borrower.
+
+- Interest‐Only Mortgages
+
+Some fixed‐rate mortgages are interest‐only mortgages, meaning monthly payments consist entirely of interest payments for some initial period. 
+
+The two widely used interest‐only loans are both 30‐year mortgages:
+
+  i) begins with 10‐year interest‐only period, followed by 20‐year fully amortizing period; this loan is 10/20.
+  
+  ii) begins with 15‐year interest‐only period, followed by 15‐year fully amortizing period; this loan is 15/15.
+  
+A 25‐year mortgage with 10‐year interest‐only period is referred as 10/15 interest‐only mortgage.
+
+In each case, interest‐only payments are equal to product of principal balance and monthly rate.
+
+When mortgage commences amortization, payments are computed like fixed‐payment mortgages except they're based on remaining and shorter period of mortgage's life.
+
+Interest‐only mortgages have potential advantage that monthly payments during interest‐only period are lower than those in the case of a fully amortized loan.
+
+During amortization period, monthly payments are higher as borrower has fewer years to amortize the loan.
+
+- Variable‐Rate Mortgages
+
+During the period from 2004 to 2006, mortgage markets shifted toward increased use of variable‐rate or adjustable‐rate mortgages (ARMs) and away from fixed‐rate mortgages. 
+
+Although initial payments in the case of ARMs are calculated in same manner as conventional fixed‐rate loans, payments are not constant during life of loan, as interest rate is periodically adjusted by lender, to reflect changes in underlying short‐term market interest rates, as prescribed in mortgage agreement.
+
+Consider hypothetical variable‐rate mortgage in which interest rate changes each month and is set equal to one‐month interest rate prevailing at the time.
+
+In this extreme and hypothetical example, mortgage lender receives same interest as if lender had placed funds in series of short‐term (one‐month) interest‐bearing accounts.
+
+Investors in this hypothetical variable‐rate mortgage have same interest rate risk investors face in short‐term money market. 
+
+In effect, and ignoring default and reset limits, a variable‐rate mortgage that fully resets every X months behaves to lender or mortgage investor like series of investments in short‐term fixed‐income accounts, each with maturity of X months.
+
+The market value of variable‐rate mortgage (absent default) behaves like money market account to extent the mortgage's rate adjusts quickly and without limits. 
+
+An obvious advantage of variable‐rate type of mortgage to lender is it protects lender from valuation fluctuations due to interest rate changes experienced with fixed‐rate mortgages.
+
+A disadvantage of variable‐rate loans is risk to borrower that interest rates will increase. 
+
+A variable‐rate loan provides advantage to borrower of substantially lower initial interest rates.
+
+An index rate is variable interest rate used in determination of mortgage's stated interest rate.
+
+Index rates fluctuate freely in money markets and are based, for example, on yield of one‐year Treasury securities. 
+
+Variable rates include margin rate.
+A margin rate is spread by which stated mortgage rate is set above index rate. 
+
+This should not be confused with same term used to describe a rate associated with margin debt in brokerage account.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/5.2.5 Im82.png"}
+\end{center}
+
+The margin rate is determined as part of original terms of mortgage and is added to compensate for expected or assessed degree of risk, including interest rate risk and riskiness of borrower.
+
+The total interest rate is sum of index rate and margin rate.
+
+Its common for interest rates on ARMs to be capped. 
+An interest rate cap is limit on interest rate adjustments used in mortgages and derivatives with variable interest rates. 
+
+The effect of interest rate caps on mortgage balance and on monthly payments are to prevent the mortgage's rate from rising above annual or lifetime caps. 
+
+The borrower must pay for these caps in form of higher initial mortgage rate or index rate to compensate lender for potential negative effects that cap rates have on lender's future income from mortgage if future uncapped interest rates were to rise above mortgage's cap.
+
+- Other Types of Mortgages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
