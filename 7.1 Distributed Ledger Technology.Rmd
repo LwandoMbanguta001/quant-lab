@@ -1,0 +1,715 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 7: Digital Assets
+
+## SubTopic 7.1: Distributed Ledger Technology
+
+### Distributed Ledger Technology & Blockchains
+
+Blockchains provide trustless immutability on a decentralized network where no single entity can take full control of the system.
+
+- Basics of Blockchain Technology
+
+Distributed ledger technology (DLT) is like a shared data set or spreadsheet of who owns what. 
+
+The data is replicated and shared across multiple locations called nodes.
+
+A node is a computer operating on the network that hosts a copy of the ledger, can update it, and share the changes with the rest of the network. 
+
+For many systems, the rest of the network agrees to and adopts the changes if more than 50% of the nodes agree on the update.
+
+The most common type of DLT is a blockchain, which is a series of data blocks linked together in chronological order using cryptography. 
+
+Each block contains transactional data along with cryptographical proof of the previous block, known as a hash. 
+
+This creates a system in which each new block verifies the previous one, and it becomes impossible to edit previous blocks because it would break the validation chain.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/7.1.1 Im98.png"}
+\end{center}
+
+As a result of node network and cryptographic linking of historical data, blockchains eliminate the need to rely on a trusted third party. 
+
+Anyone can be a node, and no node has more power, authority, control, or import than any other. 
+
+DLT eliminates the dependence on specified intermediaries so long as the system is supported by a network of nodes.
+
+Over time, new nodes join the network, and nodes leave the network without any interruption or impact on the network. 
+
+The network is not reliant on any one node or set of nodes to operate and function successfully.
+
+Though is circular logic, the best way to have trust in a trustless system is to contemplate the alternative. 
+
+If no one trusted the trustless system, the system would have no value and no one would want to use it. 
+
+If, the trustless system is trusted, then value is retained and upheld. 
+
+Everyone is incentivized to be trustworthy and trust the system. 
+
+The moment the system is untrusted by the community at large, users will depart, and value will be destroyed.
+
+Many systems require large amounts of computational power to create each block. 
+
+This makes it increasingly difficult to make changes to past blocks because it would mean recomputing every block built on top of it to create a valid chain.
+
+For public blockchains, anyone can review historical information and attempt to change the information embedded in previous blocks. 
+
+However, due to cryptographic linking of historical data and the requirement of a majority of active nodes to accept changes, the likelihood of historical data being overwritten is extremely low.
+
+A blockchain is fundamentally a way to store immutable data in chronological order. 
+
+Immutable data is data that, once verified and executed, cannot be altered and is permanent. 
+
+To make changes, users need to execute a new valid transaction. 
+
+Blockchain is now widely used to describe a whole field of emerging financial technologies. 
+
+There are two main types of blockchains, and within those groups there are many different ways of agreeing to updates, known as consensus mechanisms.
+
+One main type of blockchain is public blockchain. 
+These are open-source DLTs that anyone can set up a node and access. 
+
+Transactions on a public blockchain are transparent to all participants, and consensus is achieved via computational power or a voting mechanism.
+
+The other main group of blockchain is private, hybrid, and/or consortium blockchains, which are exclusive networks that require permission to access and participate in. 
+
+Transactions on a private blockchain may not be visible to all participants, and permission can be revoked or given at any time by a centralized party or consortium. 
+
+These permissioned blockchains are mainly used in enterprise solutions where more control is required by the operator.
+
+- Interacting with Blockchains
+
+Public blockchains operate on a decentralized peer-to-peer network of nodes. 
+
+Each node on the network connects to all the other nodes and shares information via a gossiping protocol. 
+
+This is similar to the way torrent and file-sharing networks operate. 
+
+A node entering the network will connect via an entry point, which will provide an initial map of addresses for other nodes on the network. 
+
+These other nodes will share past data so the new node can create a local replica of current state of blockchain.
+
+End users will not run their own nodes. 
+They use a digital wallet in the form of a mobile app, which connects to a decentralized network via a remote procedure call node (RPC node). 
+
+This node relays transactional data to the rest of network. 
+Wallets are how users store their private key(s). 
+
+Wallets come in several forms and are differentiated between hot wallets (connected to the Internet) and cold wallets (not connected to the Internet). 
+
+Types of wallets include hardware wallets (e.g. USB-style devices), software wallets (e.g. smartphone applications), and QR codes.
+
+Cryptocurrency exchanges offer users wallets to aid in the convenience of transacting. 
+
+While the exchange provider may use any of the wallets described, the primary difference between an exchange wallet and personal wallets is the exchange controls and owns the wallets. 
+
+To transact on a blockchain, users need at least one private key–public key pair and use wallets to store the private key information.
+
+Most blockchains use the elliptic curve digital signature algorithm (ECDSA) for end users to sign transactions. 
+
+This involves generating a private key–public key pair for each user. 
+
+The private key is kept secret within a digital wallet, where its used to sign transactions. 
+
+The transaction is sent to the network with a signature to prove that the owner of the public key authorizes the transaction. 
+
+Importantly, this key pair is secured by cryptographic technology.
+
+Users of any system must trust that their data and information are safe. 
+
+When using technology, users need to be confident their identify is safe and has minimal risk of being hacked.
+
+The cryptographic functions used throughout blockchain technologies are described as one-way functions. 
+
+That is, an input (i.e. a password) easily produces a replicable output. 
+
+However, given an output, its exceptionally difficult to reproduce (i.e. reverse engineer) the original input. 
+
+In the case of a private key–public key pair, the private key (i.e. a password) is known only to the user and, when entered into the cryptographic function, will always produce the public key (i.e. an identity) known to the entire community. 
+
+Given this relationship, the community is assured that any transaction stamped with a public key is authentic, as only individual(s) with knowledge of private key could have generated the public key output attached to the transaction instructions.
+
+The more nodes there are, the safer the system is perceived to be. 
+
+Given that nodes maintain the system, the fewer the number of nodes, the more concentrated the power of each node. 
+
+If the system is sufficiently concentrated, a group of nodes act in concert in a manipulative and nefarious manner. 
+
+However, in the event a group of nodes attempts to work against the system, the network will quickly see the coordinated effort given the public and transparent nature of the blockchain. 
+
+Users would immediately lose trust in the nodes and the system, and the value of the system would be compromised. 
+
+This creates a large disincentive for a group of nodes to work together against the system.
+
+The nodes on the network will receive transactions to an inbox known as a mempool.
+
+These incoming transactions need to be verified by checking if the signature is valid and the signer has enough funds to carry out the transaction.
+
+Once all the transactions are verified, they are placed within a block, and this gets set within the chain.
+
+Once all nodes agree on finalized block, they restart the process, verifying the next batch of transactions.
+
+Another distinction when comparing public blockchain-based transactions is the permanence and finality of the transaction record.
+
+Once consensus is reached and the block is added to the chain, the transaction is irreversible. 
+
+Unless both parties agree to engage in a new transaction to undo a prior transaction, its impossible to undo—compared to the traditional financial world, in which intermediaries attempt to intervene and adjust, cancel, or otherwise edit historical transactions (and do so without the permission of each party, particularly in the event of suspected fraud). 
+
+At times, irreversibility seems like a risk; the intended benefit of irreversibility is the security that comes with knowing a transaction cannot be undone.
+
+- Achieving Consensus
+
+Bitcoin was seminal to the blockchain industry because it was the first decentralized cryptocurrency to solve the double spending problem. 
+
+Double spending is the concept that someone may try to transfer/promise the same asset to more than one person without either party knowing about it. 
+
+Solving the double spending problem was essential in creating trust in a cryptocurrency.
+
+One solution to the double spending problem is a Proof of Work (PoW) mechanism, in which each node on the network must try to solve a mathematical hashing problem.
+
+A SHA-256 hash is a 256-bit representation of data. 
+
+Users enter a string of data of any length as an input into the hash function and always receive an output 256 bits long. 
+
+Every time a user inputs the same string of data, they will always receive the same 256-bit output.
+
+Changing just one tiny piece of data on the input completely changes the output of the hash.
+
+The PoW consensus mechanism requires each node on the network to search for an input that creates a specific output. 
+
+Given these hash functions are irreversible, knowledge of output does not help in solving for the input.
+
+As a result, each node repeatedly hashes the current block data, including the incoming transactions plus a random piece of data to test for the efficacy of a different input each time.
+
+Only once a node finds a hash (i.e. a viable input) that satisfies the output requirements, defined by the number of leading zeros in the output hash, can the block be finalized by that node and added to the chain, thus earning the node a block reward. 
+
+This process is also known as mining and the nodes that participate in the process are referred to as miners.
+
+Not all nodes are miners, but all miners are nodes.
+Discovering an acceptable input is random luck. 
+
+The more guesses a miner make in a fixed period of time, the more likely that miner will be to stumble on a viable input.
+
+The first node to find a viable input earns the reward. 
+To increase the odds of earning a reward, miners will want to test as many inputs as quickly as possible. 
+
+To do so, they connect data centers full of custom hardware known as ASIC devices to run the hashing algorithm incredibly fast and try to be the first to solve each block.
+
+The more computing power on the network, the more quickly a solution is likely to be found. 
+
+Many networks prefer to have a standard expected time frame for finding a solution and adding a new block to a chain. 
+
+As computing power is added to/removed from the network, the difficulty in finding the output is increased/decreased.
+
+The successful output is one that begins with some number of leading zeros. 
+
+If the amount of network computing power sufficiently increases, new output solutions will require more leading zeros, which will increase the difficulty and reduce the likelihood of regularly finding a solution, on average, faster than codified in the protocol.
+
+The rules of blockchain dictate what must be contained within an input for it to be valid. 
+
+The input must contain the information from the current block and data from the prior block (thus cryptographically linking the two blocks), along with whatever random characters are necessary to achieve the desired output.
+
+The only requirements of the output are that it starts with a set number of zeros. 
+
+The remaining characters are irrelevant, meaning there's more than one satisfactory output and more than one satisfactory input. 
+
+What matters is finding one of the satisfactory inputs/outputs first and broadcasting that information to the rest of the network. 
+
+The other nodes on the network then verify that the input is viable by:
+
+  1) confirming the input data satisfies the requirements and 
+  
+  2) running the input through the hash function to confirm the output meets the required parameters.
+
+If the majority of the network nodes are unable to confirm either of those elements, the proposed block is rejected, and the nodes return to solving for the current block. 
+
+If the majority of the network nodes confirm both elements, the block will be added to the chain, and the nodes will move on to create a block based on new, unexecuted transactions. 
+And so the PoW process continues.
+
+An alternative to PoW algorithm is the Proof of Stake (PoS) algorithm. 
+
+In this system, holders of a digital asset use their holdings as voting rights to provide consensus on each block. 
+
+This vastly reduces the electrical consumption of the network but compromises on decentralization. 
+
+In a PoS network, a user will either run a node (hardware device) to vote on each block or delegate voting power to a third party (delegated PoS). 
+
+Public blockchains have no central party that can push out updates, so when the majority of participants want to make changes, a fork takes place, which creates a duplicate of the existing chain; miners, or stakers, then choose which chain they want to participate in. 
+
+The old chain becomes depreciated, and the new updated blockchain code becomes the default. 
+
+In many cases, the proposed changes are minor, uncontroversial, and universally agreed on.
+
+In these situations, one blockchain remains and remains backward-compatible even for users who did not adopt the update. 
+This is an example of a soft fork. 
+
+In instances where the update is not universally agreed on, two separate blockchains will exist after the fork.
+
+One blockchain will operate without the updates, while the other blockchain will have adopted the updates and be no longer compatible with the previous blockchain. 
+This is an example of a hard fork. 
+
+In the case of a hard fork, users not adopting the updates will remain on the original blockchain.
+
+There are no limits to the number of forks a blockchain can have or who may propose a fork. 
+
+There are hard forks that ultimately saw minimal adoption and created blockchains that eventually disappeared while the original blockchain remained relevant and active. 
+
+Similarly, there are hard forks where the new blockchain became widely adopted and the old blockchain operated for some time before ultimately losing relevance and users.
+
+- The Blockchain Trilemma
+
+The blockchain trilemma is a concept that states that a blockchain system cannot simultaneously achieve decentralization, security, and scalability. 
+
+Each of these three qualities is necessary for a successful blockchain system; thus, for any blockchain system, there must be a compromise between these three qualities.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/7.1.1 Im99.png"}
+\end{center}
+
+All three factors are not binary but are viewed on a scale where the more decentralized networks are less scalable, while highly scalable systems such as private blockchains are more centralized. 
+
+In many ways, this trilemma is the main source of differentiation from one blockchain to another, and navigating and mitigating the trilemma is key to creating a value-added crypto asset.
+
+Many developers in the blockchain sector strive for the highest levels of decentralization possible because centralization creates single points of failure within a network, which lead to hacks, censorship, and denial of service attacks (DoS).
+
+\newpage
+
+### Smart Contracts & DeFi
+
+Smart contracts are third-party code deployed to run on a decentralized network. 
+
+They enable developers to write permissionless immutable applications that act as programmable money. 
+
+As blockchains evolve, their use is expanding outside decentralized finance (DeFi) and on-chain data promises to usher in a new wave of applications known as Web3.0.
+
+- Smart Contracts
+
+The most popular smart contract network is Ethereum, and smart contracts run within the Ethereum Virtual Machine (EVM). 
+
+A virtual machine (VM) is like an operating system running as an application within a larger system. 
+
+The virtual machine’s job is to compute smart contract code and store data in the network state.
+
+Users can interact with smart contracts via transactions that execute functions within the smart contract itself. 
+
+These transactions change the underlying state of the data stored, and all the nodes on the network need to agree on the new state to form consensus.
+
+Smart contracts are written in a programming language, such as Solidity, and then compiled into a bytecode that is compatible with the VM. 
+
+This bytecode is then deployed to the VM, which stores the code within the state of the machine.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/7.1.2 Im100.png"}
+\end{center}
+
+This code is immutable and can’t be changed or updated once it has been deployed. 
+
+The bytecode deployed is also viewable, so all users can see what it does and verify its functionality.
+
+End users connect to a smart contract to execute transactions via a front-end application. 
+
+This is a decentralized application (dApp), which is hosted on the local device, or a website front end, which connects the user’s digital wallet, via a website, to an RPC node on the blockchain network.
+
+Just as there are multiple blockchains emulating bitcoin to be peer-to-peer payment platforms, there are multiple blockchains emulating Ethereum to execute smart contracts. 
+
+In both instances, each blockchain is separate from the others and maintains its own ledger. 
+
+These stand-alone blockchains are Layer 1 blockchains (base layers) and require their native coins to function. 
+
+Layer 1 blockchains lack interoperability (i.e. ability to use a coin on more than one blockchain).
+
+All transactions on the blockchain are executed at foundational layer, acting as a ledger’s “source of truth,” which defines the unique property rights to digital assets. 
+
+Its available for all to see publicly.
+In the digital asset ecosystem, Bitcoin and Ethereum are the largest and second largest Layer 1 blockchain protocols, respectively. 
+
+Layer 2 solutions are protocols that build on Layer 1 blockchains and attempt to improve on the weakest link in the blockchain trilemma. 
+
+Layer 2 solutions are technological solutions that do not need to use blockchain technologies.
+
+As Bitcoin and Ethereum cement their dominant positions as Layer 1 blockchains, development has shifted to these Layer 2 solutions. 
+
+Layer 2 solutions are being built to serve as catalyst for scale, which allows for broader adoption of blockchain technologies and growth in decentralized networks.
+
+- Tokens
+
+A token is a form of smart contract that creates a mapped data set of user addresses and their balances of digital assets.
+
+A non-fungible token (NFT) is a similar contract, but each asset is unique.
+
+NFT contracts can store data on a blockchain, but due to the high cost of on-chain data storage, a link is included to off-chain metadata, including the actual image or data the NFT represents.
+
+Users can read data from a blockchain at no cost, but deploying a contract or modifying data stored on-chain can get expensive. 
+
+Every time state data needs to be changed, such as during the transfer of assets, a transaction needs to be signed and a fee paid.
+
+- Decentralized Finance (DeFi)
+
+is a catch-all term for various financial services and instruments available on smart contract networks. 
+
+The use of smart contracts eliminates the need for a trusted third party to intermediate the desired outcome.
+
+  i) Decentralized exchanges (DEXs) - used to exchange one coin/token for another.
+  
+  ii) Borrowing/lending platforms - used for overcollateralized loans where a user deposit a volatile asset to borrow a stablecoin. 
+  They spend the borrowed funds while maintaining exposure to underlying collateral. 
+  If the value of collateral falls below an agreed tolerance, then the position is subject to close (similar to a margin call in traditional finance).
+  
+  iii) Algorithmic stablecoins - use vaults of collateral to mint a stablecoin that aims to maintain a peg with a fiat currency.
+  
+  iv) Derivatives (decentralized options and futures) — provide trading applications built on top of underlying assets.
+  
+  v) Oracles - provide off-chain data to DeFi ecosystem.  
+
+These services are managed not by a corporate entity but by a decentralized autonomous organization (DAO). 
+
+A common structure is that the DAO will provide tokens to its users and stakeholders, who are eligible to vote on changes to the protocol based on their ownership of the tokens.
+
+These governance tokens become valuable when fees charged for the service get distributed to token holders.
+
+\newpage
+
+### An Introduction to Bitcoin
+
+- History of Bitcoin’s creation
+
+Bitcoin is a decentralized digital currency and payment system that was created in the late 2000s.
+
+Nakamoto wanted to create a way for people around the world to send a version of electronic cash directly to each other through a global communications network without going through a trusted third party. 
+
+Nakamoto designed Bitcoin to be a secure, transparent, and neutral way to transfer value.
+
+The network’s decentralized nature is meant to ensure that no single entity can manipulate it for their own gain. 
+
+These original motivations continue to be an important part of the Bitcoin ecosystem and at the core of its value proposition for many users.
+
+Deposits are shorter term, while the loans to borrowers are longer term, which create a liquidity crisis if depositors withdraw their funds at the same time (known as bank run). 
+
+Central banks and/or governments have stepped in when these situations arise as the lender of last resort, bailing out banks in crisis.
+
+- How Bitcoin works
+
+Bitcoin is a global network that allows any two parties to transfer value (using bitcoins) between each other without any intermediary.
+
+Transactions are executed by adding them to Bitcoin’s blockchain, which is a decentralized, transparent, and immutable ledger of all bitcoin transactions. 
+
+NB: bitcoin (with a lowercase “b”) refers to the digital cryptocurrency (BTC) that is exchanged on the Bitcoin network. 
+
+bitcoins are broken up into smaller units called satoshis (or sats); which represent the smallest denomination of bitcoin, equal to 100 millionth of a bitcoin.
+
+Bitcoin uses an unspent transaction output (UTXO) model, in which a transaction has inputs and outputs. 
+
+Inputs are unspent outputs from previous transactions; assets are stored on the ledger in unspent outputs. 
+
+As soon as an unspent output is used as an input in a transaction, it becomes spent and can never be used again. 
+
+The output is specified by an address and a value (consisting of a bitcoin amount).
+
+As an example, if Alex has 2 BTC and purchases something from Max for 0.5 BTC, the network will send Alex’s 2 BTC to Max’s address and send the 1.5 BTC that Alex is owed in “change” back to Alex’s address. 
+Alex now has a UTXO worth 1.5 BTC.
+
+Addresses (or public keys) are public to the network, and each have a cryptographic code that’s paired with a private key, which is meant to be kept secret. 
+
+Anyone can send BTC to a public key, but the owner of that address needs to provide their private key to unlock that transaction and prove they are the rightful owner of the BTC received in the transaction. 
+
+Think of an address as a lock that can only be unlocked by the right private key.
+
+To execute a transaction, the sender first creates a transaction message that contains the details of the transaction, including the public addresses of the sender and recipient and the number of bitcoins being transferred. 
+
+The transaction message is then signed with the sender’s private key to prove ownership of the bitcoins being transferred.
+
+Once the transaction message is signed, it is broadcast to the network, where its validated by network nodes. 
+
+Validation involves checking the message, public key, and signature combination. 
+
+While the nodes do not know the private key, its used by the transaction’s sender to generate the signature.
+
+If the transaction is valid, its added to a pool of unconfirmed transactions, known as a mempool.
+
+Approximately every 10 minutes a group of transactions is selected from the mempool and packaged into a block, which is then added to the blockchain.
+
+Blocks contain a summary of all the transaction data in the block using a merkle tree, which is a data structure used for efficiently summarizing and verifying the integrity of large data sets. 
+
+The block also contains the previous block’s hash (this is what connects blocks together to form a blockchain), a timestamp, and a random number called a nonce, which means “number used only once”.
+
+Once a block is added to the blockchain, the transactions it contains are considered confirmed and are recorded on the ledger permanently. 
+
+This process of adding blocks to the blockchain is mining, and is performed by special nodes on the network called miners.
+
+As new blocks are added to the blockchain, the transactions they contain become increasingly difficult to reverse, making the blockchain more secure over time. 
+
+This is one of the key features of the Bitcoin blockchain, and is what makes it a reliable and secure way to transfer value.
+
+- Bitcoin’s monetary policy
+
+There is no central authority that issues bitcoins; the monetary policy of the Bitcoin network is preprogrammed and completely controlled by code. 
+
+The main rule of Bitcoin’s monetary policy is the total supply of bitcoins is fixed at 21 million coins, which'll be gradually released into circulation over time.
+
+The fixed supply of bitcoins and decreasing rate at which new bitcoins are released are intended to create a predictable and stable supply, which is one of the key features of Bitcoin. 
+
+The monetary policy is designed to ensure the value of a bitcoin is determined primarily by market demand, rather than being subject to the influence of central authorities or other external factors.
+
+The release of new bitcoins into circulation is controlled by mining process, in which new blocks are added to the blockchain and a fixed number of new bitcoins are released as a reward for the miner who added the block.
+
+The first transaction in any Bitcoin block is special because it starts a new coin thats owned by creator of the block (i.e. the miner). 
+
+This bitcoin reward creates an incentive for miners to support the network and validate transactions. 
+
+Miner rewards serve as a way to initially distribute bitcoins into circulation.
+
+The number of new bitcoins released per block decreases over time according to a predetermined halving schedule, in which the number of bitcoins created is cut in half after every 210,000 blocks.  
+
+The Bitcoin’s monetary supply is disinflationary (i.e. has lower inflation rates over time).
+
+Miners can also be rewarded in bitcoin through transaction fees. 
+
+Each Bitcoin block has a 1 megabyte limit, restricting the amount of transaction data that can be squeezed into a single block. 
+
+When the mempool exceeds 1 megabyte of pending transactions, miners cannot execute all outstanding transactions. 
+
+To incentivize miners to include their transaction in the next block, users pay transaction fees.
+
+If an output value in a transaction is less than its input value, the balance is a transaction fee thats added to the miner’s reward for that block. 
+
+There are no rules regarding the selection process from the mempool; if the volume of pending transactions is sufficiently high, pending transactions without a transaction fee may not be added to a block for a significant period of time.
+
+A pending transaction without a fee may still be added to a block, as miners continue to be incentivized to create new blocks with transaction data via the block reward.
+
+The supply cap of 21 million bitcoins means there'll be no more newly minted bitcoin and at that point miners will be entirely compensated in the form of transaction fees. 
+
+Once every bitcoin has been mined and entered into circulation, there'll no longer be inflationary pressures from new issuance. 
+
+With no more coins rewarded for mining, its likely that all pending transactions will include a transaction fee. 
+
+Users interested in ensuring their transaction occurs on the next block offer a larger fee.
+
+- Bitcoin mining and the Proof of Work consensus mechanism
+
+Every transaction that occurs on Bitcoin blockchain needs to be recorded by every member of the network so they can all maintain a common ledger of balances and transactions.
+
+bitcoin mining is the process of batching new transactions, confirming them, and adding a new block with these transactions to the Bitcoin blockchain.
+
+A decentralized network of computers, called miners, perform the task of mining.
+
+Miners act as auditors, making sure that transactions included in Bitcoin blocks are verified and honest. 
+
+The biggest issue miners are trying to prevent is the double spending problem. 
+
+To begin mining, a miner must first set up a mining rig, which consists of specialized computer hardware—graphics processing units (GPUs) or application-specific integrated circuits (ASICs) designed to perform the complex calculations required to solve a block of transactions. 
+
+When a miner is ready to begin mining, they connect their mining rig to the Bitcoin network and start searching for a solution to a type of complex computational mathematical problem. 
+
+They are trying to guess a 64-hexadecimal number (a hash).
+
+Miners find the hash using the Secure Hashing Algorithm 256 (or SHA-256), which is a cryptographic function that takes an input of any length and produces a 256-bit-long output. 
+
+They do this by varying the value of block’s nonce until they guess the hash that's less than or equal to the target hash of the block. 
+
+Miners randomly guess over and over until one miner finds the answer.
+
+This process is known as a Proof of Work because all miners in the network are expending computational power, or “proof,” to try to find the answer to this puzzle.
+
+Once the answer (nonce) is found, the miner announces it to the rest of the network, and the rest of the nodes check for its validity. 
+
+Its easy for the rest of the nodes in the network to verify the solution is the correct one. 
+
+A majority of the nodes must agree before the block is added to the chain and the new bitcoins are released to the miner who found the solution. 
+
+If the miner that found the solution submits a bad block with invalid transactions, a majority of the other nodes would need to verify that the block proposed by the miner is valid. 
+
+This is called a 51% attack because in order to corrupt the network, a party (or parties) needs more than 50% control of all the nodes on the network. 
+
+This would be very expensive from a computing power and resources perspective.
+
+The processing power expended would be wasted if the miner submitted invalid transactions, so this Proof of Work consensus mechanism creates incentive for nodes to behave honestly and to submit valid transactions.
+
+This process is repeated every time a new block is added to the blockchain, and is what keeps the Bitcoin network operating in a decentralized and secure way by ensuring that no single miner or group of miners can manipulate the ledger for their own gain. 
+
+It also helps to ensure that all participants in the network agree on the state of the ledger and the order of transactions, which is essential for functioning of Bitcoin network.
+
+The process does require a significant amount of computing power and energy to perform, which has become increasingly competitive as more people have become interested in mining bitcoins.
+
+The amount of mining power on the network is referred as hash rate. 
+
+The higher the hash rate, the higher the difficulty the puzzle needs to be in order to maintain the average Bitcoin block time of 10 minutes. 
+
+The difficulty is adjusted every 2,016 blocks (approximately every two weeks).
+
+Given the economics associated with mining, many businesses exist with sole purpose of mining bitcoins (and other PoW blockchains). 
+
+These businesses may choose to hold the bitcoins earned via the mining process or immediately convert to a fiat currency.
+
+Miners are an important part of the bitcoin ecosystem, and its important to keep in mind that a portion of the miners exist for the sole purpose of providing a service (i.e. mining) for a requisite compensation. 
+
+These businesses have no other interest in bitcoins outside mining.
+
+- Bitcoin’s value proposition as a payment network
+
+Bitcoin offers a number of advantages over traditional payment systems, including decentralization, security, transparency, and efficiency. 
+
+Its worth reviewing today’s existing payment systems (excluding cash) and how Bitcoin improves on them:
+
+1) The first payment system is wires, which are electronic transfers of funds facilitated by banks. 
+The sender and receiver must have a bank account for a wire to be completed. 
+Wires are completed in minutes or hours, but can only be sent on non-holiday weekdays and during business hours. 
+They also cannot be used to automatically pay recurring bills, and completed transactions cannot be reversed. 
+Wires come with significant fees.
+
+2) The second payment type is ACH transfers, which are like wires in that they are another mechanism for electronically transferring money between banks through automated clearinghouse (ACH) network.
+Like wires, ACH transfers require both parties to have a bank account, and transactions can only be sent on non-holiday weekdays and during business hours. 
+The advantage of ACH over wires is that they have lower fees, are reversible, and enable auto-pay. 
+The disadvantage is that transaction speeds are lower, as ACH transfers can take days versus minutes or hours.
+
+3) The third is credit card payment networks. 
+Credit cards are more flexible than wires or ACH transfers, since the owner of credit card doesn’t need to have a bank account, transactions can take place 24/7/365, and can be reversed. 
+Credit cards charge the merchant fees, and takes several days for the merchant to receive the funds from the transaction. 
+
+4) The fourth is digital payment networks controlled by centralized entities like Venmo or PayPal. 
+Similar to credit cards, users don’t need bank accounts, and payments take place at any time. 
+Transactions are seemingly instantaneous, as the company is effectively reassigning values from one account to another within the platform’s own private ledger; however, it takes a few days to move money between platforms. 
+Payments are free for individuals, whereas businesses pay 2%–4% fees. 
+These networks aren’t available everywhere, as they are geographically limited.
+
+Compared to all of these, the Bitcoin network offers a new type of database thats open and transparent to anyone. 
+
+Bitcoin transactions are faster and cheaper than traditional payment methods, as they do not require the involvement of banks or other intermediaries. 
+
+This makes it a more efficient way to transfer value, especially for international transactions. 
+
+Payments take place at any time of day and can be sent to anyone in the world with an Internet connection and a wallet.
+
+Anyone can access the network, even the unbanked population.
+The Bitcoin blockchain is immutable, and valid transactions are irreversible and can only be “corrected” by executing a new offsetting transaction.
+
+Given the anonymity/pseudonymity of blockchain technology, the source/use of funds is difficult to track, making it challenging to ensure that institutions comply with AML rules.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/7.1.3 Im101.png"}
+\end{center}
+
+For countries lacking robust banking systems or operating with weak currencies, bitcoin is a valued and valid payment system. 
+
+\newpage
+
+### An Introduction to Ethereum
+
+- History of Ethereum’s creation
+
+One of the key innovations of Ethereum is the enablement of smart contracts, or code that automatically executes when certain conditions are met. 
+
+The original motivation behind Ethereum was to create a decentralized, open-source platform that'd allow developers to build and deploy decentralized applications (dApps) and smart contracts in a secure and efficient manner. 
+
+Ethereum has many dApps built on top of it, with most applications offering financial-use cases (marketplaces, exchanges, lending, derivatives, and so on).
+
+Ethereum has Ethereum Virtual Machine (EVM), an immensely powerful world computer that stores data and executes code in smart contracts. 
+
+The EVM is Turing complete, meaning it can take a program, run it, and find a result. 
+
+The EVM was designed to be user-friendly and accessible to a wide range of developers, regardless of their technical expertise or background. 
+
+Its relatively easy to use, with a high-level programming language called Solidity and a simple, intuitive development environment.
+
+A year after Ethereum’s public launch, the network underwent a hard fork following the hack of an Ethereum-hosted decentralized autonomous organization (DAO), a blockchain-based organization thats owned and governed by its members, with rules set and executed by code.
+
+A hacker found vulnerabilities in the DAO code (i.e. the smart contract) and was able to siphon off R60 million of ether.
+
+To recoup the stolen funds, the Ethereum network forked, or split, into two distinct blockchains—Ethereum and Ethereum Classic. 
+
+This event rolled back the Ethereum blockchain’s transaction history to before the hack on the DAO, effectively undoing the hack and returning the stolen funds to their original owners.
+
+Ethereum is the blockchain that altered the original blockchain’s history, while Ethereum Classic is the original Ethereum without the fork.
+
+- Token types on Ethereum
+
+Similar to bitcoin’s role on the Bitcoin blockchain, the Ethereum blockchain has a native coin called ether (ETH). 
+
+Its the intrinsic token known to the Ethereum blockchain, and accounts on Ethereum have ether balances maintained as part of the Ethereum state. 
+
+Ether has many use cases on Ethereum:
+
+1) its used to facilitate execution of smart contracts and dApps on the Ethereum network (referred to as gas). 
+Gas is a unit of measurement that represents the amount of computational effort required to execute transactions or smart contracts. Gas is therefore the fee required to conduct an operation on Ethereum successfully and is used to ensure that users are incentivized to use the network efficiently and to prevent spamming the network. Gas is dynamic and determined on a per-block basis depending on the complexity of the operation and market demand. It fluctuates based on activity on the network: when activity increases, gas increases. Gas is often denoted in gwei (one gwei is equivalent to 0.000000001 ether; the concept is similar to the relationship between satoshis and bitcoin). Ether that is used to pay gas fees is burned (or removed from the total ether supply).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
