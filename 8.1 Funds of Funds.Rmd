@@ -1,0 +1,990 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 8: Funds of Funds
+
+## SubTopic 8.1: Funds of Funds
+
+### Overview of Funds of Funds
+
+- Four Functions of Fund of Funds Management
+
+Delegated management using a fund of funds (FoF) approach provides investors with professional management to perform the following four important functions:
+
+  i) Strategy and manager selection - The FoF manager is responsible for selecting the strategies and managers who will implement those strategies. 
+  FoF managers have access to closed managers and insights regarding strategies that are likely to perform better going forward. 
+  Many of largest institutional investors and their investment consultants have teams dedicated to finding, vetting, and investing directly in alternative investment funds.
+  
+  ii) Portfolio construction - Once the strategies and managers have been selected, the FoF manager has to decide on how much to allocate to each strategy and manager. 
+  The allocation will depend on risk and return characteristics of individual managers and expected correlations between funds, and other fund features.
+  
+  iii) Risk management and monitoring - The FoF manager will monitor each fund to ensure its ongoing performance profile is consistent with fund’s overall objectives. 
+  Some FoFs employ sophisticated risk‐management processes to monitor the underlying funds’ positions. 
+  Other FoFs employ multifactor sensitivity analysis to gauge risk exposure to various market factors and analyze the funds’ potential tail risk.
+  
+  iv) Due diligence - For alternative fund investing, due diligence is the process of monitoring and reviewing management and operations of fund manager.
+  This is one of important functions and value‐added features of FoF manager to consider when deciding between a direct and a delegated investment program.
+  Some large FoFs are marred by blowups and fraud scandals, which caused some institutional investors to become wary about the value of an FoF’s due diligence process. 
+  There's academic evidence justifying the payment of additional layer of fees in return for operational due diligence.
+  Operational due diligence is the process of evaluating the policies, procedures, and internal controls of an asset management organization. 
+  Net of fees, the largest FoFs outperform the smallest FoFs. 
+  Larger FoFs outperform because their scale allows them to invest greater resources in due diligence and risk management processes.
+
+- Eleven Benefits to Investing in Funds of Funds
+
+In addition to accessing professional management for the four functions, there are a number of other benefits to investing in funds of funds:
+
+  1) Diversification - Prudent investing dictates portfolios be well diversified. 
+  Some investors lack necessary asset size and expertise to invest directly in funds to reach an appropriate level of diversification and risk reduction.
+  Through a single FoF investment, investors can access a well‐diversified portfolio in terms of managers or strategies. 
+  The diversification level of FoF portfolio is not necessarily a straightforward function of number of underlying funds or strategies analogous to stock investing. 
+  Because funds are not single securities; they are previously diversified portfolios of securities.
+  
+  2) Accessibility - The median minimum investment for a single fund is R500,000, which makes diversification into numerous funds unaffordable for most individual investors.
+  By comparison, minimum investment levels for FoFs are relatively low. 
+  This allows more individual investors and small institutions to gain diversified access to funds though their capital base is comparatively small.
+  
+  3) Economies of scale - Investors share costs, such as those associated with manager selection, reporting, analysis, and due diligence processes, with their FoF co‐investors, thereby reducing their individual costs.
+  
+  4) Information advantage - As professional asset allocators, FoF managers have ability to access, collect, and interpret data gleaned from various channels, such as data providers, prime brokers, and industry contacts. 
+  This gives informational advantage over nonprofessional investors.
+  
+  5) Liquidity (hedge funds of funds specifically) - Investments in hedge funds are illiquid, due to lockups, redemption gates, notice periods, and limited redemption dates.
+  By comparison, liquidity terms offered by FoFs are more flexible.
+  Most FoFs offer quarterly or monthly liquidity in normal market conditions. 
+  Some FoFs offer daily liquidity, either through a listing on an exchange or via an over‐the‐counter secondary market that matches demand and supply.
+  
+  6) Access to certain managers - Access to best talent and ideas in alts community is a scarce resource.
+  The most desirable funds are closed to new investments. 
+  Many investors do not have necessary networks and protocol for obtaining investment capacity in these funds when it becomes available. 
+  Investing in existing FoF that's already allocated to these desirable funds is fastest way to immediately participate in their performance.
+  
+  7) Negotiated fees - Due to their collective assets, some FoFs have successfully negotiated access to certain managers at reduced fees. 
+  This is beyond the capabilities of most individual investors.
+  
+  8) Regulation - To facilitate their distribution to a wider audience, some FoFs choose to register in regulatory jurisdictions that offer better investor protection than their underlying investments, even though the cost and administrative and operational burdens are higher.
+  The improved investor protections are reassuring for first‐time investors and ensure they will receive sufficient transparency, oversight, and quarterly reports.
+  
+  9) Currency hedging - Although the currency of choice in the alts world is the US dollar, some FoFs offer share classes denominated in various currencies with the currency risk hedged. 
+  Institutional investors wish to manage their own currency risks, many small or private investors prefer to be shielded from currency fluctuations and delegate the hedging aspects to professional managers.
+  
+  10) Leverage - Some FoFs provide leverage to their investors. 
+  They borrow money in addition to capital provided by their investors and invest it in a portfolio of funds. 
+  This allows them to produce higher returns than would be produced with an unlevered FoF, as long as leverage and interest costs incurred are surpassed by unlevered returns of underlying fund portfolio.
+  
+  11) Educational role - Many first‐time alts investors look at FoFs not as investment vehicle but as a way of learning about hedge fund strategies and hedge fund managers. 
+  Larger investors switch to direct investments in alts funds after gaining a few years of experience.
+  
+- Six Disadvantages to Investing in Funds of Funds
+
+  1) Double layer of fees - FoF managers pass on to their investors all fees charged by underlying funds in their portfolios, while also charging an extra set of fees for their own work, and for an additional layer of service providers. 
+  FoFs charge a 1% management fee and a 10% performance fee on top of an underlying fund management fee of sometimes 2% and an incentive fee of 20% for the funds.
+  Due to economies of scale, institutional investors making large allocations have recently been paying much lower fees than the 1% and 10%.
+  Fees are falling in some cases, due to both disappointing fund performance and increased buying power of large investors. 
+  
+  2) Performance fees not netted - In an FoF, the investor pays performance fees for each of underlying funds that are profitable, regardless of performance of overall portfolio. 
+  If half the managers are down 10% and the other half are up 10% on a gross basis, the investor will have to pay a performance fee to the positive performers despite no positive returns at aggregate level. 
+  The fees are the same for portfolios of funds using direct investing. 
+  The fees are lower using a multistrategy fund because performance fees are charged on a netted or aggregate basis.
+  
+  3) Taxation - Because of their offshore registration, many funds and FoFs are tax inefficient for certain investors in certain countries. 
+  
+  4) Lack of transparency - Some FoF managers do not disclose the content of their portfolio or asset allocation. 
+  They contend it represents the valuable skills they bring to the table, and are reluctant to reveal their full strategy.
+  It becomes relatively difficult for their investors to understand what is really happening in terms of risk and returns beyond the information that is ascertained from the stream of net asset values (NAVs).
+  
+  5) Exposure to other investors’ cash flows - FoFs commingle the assets of a number of investors. 
+  Investors are affected jointly by inflows and outflows, since co‐investors in the same fund trigger cash increases or decreases or undesirable leveraging to finance redemptions. 
+  To satisfy investors’ requests for redemption, the FoF manager will sell the most liquid funds first, leading to a potential change in the FoF’s style.
+  Custom portfolios for a single investor (managed accounts) are not exposed to this type of problem.
+  
+  6) Lack of control - In an FoF, investors give up control over how assets are managed.
+  They lose the direct relationship with the funds in which the FoF invests. 
+  Direct investment in funds allows investors to create allocations that fit their overall portfolios, but investors in FoFs can’t control this style allocation.
+  
+- Three Major Ways for FoF Managers to Add Value
+
+One of the most important debates with respect to FoFs concerns whether they deserve their second layer of fees. 
+
+In practice, there are three major ways for FoF managers to add value from portfolio selection and asset allocation:
+  
+  1) Through strategic allocations to various fund styles - Running an FoF is not a matter of assembling a large collection of good managers. 
+  Having such collection can result in a concentration of risks, with somewhat illusory diversification if there is a high level of correlation in the trades or underlying exposures of these managers.
+  The first choice an FoF manager make when organizing a portfolio is the long‐term strategic asset allocation. 
+  The strategic allocation sets the long‐term weights across strategies, such as static weights of 20% on macro strategies and 30% on equity strategies.
+  This implies analyzing long‐term risk and return profiles of different strategies, and examining the correlation of their observed and expected returns. 
+  The goal is to determine an initial portfolio allocation consistent with fund’s long‐term objectives and constraints. 
+  This task determines the long‐run beta of fund with respect to various sources of risks. 
+  Superior strategic asset allocations is an important way for a fund of funds manager to add value.
+  
+  2) Through tactical allocations across fund styles - Tactical asset allocation refers to active strategies that seek to enhance short‐term portfolio performance by opportunistically shifting the asset allocation in response to changing environment. 
+  Many FoFs argue they implement a top‐down, tactical allocation process.
+  This involves making three key style‐weighting decisions periodically: 
+  
+  i) what to do (i.e. overweighting or underweighting a particular investment style); 
+  
+  ii) when to do it (i.e. implementing the changes based on levels of certain indicators or factors); and 
+  
+  iii) how much to do (i.e. deciding whether the overweight should be).
+  
+  In practice, an FoF’s tactical allocations are limited due to underlying funds’ liquidity constraints unless the fund of funds invests the most liquid areas of alternative investments or uses managed accounts. 
+  New investment flows received by FoF are used to reallocate to the most attractive tactical opportunities.
+  Tactical allocation is a way for fund of funds managers to add value by determining how much the FoF adjusts its asset allocations in response to changes in the market environment.
+
+  3) Through selection of individual managers - FoF managers add value within a strategy through the decision of how much money to invest with each manager. 
+  Although this manager selection activity seems very similar to a traditional stock selection activity, the reality is that FoF managers need to consider the liquidity of the funds. 
+  Managers have to make a trade‐off between their ability to add value through dynamic manager allocations in highly liquid funds and the potential contribution of less liquid funds. 
+  Managerial selection is a major source of added value for an FoF manager.
+
+\newpage
+
+### Private Equity Funds of Funds
+
+- Private Equity-Style Funds of Funds and Fees
+
+Private equity-style funds of funds (PE FoFs) are investment vehicles, similar in legal structure to a PE-style fund, which make investments as limited partners in private investments and funds, as opposed to making direct investments into portfolio companies.
+
+Many smaller institutions outsource their private fund investment program either through a dedicated account or by pooling assets with other investors. 
+
+PE-style funds of funds, which are mainly organized by specialist asset managers, are vehicles that pool capital from a group of investors to invest in a diversified portfolio of private funds. 
+
+Some funds of funds specialize in certain sectors or geographies, whereas others follow a more generalist approach.
+
+PE-style funds of funds primarily invest in newly formed limited partnerships. 
+
+Because of blind pool nature of such investments, where investors don't know the underlying portfolio companies before committing capital, the initial assessment and ongoing monitoring of fund management team's skills are key.
+
+PE-style funds of funds also co‐invest alongside primary investors. 
+
+This activity requires direct investment experience and skills. 
+
+PE-style funds of funds also use secondary investments in existing funds or portfolios of direct investments. 
+
+This is a niche activity for most funds of funds. 
+This activity requires both co‐investment skills for assessment of companies already in the portfolio and primary investment skills for blind‐pool part of the transaction.
+
+While investment in a particular PE-style fund has a blind‐pool nature, a fund of funds has established relationships with fund managers via existing investments. 
+
+Its future portfolio is somewhat predictable and not necessarily a blind pool investment.
+
+A newly created portfolio is likely to be largely composed of follow‐on funds raised by these known managers. 
+
+Funds of funds are marketed on either a partially blind or a fully informed basis.
+
+For a partially blind pool, some of intended partnership groups are identified, while for a fully informed pool, virtually all of intended partnerships are identified.
+
+FoFs are seen as less efficient than single GP PE funds (i.e. direct fund investments) because of the additional layer of management fees and incentive fees. 
+
+This double layer of fees is one of the main disadvantages of this structure. 
+
+Given the resources required for institutional investor to select, monitor, and manage a portfolio of PE funds internally, investing through a fund‐of‐funds structure proves more cost‐efficient than a direct fund investing approach.
+
+The cost of outsourcing investment management, including carried interest of funds of funds, is compared to performance‐related incentives, if any, paid in a program managed internally. 
+
+Whether an in‐house program can work effectively without investment‐performance‐related incentives is debatable.
+
+The annual costs of an in‐house team is substantial compared to that of a fund of funds.
+
+- Private Equity Funds of Funds and the Value of Information and Control
+
+Information is a valuable asset in an opaque environment such as PE.
+
+Funds of funds provide the necessary resources and address the information gap for inexperienced PE investors through their expertise in due diligence, monitoring, and restructuring. 
+
+Successful investing in PE funds requires: 
+
+  1) a wide‐reaching network of contacts in order to gain access to high‐quality funds, 
+  
+  2) well‐trained investment judgment, and 
+  
+  3) the ability to assemble balanced portfolios.
+
+An institutional investor taking the fund‐of‐funds route (as opposed to direct investment route) can lose access to information and control, essentially a cost in itself.
+
+Because PE programs follow a learning curve, inexperienced institutions initially have little option other than to go through a fund‐of‐funds vehicle. 
+
+Experience with funds‐of‐funds approach allow institutional investors new to PE to build knowledge and sophistication, leading to building their own portfolios of funds.
+
+Funds of funds are used as a first step into PE and worth the additional layer of fees in exchange for avoiding expensive learning‐curve mistakes and for providing access to a broader selection of funds.
+
+- Private Equity Funds of Funds, Diversification, and Intermediation
+
+PE FoFs add value in several respects, especially in the case of investments in new technologies, new teams, or emerging markets. 
+
+A fund of funds approach allows for reasonable downside protection through greater diversification than many investors achieve through a direct program. 
+
+Its important to diversify a PE investment program across vintage years, GPs, industry, stage of investment, and geography.
+
+For larger institutions, investments in PE funds and VC funds are too cost‐intensive when the size of such investments is small compared to administrative expenses.
+
+A fund of funds mediate these potential size issues by either scaling up through pooling of commitments of smaller investors and providing each of them with sufficient diversification, or scaling down through sharing administrative expenses and making such investments less cost‐intensive by allowing larger commitment to the fund of funds.
+
+- Private Equity Funds of Funds, Access, Selection Skills, and Expertise
+
+Some limited partners, especially those new to private equity, may not be able to access the most popular and successful PE funds.
+
+Depending on overall market situation, access to quality funds is highly competitive, and being a newcomer to the market pose a significant barrier.
+
+Funds of funds are continuously involved in the PE space, speak the language, and understand the trade‐offs in the industry. 
+
+PE FoFs offer those investors the advantage of being able to invest in top‐performing funds, either by having access to successful invitation‐only funds or by identifying future stars among young and lesser‐known funds. 
+
+PE FoFs offer better access to top fund managers because those top managers welcome funds‐of‐funds investors as a more stable and experienced source of pooled capital.
+
+Liquidity management is quite challenging, because it demands a full‐time team with insight and an industry network, adequate resources, and access to research databases and models, and skills and experience in due diligence, negotiation, and contract structuring.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/8.1.2 Im102.png"}
+\end{center}
+
+\newpage
+
+### Private Equity Funds of Funds Investment Process
+
+- PE Funds of Funds Have Varying Investment Objectives
+
+There are many commonalities among PE FoFs. 
+They offer investors diversified access to private equity, they aim to value‐add by selecting top quartile PE funds, and they potentially offer investors economics of scale and allocations to oversubscribed PE funds. 
+
+Not all PE funds of funds are the same. 
+They differ by three key dimensions:
+
+  i) Geographical focus - Like direct PE fund investments, PE FoFs focus on country, regional, or global portfolio companies. 
+  The preferred option depends on the size of the market opportunity. 
+  PE FoFs seek to identify emerging PE funds to invest in before they become highly sought after.
+  This requires strong domain knowledge, local presence, and sufficient scale to be treated by PE funds as a preferred investor. 
+  There are also PE FoFs with a global focus. 
+  These are fewer, and normally part of a larger organization with a global footprint to provide the right market expertise and access to the best GPs.
+  
+  ii) Focus - PE FoFs focus on different types of GP categories such as venture capital, growth equity, or buyouts.
+  Within buyouts there are subcategories such as small, medium, large, and mega buyouts, depending on deal size. 
+  PE FoFs focus on a specific category and subcategories, or diversify across categories.
+  
+  iii) Portfolio construction - When constructing a portfolio of PE funds, diversification is achieved in several dimensions, including different strategies, GP, vintage year, industry, and geography. 
+  A right balance of diversification can reduce risk and enhance returns. 
+  Concentrating on two dimensions – number of fund commitments per year and number of vintage years – can effectively reduce the loss of invested capital to zero and increase the average performance of a PE fund portfolio. 
+  20 to 25 PE funds is the optimal size for a portfolio of PE funds thats diversified across stages, vintages, and geographies.
+  Once an optimal point is reached, adding more funds has a negligible impact on risk reduction and reduce the value added from manager selection.
+
+- Distinguish between Primary and Secondary PE Fund of Funds
+
+PE FoFs are broadly categorized into the following strategies:
+
+  i) Primary Funds of Funds - invest in individual PE funds at their inception through primary capital commitments. 
+  Depending on its strategy, a primary FoF develop a portfolio of between 20 to 50 PE fund investments over several vintage years.
+  Primary FoFs provide investors with exposure to diversified portfolio of PE funds and demonstrate a similar J‐Curve to that of individual PE fund. 
+  As a mature category of PE asset class, many primary FoFs employ specific strategies and focus on investing in PE funds of a specific region, strategy or fund size.
+  
+  ii) Secondary Fund of Funds - invest in individual PE funds by acquiring LP interests through a secondary market purchase.
+  Depending on its strategy, a secondary FoF develop a portfolio of several hundred LP interests and is significantly more diversified than primary FoFs. 
+  Secondary FoFs provide investors with exposure to a seasoned and diversified portfolio of PE funds and demonstrate a shorter J‐Curve than an individual PE fund. 
+  Given that many of purchased funds have progressed beyond their initial vintage year, LPs have visibility into portfolio companies held in the underlying funds.
+
+- Describe the Process for Constructing a Portfolio of PE Funds
+
+A process of constructing a portfolio of PE funds can be described in three phases:
+
+  i) Portfolio construction phase - An investor must first decide how many PE funds provide adequate diversification. 
+  The number of PE funds for a PE FoFs is between 15 and 50. 
+  Next, the investor must ensure consistent investment through the cycle. 
+  This means spreading the investment across vintage years. 
+  The total number of PE funds and the spread across vintage years help investor decide on suitable size of their annual commitment. 
+  After deciding on the amount to commit, the investor use top‐down criteria to structure the portfolio. 
+  
+  ii) GP and fund selection phase - This phase is screening GPs or funds. 
+  Most investors adopt a mix of quantitative and qualitative screens based on their portfolio construction parameters that broadly includes categories and geography. 
+  Investors also include specific parameters based on their preference or risk management. 
+  Some larger institutional investors avoid first‐time funds because of their lack of track record. 
+  Investors do not want to take an overly disproportional size of the fund, so the fund size must match their target commitment size. 
+  Investors also make a qualitative assessment of GPs' reputation, strategy, team, track record, network, and risk management.
+  While investor could screen for GPs, looking for top‐quartile GPs based on their historical performance, these GPs may not be fundraising. 
+  The fundraising cycle for GPs is one fund every two to three years for small GPs, and one fund a year for large GPs with multiple funds strategy. 
+  Nonetheless, the investor could be introduced to the manager and aim to get on the GP’s pre‐marketing list when they are next fundraising. 
+  Alternatively, an investor may form a macro view and identify attractive areas for investment. 
+  They would then screen for funds that meet that investment strategy, geography, or niche. 
+  Its also important for investors not to rely solely on past performance due to the trend of declining performance persistence. 
+  Investors also consider including emerging managers as part of their selection process.
+  
+  iii) Ongoing monitoring phase - After the closing of investment into PE funds, some of key activities for investor include:
+  
+  (1) Regular interaction with GP to understand the status of underlying portfolio companies and GP’s outlook on risks and opportunities.
+  
+  (2) Regular performance analysis of fund
+  
+  (3) Regular valuation update of the fund
+  
+  Some investors sit on the LP advisory board to monitor potential conflict of interest between the fund and GP.
+  Most LP would attend annual LP meeting to get the update on the PE fund. The information from these activities help investor to refine their portfolio construction as market condition changes.
+  
+  An investor choosing the PE FoF option rely on manager of PE FoF to perform portfolio construction required to build a diversified portfolio. 
+  
+  Investors evaluate the manager of PE FoFs manager to determine whether the manager is able to select and access top quartile GPs for their fund.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/8.1.3 Im103.png"}
+\end{center}
+
+\newpage
+
+### Private Equity Funds of Funds Investment
+
+- Four Benefits to Investing in PE Fund of Funds
+
+1) Diversification benefits - PE FoFs invest across PE funds and vintage years. 
+This has the effect of reducing performance dispersion compared to investing in a single PE fund. 
+It also lowers downside risk when compared to investing in a single PE fund.
+
+2) Professional Management - The manager of PE FoF has a dedicated investment team with experience in identifying top‐performing PE funds. 
+They have a network in the PE space they are targeting, either through staff with experience working in PE funds, or personal networks developed over time. 
+This helps them identify GPs and conduct reference checks. 
+FoFs invest in funds on a large scale, giving them economies of scale not available to smaller investors, and have a long‐term horizon and targeted pool of capital.
+
+3) Access to funds, specific strategy, or geography - Many PE FoFs are specialized funds focusing on a particular strategy. 
+They also focus on a specific geography.
+The expertise and domain knowledge of the manager is difficult to replicate by smaller LPs without the help of external advisors. 
+Some of the FoFs have established relationships with leading venture capital firms that are heavily sought after. 
+These FoFs are able to provide investors access to these leading venture capital firms.
+
+4) Lower capital commitment - The minimum investment for a single PE fund is R1m, thus an investor may need a large amount of capital to create a portfolio of PE funds. 
+In comparison, the minimum investment for PE FoFs is lower and the investor can obtain the diversification without a large capital commitment. 
+Some investors may not meet the minimum investment requirement for PE funds. 
+But by investing through PE FoFs, they enjoy the economies of scale and gain access to PE funds they otherwise would be unable to.
+
+- Four Disadvantages in Investing in PE Fund of Funds
+
+1) Additional layer of fees - PE FoFs charge management fee and carried interest in addition to the layer of the fees charged by underlying PE funds. 
+The management fee is 0.5% to 1.0% of committed capital with carried interest of 5% to 10% of realized gains, which reduce the returns the investor would've earned by directly investing in the portfolio of PE funds.
+For large institutional LPs who have experience, bargaining power, and access to PE funds, the fund selection and risk reduction benefits of PE FoFs is significantly reduced. 
+For smaller institutional LPs, they find that the cost of investing in a PE FoF is lower than if they had built an internal team to identify and monitor a portfolio of PE managers.
+
+2) GP relationship remains with manager of PE FoF - The manager of PE FoF has direct relationships with underlying GPs as they are sourcing and evaluating the managers in their portfolio. 
+Investors of PE FoFs do not have direct access to underlying fund managers without an introduction from manager of PE FoF.
+
+3) Less transparency - Since PE FoFs are investing across funds, the information on underlying portfolio companies is limited. 
+Investors in PE funds are able to obtain more detailed information on portfolio companies held in underlying funds.
+
+4) Lack of liquidity - The PE fund has a fund life of 7 to 10 years. 
+PE FoFs, or primary FoFs, have longer fund life than PE funds because they are investing in the PE funds across vintage years. 
+In contrast, secondary FoFs have shorter fund lives than primary FoFs. 
+The majority of PE FoFs are closed‐ended with finite fund life. 
+This matches the underlying PE funds, which are likely to be closed‐ended as well.
+There are some open‐ended PE FoFs, likely to have redemption features to provide limited liquidity on a quarterly or monthly basis.
+But the redemption features come at a cost in the form or redemption penalty, or cash drag on returns as the FoF hold cash balance to meet redemptions. 
+Most open‐ended funds have some gating mechanism such as a cap on total redemption to protect the fund. 
+The liquidity from open‐ended fund is limited in times of market turmoil. 
+Secondary market for PE FoFs stake may not be active, which makes exiting before the end of fund life challenging.
+
+- Factors Driving the PE Fund of Funds Market
+
+The business models of PE FoFs are evolving. 
+The GPs of many FoFs expanded their offerings to include secondaries, co‐investments, and separate accounts as the sophistication of investors has increased. 
+
+Despite the changing conditions, the value proposition of PE FoFs to investors remains relevant:
+
+  1) Easy way to access PE - PE FoFs are a good way for new investors to obtain their initial exposure to the asset class. 
+  The structure of PE FoFs creates an easy way to access private equity for investors who lack the knowledge or resources to do so. 
+  For many investors, FoFs remain a springboard for a PE program.
+  It offers significant diversification and alleviates many constraints faced by investors.
+  
+  2) Smaller PE program - If an investor’s portfolio base is not large, they may not have enough capital to build a diversified portfolio of PE funds.
+  An investment in PE FoF is a good way to access the PE asset class.
+  
+  3) Complement to existing PE Program - A PE FoF program can complement existing PE program.
+  
+  4) Increased complexity of PE operational due diligence - As LPs become increasingly focused on operational risk in PE funds, PE GPs have increasingly enhanced the complexity and strength of their operations. 
+  This increase in operational complexity is driven by growing complexity in regard to regulatory compliance obligations of PE firms.
+  A PE FoF can assist many LPs who do not have the requisite expertise in performing operational due diligence (ODD) on PE funds in order to better vet these operational and compliance risks at PE firms.
+
+#### Example 1
+
+An investor plans to make R20 million investment into a PE FoF.
+The investor will hold the investment for 10 years and underlying portfolio of PE funds is expected to achieve an IRR of 10% over the period. 
+The PE FoF will charge annual management fee of 1.0% on commitment capital, and a carry of 10% over an 8% preferred return.
+
+  i) What is total fee paid to FoF GP? 
+  
+  ii) What is total fee as a percentage to investor’s capital commitment?
+  
+  iii) Assuming an in‐house fund selection team costs R600k per year, should investor allocate to FoF, or build in‐house team?
+
+=>
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/8.1.4 Im103.png"}
+\end{center}
+
+From above, 
+
+  i) Total fee paid to PE FoF GP is R5 million.
+  
+  ii) Total fee paid as a percentage of investor’s commitment is 25%, or an average 2.5% p.a. over the period.
+  
+  iii) Since expected annual fee paid to FoF (R500k) is lower than cost of in‐house team (R600k), the investor consider allocating to FoF as cost‐effective option.
+
+\newpage
+
+### Private Equity Funds of Funds Historical Returns
+
+- Key Observations Regarding Historical Returns of PE Fund of Funds
+
+Using IRR and multiples of invested capital, PE FoFs have lower return dispersion than investing in single PE funds in the same vintage year. 
+
+Return dispersion describes the possible range of returns for an investment. 
+
+A higher return dispersion implies a wider range of potential returns, measuring an increased risk of investment.
+
+Kaplan‐Schoar PME (KS‐PME) is a ratio that compares private equity performance relative to public market index.
+
+A KS‐PME of greater than 1 implies outperformance relative to public market benchmark.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/8.1.4 Im104.png"}
+\end{center}
+
+The above results show:
+
+  i) PE FoFs offer diversification benefits by reducing performance dispersion. 
+  
+  ii) Overall PE FoFs provide higher return than investing in public equity markets, but at the cost of higher illiquidity. 
+  
+  iii) PE FoFs returns are lower than a portfolio of PE funds. 
+  This is due to double layer of fees. 
+  The portfolio of PE funds assumes an investor has no limitation in selecting the PE funds, but access to some PE funds is limited for some investors because of oversubscription and the challenge of identifying top PE funds.
+
+- Buyout Fund of Funds vs Its equivalent Portfolio of Funds
+
+Private equity is further divided into three broad categories, i.e. venture capital, growth equity, and buyout.
+
+Buyout is at the lower end of the risk spectrum, while venture capital is at the higher end of the risk spectrum. 
+
+PE FoFs is further categorized.
+When benchmarked whether buyout FoFs performed better than a portfolio of buyout funds, the following is concluded:
+
+  i) Buyout FoFs have smaller dispersion in performance than single buyout funds. 
+  This is the result of diversifying across funds and vintage years.
+  
+  ii) Buyout FoFs have lower return against a similar portfolio of funds. 
+  This suggests an investor is better off creating a portfolio of PE funds if they exhibit fund selection skills and have access to top‐performing managers.
+
+- Venture Capital Fund of Funds versus Its Equivalent Portfolio of Funds
+
+When benchmarked whether VC FoFs performed better than its equivalent portfolio of VC funds.
+The following is concluded:
+
+  i) VC FoFs have smaller performance dispersion than single VC funds. 
+  The reduction in performance dispersion is greater than of buyout FoFs. 
+  This suggests the diversification benefit delivered by funds of funds depends on underlying variability in fund performance. 
+  The greater the underlying variability in fund performance, the greater the diversification benefit delivered by fund of funds.
+  
+  ii) VC FoFs performed on par against a portfolio of VC funds.
+  This is notable because gross returns (before double‐layer fees) of VC FoFs is higher than a portfolio of VC funds. 
+  This suggests the VC FoFs has strong fund selection skills or access to top‐performing funds.
+  Since top‐performing VC funds limit access to new investors, established VC FoFs are able to provide their investors access to these funds.
+
+\newpage
+
+### Overview of Funds of Hedge Funds
+
+Few investors allocate their entire hedge fund investment to a single hedge fund manager or a single hedge fund strategy.
+
+Investors realize each manager and each strategy has its own specific risks and cyclicality of returns and diversification across managers and strategies reduce the risks of hedge fund investing.
+
+The hedge fund industry includes funds of funds (FoFs) and single‐manager funds.
+
+Funds of funds are hedge funds with underlying portfolio of other hedge funds. 
+
+The primary advantages of fund of funds are diversification, professional manager selection, and portfolio management processes. 
+
+The primary disadvantage of fund of funds is a second layer of fees imposed by fund of funds manager.
+
+Investors want to consider multistrategy funds, which manage multiple strategies within a single entity.
+
+Multistrategy funds offer strategy diversification without additional layer of fees, but there are trade‐offs involved when selecting these funds.
+
+A fund of hedge funds is a diversified fund run by a single hedge fund manager, in which assets are allocated among other hedge funds. 
+
+This structure creates two layers of fees: 
+
+  i) the fees of fund of funds structure, and 
+  
+  ii) the fees of underlying hedge fund investments. 
+  
+A key goal of investing in a fund of funds is to improve portfolio diversification, as a fund of funds quickly diversifies both the risks of concentrated hedge fund styles and idiosyncratic risks of investing with single hedge fund managers.
+
+- Benefits and Costs of Diversification
+
+Because each hedge fund strategy has its own risks and varying correlations to other hedge fund strategies, diversifying across hedge fund strategies reduces the risk of a hedge fund portfolio. 
+
+The largest allocation to single‐strategy managers is to equity hedge, and relative value managers and event‐driven funds earned larger allocations than macro managers. 
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/8.1.6 Im105.png"}
+\end{center}
+
+- How Many Hedge Funds Provide Reasonable Diversification?
+
+When constructing a portfolio of hedge funds, consider how many funds are needed to achieve appropriate diversification. 
+
+i.e. how many funds are required to reduce manager‐ and style‐specific risks while maintaining manager weights large enough for superior manager selection to have a positive impact on the portfolio? 
+
+The two methods of estimating the relationship between number of funds and level of diversification: empirical and theoretical.
+
+  i) Empirical approach - A broadly diversified portfolio of between 15 and 20 hedge funds reduce portfolio volatility to the level of fixed‐income investments.
+  The marginal risk reduction benefit of adding more than 15 to 20 hedge funds is minimal. 
+  Portfolios of more than 40 hedge funds dilute manager skill and approach the risk and return of a hedge fund index.
+  The problem with the empirical approach to estimating the benefits to diversification is differentiating between systematic and diversifiable risks and the assumption that future returns will offer the same levels of diversification indicated by analysis of past returns.
+  
+  ii) Theoretical approach - is to model the returns of a portfolio as depending on the weights, variances, and covariances of the returns of the constituent assets. 
+  This reflects Markowitz’s pioneering expression for the variance of a portfolio when assets are uncorrelated.
+  
+  $$Var(R_p) = \sum^n_{i=1} w^2_i \text{Var}(R_i), \hspace{12pt} \text{when } \rho =0 \text{ between all individual assets}$$
+
+This equation is used while assuming all assets in the portfolio are equally weighted, have no systematic risk, and have equal variances ($\sigma^2$).
+
+In this case, the variance of the portfolio is $\frac{\sigma^2}{n}$. 
+
+Given these assumptions, the standard deviation of the rate of return on the portfolio is directly related to the number of funds:
+$$\sigma_p = \frac{\sigma_f}{\sqrt{n}}$$
+
+where $\sigma_p$ - standard deviation of portfolio's return, and $\sigma_f$ - standard deviation of every constituent fund.
+
+It provides a simple approximation of risk reduction based on the number of funds. 
+
+Zero correlation between fund returns overstates the benefits to diversification. 
+
+These results provide reasonable indications of potential reduction in the idiosyncratic risks.
+
+- Identifying Funds for an Institutional Portfolio or Fund of Funds
+
+The second issue to consider is of manager selection and due diligence.
+
+Many hedge fund investors have one or more simple rules that immediately reduce the number of hedge funds under consideration.
+
+The manager funnel below shows the steps taken to select a small number of managers from the vast sea of candidates. 
+
+Quantitative screens, such as minimum length of track record, minimum returns, or maximum risk when compared to funds in the same style, can reduce the number of hedge funds under investment consideration. 
+
+Other criteria include manager capacity and ability of fund of funds manager to build a long‐term relationship with hedge fund manager. 
+
+The next step, due diligence, is the most expensive and challenging, beginning with locating and meeting each hedge fund manager. 
+
+Although locating managers is accomplished through database searches, many fund of funds managers have an edge through proprietary knowledge of managers who do not report their returns to databases. 
+
+Large investors are frequently contacted by managers who wish to present their funds for investment consideration.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/8.1.6 Im106.png"}
+\end{center}
+
+Suppose after quantitative screens and first manager interview, the portfolio manager has selected an initial 100 to 200 funds for further consideration. 
+
+Perhaps there are 10 to 20 funds in each investment style. 
+Once the portfolio manager is satisfied with this group of candidates, the in‐depth due diligence process begins. 
+
+After reviewing a completed due diligence questionnaire, the investor visits the hedge fund manager’s office. 
+
+The on‐site visit gives the investor an opportunity to interview a broad number of staff members from hedge fund to determine the manager’s level of skill and ability to manage market risks and minimize operational risks. 
+
+The prospective investor also conduct reference checks, contact service providers, and verify systems and trading programs.
+
+\newpage
+
+### Investing in Funds of Hedge Funds
+
+- Investing in Funds of Hedge Funds
+
+The primary purposes of funds of funds are to reduce idiosyncratic risk of investment with any one hedge fund manager and tap into potential skill of fund of funds manager in selecting and monitoring hedge fund investments. 
+
+Some funds of funds have continued access to investing with managers whose funds are closed to new investors. 
+
+Fund access is an investor’s ability to place new or increased money in a particular fund. 
+
+The access to otherwise closed funds is an advantage of a fund of funds for an investor relative to investor forming their own portfolio. 
+
+Some funds of funds arrange to have a liquidity facility that bridge the fund’s mismatches between subscriptions and redemptions. 
+
+A liquidity facility is a standby agreement with a major bank to provide temporary cash for specified needs with prespecified conditions.
+
+- Funds of Hedge Funds as Diversified Pools
+
+There is safety in numbers.
+As mutual funds are to single stocks, funds of funds are to single managers. 
+
+Funds of funds offer diversification and professional management, like mutual funds. 
+
+As mutual funds invest in a large number of stocks across industries to diversify risk, funds of funds invest in multiple hedge fund managers and strategies to control risk.
+
+Investing in a single stock has commonalities to investing in a single hedge fund manager in that there's substantial amount of idiosyncratic risk. 
+
+The company’s industry or hedge fund manager’s style may be out of favor, or CEO of company or fund manager may make some substantial mistakes. 
+
+If fund of funds invested in a single manager or strategy that experienced dramatic losses, the investor’s losses is reduced by other investments maintained or grew their value.
+
+Whereas concentrated investments in single stocks or hedge funds lead to riches or ruin, diversified investments in mutual funds and funds of funds earn returns in a narrower range, due to reduction in idiosyncratic risk inherent in portfolios that contain multiple investments.
+
+A fund of funds seek to reduce operational risk and improve transparency for fund of funds manager by placing the fund’s money in managed accounts or separate accounts. 
+
+Rather than investing as a limited partner and allowing individual hedge fund managers as general partners to take custody of assets of fund of funds, the manager of fund of funds invest using a managed account or separate account that allows hedge fund managers to trade the assets while fund of funds controls the custody of assets.
+
+This arrangement nearly eliminates the ability of hedge fund managers to steal the funds or misrepresent performance. 
+
+Because assets are controlled by fund of funds, the manager has perfect transparency, allowing fund of funds manager to see all performance and positions in real time, which improves the manager’s ability to manage risk and oversee investors.
+
+The liquidity of fund of funds portfolio also increases, as underlying hedge funds can’t enforce lockup and gating provisions in a managed account framework.
+
+The returns to funds of funds have underperformed returns of a broad hedge fund index. 
+
+However, its inappropriate to directly make this comparison.
+Funds of funds suffer less from survivor bias and selection bias than individual hedge funds.
+
+Hedge fund survivor bias is 3% annually, whereas survivor bias of funds of funds is 1.4% annually. 
+
+Analyzing the returns to funds of funds give a more realistic view of performance of hedge fund universe. 
+
+There are several reasons funds of funds give a less biased view of hedge fund performance, including:
+
+  i) Survivor bias arises when returns from dead funds are removed from, or never included in, a database.
+  Funds of funds invested in funds that are liquidated, however, retain the returns of those funds in their track records.
+  
+  ii) Instant history bias is reduced, as funds of funds count returns to their investments in single hedge funds from the date of investment.
+  
+  iii) Funds of funds use actual investment weights, which better reflect the weights used by investors.
+
+Because of second layer of fees, the after‐fee returns of funds of funds are, on average, lower than hedge fund returns.
+
+Its a mistake to conclude that funds of funds do not add value. 
+
+In addition to reducing due diligence cost of building a diversified portfolio of single‐manager hedge funds, funds of funds have skill in evaluating hedge fund managers.
+
+The correct fund of funds benchmark is the return an investor would achieve from direct hedge fund investments individually, without recourse to funds of funds. 
+
+Once fund of funds performance is compared to the correct benchmark, can conclude on average, funds of funds add value on an after‐fee basis.
+
+Larger funds of funds have statistically significant levels of higher returns and alpha than do smaller funds.
+
+The larger funds have significantly lower standard deviations, which lead to higher Sharpe ratios. 
+
+The larger funds of funds have greater operational resources, which are used to invest in stronger risk management, portfolio construction, and manager due diligence capabilities. 
+
+The larger funds also cater to more institutionally focused clientele.
+
+If large institutional investors demand lower fees from their fund of funds managers, this fee difference explains a portion of return advantage experienced by the larger funds of funds. 
+
+The difference in returns between smaller and larger funds of funds represents economies of scale from fixed cost of performing operational due diligence.
+
+- Funds of Hedge Funds Have Varying Investment Objectives
+
+Funds of funds, like any other investor, choose to build a portfolio with a wide range of investment objectives.
+
+HFR maintains indices that measure the performance of funds of funds, including composite, conservative, diversified, market‐defensive, and strategic indices. 
+
+The composite and diversified indices look most like hedge fund universe, investing across the macro, equity, event‐driven, and relative value strategies, and most closely compared to HFRI Fund Weighted Composite Index of single‐strategy hedge funds.
+
+Funds of funds included in conservative index focus on strategies with lower standard deviations, such as equity market‐neutral, relative value, and event‐driven.
+
+Investors in funds included in strategic index seek to maximize total returns, which is different from risk‐reduction goal espoused by many funds of funds.
+
+To earn these higher returns, strategic funds make larger allocations to directional strategies, such as equity hedge or emerging markets funds.
+
+Managers of funds of funds included in the market‐defensive index seek returns uncorrelated to stock and bond markets and have lower downside risk. 
+
+Defensive funds are likely to have minimal investments in event‐driven and relative value strategies, as these managers prefer to overweight investments in macro, systematic diversified, and short selling funds.
+
+Although the vast majority of funds of funds are diversified across a number of strategies, some funds of funds eschew this diversification to focus on a single sector.
+
+The most popular of these focused funds invest only in equity strategies, only in managed futures, only in smaller and emerging managers, or only in funds within a specific geographic region. 
+
+These single strategy or sector‐focused funds of funds are attractive to investors who seek specific return profile of one strategy, such as managed futures, but believe its important to invest in a number of managers to reduce the fund‐specific risk.
+
+- Funds of Funds as Venture Capitalists
+
+Its difficult to tell the difference between private equity funds and hedge funds. 
+
+Within specific strategies of distressed investments or equity activists, the line between private equity funds and hedge funds becomes increasingly blurred, especially when hedge funds invest in private securities or private equity funds invest in public securities.
+
+Some funds of funds also blur the line between hedge fund and private equity investments.
+
+Seeding funds, or seeders, are funds of funds that invest in newly created individual hedge funds, taking an equity stake in management companies of newly minted hedge funds. 
+
+One reason a seeding fund create new funds is to obtain transparency and capacity in its underlying hedge fund managers, which is difficult to obtain with existing hedge funds. 
+
+The best way for a fund of funds to guarantee transparency and capacity over long run with specific hedge fund managers is for fund of funds to own a stake in hedge fund management company.
+
+Although hedge fund managers are experts at trading strategies, not all hedge fund managers have the time, connections, or skill to raise funds, and some may not have resources or knowledge to build the infrastructure of a new hedge fund.
+
+Funds of funds are experts at raising capital from investors and structuring new investment vehicles. 
+
+These complementary needs and skills form the basis for a seeding relationship, or incubating relationship, between a fund of funds and a start‐up hedge fund manager.
+
+In a seeding relationship, the fund of funds provide the fledgling hedge fund manager with R20 million or so in capital, in addition to the legal and accounting documents, infrastructure, and relationships needed to start the hedge fund. 
+
+The fund of funds manager also serve as third‐party marketer, soliciting investors for new hedge fund. 
+
+In return, the hedge fund manager guarantees capacity to fund of funds, even when hedge fund has closed its doors to other investors. 
+
+The fund of funds has an equity stake in hedge fund manager, which earn fund of funds 20% of hedge fund’s total fees and/or value of firm upon sale of hedge fund management company to external investor.
+
+The seeding activity of fund of funds reach 10 managers across a number of strategies.
+
+At R20 million per manager, the fund of funds has R200 million of investor capital placed with underlying managers, quite similar to traditional fund of funds without seeding activity. 
+
+The seeding fund of funds earns the return to underlying hedge fund portfolio, at preferential fees. 
+
+In addition to return on hedge fund portfolio, the fund of funds also receives an equity kicker. 
+
+To the extent that any of underlying managers becomes extremely successful, raising R500 million in investor capital, the value of fee and equity sharing agreement with fund of funds can become valuable, possibly exceeding return on investment in underlying hedge fund strategy.
+
+\newpage
+
+### Investing in Portfolios of Single Hedge Funds
+
+Although funds of funds provide instant diversification, they do so at cost of extra layer of fees. 
+
+Whereas investors with a small amount to invest in hedge funds may find these fees to be cost‐effective, larger investors compare the value of paying fees to funds of funds relative to building a portfolio of hedge funds using in‐house resources.
+
+There are a number of costs involved with hedge fund due diligence process. 
+
+Its expensive to subscribe to hedge fund databases, to hire and retain internal staff skilled in manager selection and portfolio construction, and to fund expenses of visiting and evaluating each hedge fund manager. 
+
+Since minimum investment in hedge funds is rather large, only investors with very large portfolios can hold a diversified portfolio of hedge funds.
+
+A buy‐versus‐build heuristic institutional investors should consider:
+
+Assume a fund of funds approach has a second layer of hedge fund fees, including a management fee of 1% and an incentive fee of 10%.
+
+A full internal program has a minimum annual cost of R1 million for building and maintaining an internal fund evaluation program. 
+
+Investors find it cost‐effective to build their own hedge fund portfolio once assets allocated to hedge funds exceed R50 million. T
+
+his result is found by dividing R1 million by 2%, which is the total fee, assuming incentive fee of 1% of AUM. 
+
+For investors with less than R50 million to invest in hedge funds, paying 2% fees to a fund of funds manager is a lower‐cost alternative to spending R1 million annually inhouse.
+
+\newpage
+
+### Multialternatives and Other Hedge Fund Liquid Alternatives
+
+- Emergence of Liquid Alternatives
+
+As the quality and number of liquid strategies increase, the business model of funds of funds is negatively affected. 
+
+When individual investors easily access transparent, liquid hedge funds with a low minimum investment, the advantages of a fund of funds to diversify investments and offer a low minimum subscription become less compelling. 
+
+Not only do liquid alternatives provide access to hedge fund strategies at lower fees and small minimum investments, but search costs are also reduced, as exchange‐traded strategies have regulatory‐mandated disclosures that allow both large and small investors to quickly access information regarding all exchange‐traded hedge fund strategies.
+
+Most hedge funds are offered mainly as illiquid and less‐than‐transparent private placements, sold to high‐net‐worth and institutional investors.
+
+Liquid alternative investments are innovative products that democratize alternative investments by allowing all investors to easily access these strategies in an exchange‐traded and transparent format.
+
+A hedge fund is investment pool or investment vehicle privately organized in most jurisdictions and offers performance‐based fees to its managers.
+
+Hedge funds can apply leverage, invest in private securities, real assets, actively trade derivative instruments, establish short positions, invest in structured products, and hold concentrated positions.
+
+Investment managers in private placement vehicles have ultimate flexibility, in that they can take as much or as little risk as investors or counterparties allow. 
+
+In private placement formats, long lockup periods encourage holding illiquid or complex assets, which earn higher long‐term returns.
+
+If there's a liquidity premium, in which less liquid assets earn higher returns, then some fund managers choose to hold most or all of their assets in less liquid holdings.
+
+Whereas hedge funds are relatively unregulated, exchange‐traded or liquid alternative investments comply with local regulations.
+
+These regulations legislate minimum levels of liquidity and transparency, and maximum levels of leverage, derivatives, shorting, and investment concentration.
+
+On average, private placement funds have higher returns and higher risks due to extra freedom allowed in portfolio management process. 
+
+Exchange‐traded liquid alternatives have lower returns and lower risks than private placements trading similar strategies, as regulatory restrictions reduce investment manager flexibility. 
+
+The investors attracted to liquid alternative products are those who value the lower fees, greater transparency and liquidity, and the reduced risk of these products over higher returns from private placement products. 
+
+There's also evidence of retail investors, or those not legally allowed to access private placement products due to low net worth levels, increasingly investing in liquid alternative products to diversify their portfolios in ways not previously possible.
+
+- UCITS Framework for Liquid Alternatives
+
+UCITS‐compliant funds were managed as long‐only stock and bond funds for first 15 years of regulatory regime.
+
+When UCITS III was enacted in 2001, the regulations allowed use of options, futures, and other strategies for first time, which opened the door for managers to offer hedge‐fund‐like strategies in a UCITS‐compliant vehicle. 
+
+UCITS IV, enacted in 2011, allows fund mergers and master‐feeder structures, which gives greater flexibility to hedge fund managers. 
+
+UCITS V, enacted in 2016, tightened requirements for custody of assets, requiring the use of a single depository to be responsible for explicit safekeeping requirements.
+
+Although private placements offer investment manager a great deal of flexibility when implementing an investment strategy, UCITS regulations have strict requirements for transparency, risk, and liquidity of compliant funds.
+
+UCITS regulations require reporting of holdings at least every two weeks to enable investors to view the composition of their funds on a regular basis.
+
+- Funds Registered under the ’40 Act
+
+Unlike the less liquid regime of private placements, funds compliant with ’40 Act regulations offer regular liquidity, with redemptions being paid within seven days.
+
+Fund holdings are disclosed on a regular basis. 
+The most interesting aspect of ’40 Act regulations is that performance fees for funds that trade securities are symmetric. 
+
+The sharing of investment profits by investment managers is matched by sharing of investment losses. 
+
+In the private placement world, hedge fund or private equity managers frequently earn asymmetric incentive fees.
+
+Hedge fund managers have incentive fee structures that allow managers to receive 20% of all fund profits without requirement of compensating investors for 20% of their losses. 
+
+This asymmetric fee structure, which is attractive to managers of private placement products, is not compliant with regulations of ’40 Act. 
+
+Although most managers of ’40 Act funds do not charge performance fees, there are few managers who charge symmetric performance fees. 
+
+These performance‐based fees are unlikely to ever be as popular with liquid alternative managers as asymmetric performance fees can be earned in private placement world.
+
+The ’40 Act also places limits on each fund’s leverage. 
+There's a 300% asset coverage rule, which requires a fund to have assets totaling at least three times the total borrowings of the fund, thus limiting borrowing to 33% of assets. 
+
+A fund with 150% long positions and 50% short positions would comply with the regulations, whereas a fund with 200% long positions and 100% short positions would not.
+
+The concentration limits of ’40 Act are less complex than those of UCITS. 
+
+Under the ’40 Act, diversification regulations apply to 75% of fund’s portfolio, while remaining 25% of fund has no concentration limits. 
+
+In the diversified portion of a fund, investment concentrations cannot exceed 5% of assets invested in one issuer, 25% in one industry, or more than 10% of the shares outstanding of a single company. 
+
+There are limits on liquidity risk, specifying no more than 15% of fund is invested in illiquid assets.
+
+- Availability of Liquid Alternative Strategies
+
+Macro and managed futures funds are broadly available as liquid alternative products, given the underlying holdings of futures and forward contracts is extremely liquid.
+
+Funds using a ’40 Act fund structure access managed futures returns by holding funds as collateral and entering into swap agreements that transport the returns of managed futures into liquid alternative structure.
+
+Liquid alternative funds are managed with less concentration and leverage than macro funds. 
+
+Investors perform due diligence carefully on funds in this sector, as leverage and asymmetric incentive fees are buried in swap products that are used inside liquid alternative vehicles.
+
+Event‐driven hedge funds are a broad variety of strategies that focus on corporate events. 
+
+Strategies such as merger arbitrage or activism are compliant with liquid alternative regulations but aren’t broadly available in a liquid alternative format.
+
+Other strategies, such as distressed investing, are too illiquid to be offered in an exchange‐traded format. 
+
+Similarly, traditional private equity strategies are not available as liquid alternatives, as the time to exit is years away, far longer than the daily or weekly liquidity expected by investors in liquid alternative funds.
+
+Relative value hedge funds focus mainly on convertible bond arbitrage and fixed‐income arbitrage strategies.
+
+These funds hold long positions in underpriced bonds and short positions in bonds or stocks meant to hedge the long positions. 
+
+Because the divergences between the long positions and fair value are small in these strategies, relative value funds are managed at levels of leverage far in excess of those allowed under UCITS or ’40 Act regulations. 
+
+As such, relative value funds are not available in a liquid alternative format.
+
+Compared to other hedge fund styles, equity hedge fund strategies have attracted the largest AUM in liquid alternative sector. 
+
+Long/short equity funds are most popular strategy, with equity market‐neutral funds following closely behind. 
+
+The availability of equity funds in a liquid alternative format is so prevalent due to similarity of strategy in private and public formats. 
+
+A large number of equity hedge funds are likely to be compliant with regulatory requirements for alternative investments, even when managed in private placement structure.
+
+The liquid alternative space is broader than hedge funds, including funds with exposure to commodities, currencies, and nontraditional bonds.
+
+Nontraditional or unconstrained bond funds do not take long positions in investment‐grade sovereign and credit securities, but invest in high‐yield or emerging markets debt, including leverage and short positions. 
+
+These funds increase exposure to credit risk while reducing risk to changes in the level of investment‐grade interest rates.
+
+- Engineering Illiquid and Leveraged Strategies into Multialternatives
+
+Multi-alternative funds are liquid alternative funds that offer a strategy similar to that of funds of funds, they diversify across fund managers and strategies. 
+
+Long/short equity and multi-alternative funds comprise more than half of assets under management within the category of liquid alternatives focused on hedge‐fund‐like strategies.
+
+Both investors and hedge fund managers find multi-alternative funds attractive.
+
+Investors buy a single multi-alternative fund as a diversified offering, similar to fund of funds. 
+
+Hedge fund managers wish to serve as sub‐adviser to multi-alternative fund, especially when their stand‐alone strategy does not comply with liquid alternative regulations.
+
+Managers prefer to be sub‐adviser to multi-alternative fund rather than offering their own liquid alternative funds, as that role clearly delineates between manager’s private placement and liquid alternative investments. 
+
+Managers who offer both a private placement fund and a liquid alternative fund following similar strategies are careful to demonstrate that private placement fund adds value relative to greater liquidity and lower fees offered in exchange‐traded market.
+
+- Performance of Liquid Alternative Vehicles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
