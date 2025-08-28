@@ -1,0 +1,163 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 6: Hedge Funds
+
+## SubTopic 6.1: Structure of the Hedge Fund Industry
+
+### Distinguishing Hedge Funds
+
+The intent of first hedge fund was to limit market risk while focusing on stock selection. 
+
+The growth was aided in part by investors appreciating the capacity of HFs to cope with bear markets and overcome crises against old traditional idea of a long only strategy.
+
+The ability to short assets was a game changer in the capital markets. 
+
+In addition to generating returns on both long and short investments, over the years hedge funds evolved to offer institutional investors other benefits. 
+
+Institutional investors saw hedge funds as diversifiers in their asset allocation by providing new approaches to portfolio management, risk management, portfolio construction, portfolio calibration, and new risk mitigation features. 
+
+The growth in hedge fund industry brought on a new set of skills to traditional managers that were unknown or had misconception before popularity and adoption of hedge funds.
+
+The term hedge fund has evolved and expanded to include funds that do not necessarily hold hedged positions.
+
+- Primary Elements of Hedge Funds
+
+A hedge fund is an investment pool or investment vehicle thats characterized by:
+
+  i) privately organized in most jurisdictions
+  
+  ii) charging performance‐based fees in addition to management fees
+  
+  iii) can apply leverage, actively trade derivative instruments, establish short positions, invest in structured products, and hold relatively concentrated positions
+  
+  iv) operates under fewer regulations than traditional counterparts, which affords an unconstrained investment universe (i.e., can invest in public or private securities of any kind) and investment strategy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
