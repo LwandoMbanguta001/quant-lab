@@ -1,0 +1,359 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic 6: Hedge Funds
+
+## SubTopic 6.1: Structure of the Hedge Fund Industry
+
+### Distinguishing Hedge Funds
+
+The intent of first hedge fund was to limit market risk while focusing on stock selection. 
+
+The growth was aided in part by investors appreciating the capacity of HFs to cope with bear markets and overcome crises against old traditional idea of a long only strategy.
+
+The ability to short assets was a game changer in the capital markets. 
+
+In addition to generating returns on both long and short investments, over the years hedge funds evolved to offer institutional investors other benefits. 
+
+Institutional investors saw hedge funds as diversifiers in their asset allocation by providing new approaches to portfolio management, risk management, portfolio construction, portfolio calibration, and new risk mitigation features. 
+
+The growth in hedge fund industry brought on a new set of skills to traditional managers that were unknown or had misconception before popularity and adoption of hedge funds.
+
+The term hedge fund has evolved and expanded to include funds that do not necessarily hold hedged positions.
+
+- Primary Elements of Hedge Funds
+
+A hedge fund is an investment pool or investment vehicle thats characterized by:
+
+  i) privately organized in most jurisdictions
+  
+  ii) charging performance‐based fees in addition to management fees
+  
+  iii) can apply leverage, actively trade derivative instruments, establish short positions, invest in structured products, and hold relatively concentrated positions
+  
+  iv) operates under fewer regulations than traditional counterparts, which affords an unconstrained investment universe (i.e., can invest in public or private securities of any kind) and investment strategy
+
+Expanding on above, hedge funds are privately organized and unlisted. 
+
+They are designed this way to pool the resources of institutional and other qualified investors and provide opportunities not available through traditional, regulated pools or more easily or cost effectively executed using private vehicles.
+
+Hedge funds are less regulated than public investment vehicles because of their privately organized nature. 
+
+As regulatory environment evolves, hedge funds are increasingly creating vehicles, structures, and strategies made available to and are suitable for smaller, retail investors. 
+
+Hedge funds are designed to be private by using one or more safe harbor provisions.
+
+In investments, a safe harbor denotes an area thats explicitly protected by one set of regulations from another set of regulations.
+
+Hedge funds offer incentive‐based fees to attract and motivate top financial professionals.
+
+These fees are designed to align interests of managers with investors.
+
+The potentially high and performance‐based compensation in additional to asset-based fee is central to the idea that hedge fund management implements highly sophisticated investment strategies that offer investment opportunities distinct from those available in public investment space. 
+
+How managers are compensated change the nature of investment, including its risks and returns, and potential alignment between LPs and GPs
+
+- Investment Flexibilities of Hedge Funds
+
+The major investment flexibilities used by hedge funds not available to traditional fund (i.e. mutual funds) are:
+
+  i) Hedge fund strategies can invest in nonpublic, unlisted securities, i.e. securities issued to investors without support of prospectus and public offering and are not publicly traded.
+  
+  ii) Hedge funds use leverage, at times very large amounts.
+  Mutual funds in United States are limited in the amount of leverage they can employ, able to borrow up to 33% of their net asset base. 
+  Hedge funds do not have this restriction. 
+  Its not unusual to see hedge fund strategies employing leverage up to 10 times their net asset base. 
+  At extreme, there are hedge funds employing leverage up to 100 times their net asset base.
+  
+  iii) Hedge funds use derivative strategies more predominantly than traditional investment vehicles such as mutual funds. 
+  Some strategies, such as convertible arbitrage or managed futures, the ability to sell or buy options or futures is a key component of executing the fund's strategy.
+  The use of derivative strategies result in nonlinear cash flows that require more sophisticated risk management techniques. 
+  Derivative strategies also increase fund leverage and add new types of risks.
+  
+  iv) Hedge funds take short positions in securities to increase return or reduce risk. 
+  The ability to take very large short positions in public securities is one of key distinctions between hedge fund managers and traditional money managers.
+  Hedge fund managers incorporate their ability to short sell securities into their investment strategies. 
+  This is different from actions of most traditional money managers, who are tied to long‐only securities benchmark. 
+  Shorting and use of derivatives in different markets and asset classes also have effect of increasing fund leverage.
+  
+  v) Hedge funds sometimes trade in more esoteric or riskier underlying investments, such as structured products, digital assets, and other alternative investments.
+  
+  vi) Hedge funds are more actively managed than traditional investment vehicles, with more complex strategies and more dynamic risk exposures than traditional funds, which are constrained to generating performance linked to a benchmark.
+
+Some funds are considered hedge funds even though they possess only one or two of characteristics above.
+
+Hedge funds are a legal structure and not a singular strategy defined by sharp lines of division from other investments; as alternative investments evolve, the lines between hedge funds and other alternative investment strategies have continued to blur.
+
+\begin{center}
+\includegraphics[width=10cm, height=5cm]{"C:/Catapult Programme/Training/CAIA/Images/6.1.1 Im107.png"}
+\end{center}
+
+The greater restrictions on mutual funds facilitate distribution of shares more broadly to the public, whereas lesser restrictions on hedge funds are consistent with limited distribution to accredited investors or qualified purchasers whom regulators deem able to properly evaluate risks inherent in the offering.
+
+There are many reasons for the huge interest in hedge funds:
+
+  i) hedge fund returns offer low correlation with traditional investments and serve as diversifiers.
+  Bear markets fuel the interest of investors who saw their traditional stock portfolios decline in value.
+  
+  ii) many investors recognize the advantage hedge funds have with regard to investment mandate flexibility, such as going both long and short to maximize the value of their information about stocks, bonds, and other securities. 
+  
+  iii) many investors seek the attractive risk-adjusted returns of hedge fund industry.
+
+- Industry Concentration
+
+The hedge fund frauds and massive fund liquidations served to accelerate the trend of consolidation within the hedge fund industry. 
+
+Consolidation is an increase in proportion of a market represented by a relatively small number of participants (i.e. industry concentration). 
+
+An explanation is that hedge fund investors are seeking to invest with stable firms with demonstrated risk management processes and strong operational risk controls. 
+
+Large funds are perceived as being less risky (i.e. less likely to blow up).
+
+Another reason for hedge fund industry consolidation is the expense to hedge funds of facilitating due diligence by investors.
+
+Due diligence processes are performed by prospective investors prior to consummating their investment in a hedge fund. 
+
+These due diligence processes place a substantial burden on the managers of hedge funds targeted for investment.
+
+The largest hedge funds best afford the investments in staff and systems required to pass the strict investigations made by today's post‐crisis institutional investors.
+
+ - Hedge Fund Classification
+ 
+A critical dimension in understanding hedge funds is the spectrum of trading strategies that underlie their performance. 
+
+Hedge funds as a group are identified, at least in part, by their use of sophisticated trading strategies, and hedge funds are primarily differentiated from one another by their trading strategies.
+
+The diverse strategies that comprise the universe of hedge funds are organized into a classification of hedge fund strategies.
+
+A classification of hedge fund strategies is an organized grouping and labeling of hedge fund strategies. 
+
+Hedge funds are classified differently by different commentators, authors, and database managers.
+
+1. Macro and Managed Futures Funds
+
+  i) Macro
+  
+  ii) Managed Futures
+  
+2. Event‐Driven Hedge Funds
+
+  i) Activists
+
+  ii) Merger Arbitrage
+
+  iii) Distressed
+
+  iv) Event‐Driven Multistrategy
+  
+3. Relative Value Hedge Funds
+
+  i) Convertible Arbitrage
+
+  ii) Volatility Arbitrage
+
+  iii) Fixed‐Income Arbitrage
+
+  iv) Relative Value Multistrategy
+  
+4. Equity Hedge Funds
+
+  i) Long/Short
+
+  ii) Market Neutral
+
+  iii) Short Selling
+
+The hedge fund industry is composed of single‐manager funds and funds of funds. 
+
+A fund of funds is a hedge fund with underlying investments that are predominantly investments in other hedge funds.
+
+A single‐manager hedge fund, or single hedge fund, has underlying investments that are not allocations to other hedge funds.
+
+A single hedge fund may be a multistrategy fund.
+A multistrategy fund deploys its underlying investments with a variety of strategies and sub‐managers, much as corporation would use its divisions. 
+
+In a multistrategy fund, there's a single layer of fees, and sub‐managers are part of same organization.
+
+The underlying components of fund of funds are themselves hedge funds, with independently organized managers and second layer of hedge fund fees to compensate the manager for activities relating to portfolio construction, monitoring, and oversight.
+
+An analogy is made between hedge funds and stocks in understanding the distinction between single‐manager funds, multistrategy funds, and funds of funds.
+
+As single stocks are to mutual funds, single‐manager hedge funds are to funds of funds. 
+
+Investing in multistrategy fund rather than single‐manager hedge fund is akin to investing in a conglomerate stock rather than a stock focused on a single line of business.
+
+Funds of funds are compared to mutual funds. 
+As mutual funds invest in a large number of stocks across industries to diversify risk, funds of funds invest in multiple hedge fund managers and strategies to control risk.
+
+If a fund of funds includes a fund or strategy that experiences dramatic losses, investors’ percentage losses are reduced by other managers or strategies in the fund of funds that maintained or grew their value.
+
+Whereas portfolio concentration in a few stocks or hedge funds lead to success or failure, mutual funds and funds of funds offer returns in a much narrower range due to diversification inherent in multiple investments.
+
+Fund mortality, the liquidation or cessation of operations of funds, illustrates the risk of individual hedge funds and is important issue in hedge fund analysis.
+
+Funds with larger AUM and lower volatility exist longer.
+
+\newpage
+
+### Hedge Fund Fees
+
+Hedge funds allow managers the flexibility to implement sophisticated strategies and coinvest with LPs in a privately held vehicle structured with performance fee based compensation. 
+
+A hedge fund fee arrangement has two components: a management fee and incentive (or performance) fee. 
+
+The management fee is a constant percentage applied to net asset value (NAV) of fund on a monthly basis. 
+
+The NAV is value of fund's assets minus its liabilities.
+An incentive fee is a form of profit sharing wherein managers receive a stated percentage of profits. 
+
+The incentive fee is applied to profits of firm after management fee is deducted. 
+
+Incentive fees are received only if hedge fund manager earns a profit for investors during a fiscal year, and is subject to other conditions and limitations. 
+
+The management and incentive fees are expressed as pair of numbers, which represent annual management fees of 2% and incentive fees of 20% of profit. 
+
+From perspective of limited partner, fund managers have their own capital invested in the fund. 
+
+The primary reason for fund managers to devote a substantial portion of their wealth to their own fund is to align their financial interests with financial interests of limited partners and communicate their commitment in the fund and alignment of interests to prospective investors.
+
+Fund managers benefit from high fund returns both through incentive fees and investment in the fund.
+
+The attraction of high potential returns and associated fees generated as result of high returns, along with satisfaction of freedom to use more flexible investment tools and trading strategies, fueled the exodus of talent from traditional investment vehicles to hedge fund industry, and this pool of talent continues to drive growth of assets to this brand of investing. 
+
+In some cases, investors can negotiate with manager to reduce total amount of fees paid. 
+
+A hedge fund fee arrangement includes other terms, such as hurdle rates, highwater mark provisions, and details regarding exact computations and payment dates.
+
+- Computation of Hedge Fund Fees
+
+1% to 2% annual management fees are common in hedge fund industry and exceed management fees of most traditional investment pools, such as mutual funds.
+
+A 15% to 20% incentive fee is common in hedge funds in addition to management fee. 
+
+Incentive fees are not found in traditional investment vehicles. 
+
+Hedge fund fees range from 1% to 3% for management fees and up to 30% for incentive fees.
+
+Managers offered one set of fees (i.e. 2 and 20), hedge funds offer LPs a range of fee options accompanied by varying lockups or liquidity.
+
+More esoteric strategies are accompanied by higher incentive fees and/or management fees. 
+
+The management fee is collected on a monthly, quarterly, semiannual, or annual basis, and incentive fee is collected annually. 
+
+Incentive fees are very large when returns are high. 
+The total annual fee as a percentage of fund assets is:
+$$\text{Annual Fee} = \text{Management Fee} + \{ \text{Max}(0, \text{Incentive Fee} \times [\text{Gross Return above HWM} - \text{Management Fee} - \text{Hurdle Rate}])$$
+
+Management fee, incentive fee, and hurdle rate are expressed as percentages. 
+
+HWM denotes high‐water mark of fund.
+The total annual fee in currency is found by multiplying percentage fees by fund's NAV.
+
+#### Example 1
+
+TTMAR Hedge Fund has 1.5 and 30 fee arrangement, with no hurdle rate and NAV of R200 million at start of the year.
+At end of the year, before fees, NAV is R253 million. 
+
+Assuming management fees are computed on start‐of‐year NAVs and distributed annually, find annual management fee, incentive fee, and ending NAV after fees, assuming no redemptions or subscriptions.
+
+=>
+
+i) Annual management fee = $1.5\% \times R200M = R3M$
+
+ii) The fund earned profit = $R253M - R3M - R200M = R50M$. 
+The incentive fee on profit = $R50M \times 30\% = R15M$.
+
+iii) The ending NAV after distribution of fees = $R253M - R3M - R15M = R235M$
+
+#### Example 2
+
+VVMAR Hedge Fund has 1.5 and 30 fee arrangement, with no hurdle rate and NAV of R200 million at start of the year.
+At end of the year, after fees, the NAV is R270 million. 
+Assuming management fees are computed on start‐of‐year NAVs and distributed annually, find annual management fee, incentive fee, and ending NAV before fees, assuming no redemptions or subscriptions.
+
+=>
+
+The incentive fee represents 30% of total profits for general partner and 70% of net profits to limited partners. 
+Since profit to limited partners is R70 million, the incentive fee to manager $= R70M × \frac{30\%}{70\%} = R30M$.
+
+The NAV after management fees but before incentive fees is $ = R300M$ 
+
+The management fees are 1.5% of starting NAV: $1.5\% × R200M = R3M$, inferring an ending NAV of $R303M$ before fees.
+
+$R303M$ is reduced to $R300M$ by 1.5% management fee on starting value of $R200M$.
+
+The fund earned a profit of $(R300M - R200M) = R100M$ after management fees. 
+
+The incentive fee to manager was $R100M \times 30\% = R30M$. 
+
+The profit after fees to limited partners was $R70M$, leaving an NAV of $R270M$ after all fees.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
