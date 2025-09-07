@@ -1,0 +1,635 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+  - \usepackage{amsmath}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lesson 1: ARCH Model
+
+### Common Features of Financial Asset Returns
+
+  1) Asset return is more stable than asset price time series data
+
+In a lot of financial research, use asset returns instead of asset prices to conduct analysis for a financial asset:
+
+  i) An asset return provides same-scale time series data for all financial assets.
+  Its easier for comparison among several financial assets with different price levels.
+  
+  ii) Asset return time series is more stable than asset price time series. 
+  
+  iii) If the asset return is small, can approximate the return by using the difference of natural log of price
+$$r_t = \frac{P_t - P_{t-1}}{P_{t-1}} \approx \log(P_t) - \log(P_{t-1})$$
+
+  2) Volatility of asset returns vary during different time periods
+  
+In portfolio management and risk management, managers control risk by monitoring the volatility of the underlying assets. 
+
+Variance and standard deviations are metrics to measure volatility.
+
+The local variance of most stock returns changes substantially across time period, i.e. time series data exhibits heteroskedasticity. 
+
+Returns usually indicate pockets of time from whole period where movement of returns are more volatile than others.
+
+These high volatility pockets do not spread randomly during the whole time period, i.e. volatility clustering. 
+
+There is autocorrelation of asset returns. 
+A highly volatile return one day is followed by another highly volatile return the next day. 
+
+Thus, past volatilities will still have an impact on today's volatility.
+
+The highly volatile periods tend to group together.
+
+  3) Asset return distribution has heavier tails than Normal Distribution
+
+### Conditional Means and Conditional Variances
+
+Assume $X$ and $Y$ are two discrete random variables:
+
+  i) Conditional mean of Y given X
+  $$\mu_{Y|X} = \sum f(Y|X) Y = \mathbb{E}[Y|X], \hspace{10pt} \text{where } f(\cdot) \text{ is conditional probability}$$
+  
+  ii) Conditional variance of Y given X
+  $$\sigma^2_{Y|X} = \sum Y^2 f(Y|X) - \mu^2_{Y|X}$$
+  $$= \mathbb{E}[Y^2|X] - \mu^2_{Y|X}$$
+  
+The central idea is to incorporate the concept of using past value information to predict today's value in a model.
+
+Consider AR(p) model with a constant conditional variance
+$$\text{Var}(X_t | X_{t-1}, X_{t-2}, \cdots, X_{t-p}) = \sigma^2$$
+
+Then AR(p) model is
+$$X_t = f(X_{t-1}, X_{t-2},\cdots, X_{t-p}) + e_t, \hspace{10pt} \text{where } e_t \sim \text{WN}(0, \sigma^2)$$
+
+Now, if we introduce a non-constant variance to AR(p) model, can rewrite model as:
+$$X_t = f(X_{t-1}, X_{t-2}, \cdots, X_{t-p}) + \sigma(X_{t-1}, X_{t-2}, \cdots, X_{t-p})_t e_t$$
+where $\sigma(X_{t-1}, X_{t-2}, \cdots, X_{t-p})_t$ - standard deviation for $X_t | X_{t-1}, X_{t-2}, \cdots, X_{t-p}$.
+
+This standard deviation will change when $X_{t-1}, X_{t-2}, \cdots, X_{t-p}$ changes.
+
+The above is a general variance function model for conditional variance. 
+ARCH and GARCH are all types of variance function models.
+
+NB: The common observation is that the conditional mean of asset return is 0.
+
+### ARCH(1) Model
+
+ARCH stands for autoregressive conditional heteroskedasticity.
+
+From stationary asset return time series $r_t$, define ARCH(1) as:
+$$r_t = \sigma_t e_t, \hspace{10pt} \text{where } e_t \sim iidN(0,1)$$
+and 
+$$\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1}$$
+with $\alpha_0 > 0$ and $0 \le \alpha_1 < 1$.
+
+The above ensures variance is non-negative.
+
+The requirement of $\alpha_1 < 1$ also ensures $r_t$ is stationary with finite variance.
+
+Instead of assuming $e_t \sim N(0,1)$, can assume $e_t$ follows a Student's t-distribution.
+
+The 1 in ARCH(1) refers to the lag 1 asset return in the variance equation.
+
+Properties of ARCH(1):
+
+  i) ARCH(1) is strictly stationary
+  
+From $r_t = \sigma_t e_t$ and $\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1}$, then
+$$r^2_t = \alpha_0 e^2_t + \alpha_1 e^2_t r^2_{t-1}$$
+Iterating the above definition gives,
+$$r_t = e_t \sqrt{\alpha_0 \left( 1 + \sum^{\infty}_{j=1} \alpha^j_1 e^2_{t-1} \cdots e^2_{t-j} \right) }$$
+
+  ii) $r_t$ is conditionally Normally Distributed
+  
+Conditional mean is
+$$\mathbb{E}[r_t | r_s, s<t] = \mathbb{E}[\sigma_t e_t | r_s, s<t]$$
+$$= \sigma_t \mathbb{E}[e_t]$$
+$$\sigma_t \times 0 = 0$$
+
+Conditional variance is
+$$\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1}$$
+
+$$\therefore r_t | r_{t-1} \sim N(0,\alpha_0 + \alpha_1 r^2_{t-1}) $$
+
+The current variance of $r_t$ depends on the past value of $r_{t-1}$, i.e. when $r_{t-1}$ has a large value at $t-1$, the variance at $t$ will be large too and $r_t$ will have large volatility at $t$.
+
+The model set up is able to capture the volatility clustering phenomenon.
+
+  iii) $r_t$ is White Noise
+  
+Unconditional mean is
+$$\mathbb{E}[\mathbb{E}(r_t | r_s, s<t)] = 0$$
+
+Unconditional variance is
+$$\text{Var}[r_t] = \mathbb{E}[r^2_t]$$
+$$= \mathbb{E}[e^2_t \left( \alpha_0 \left( 1 + \sum^{\infty}_{j=1} \alpha^j_1 e^2_{t-1} \cdots e^2_{t-j} \right) \right)]$$
+$$= \alpha_0 (1 + \alpha_1^1 + \alpha_1^2 + \cdots + \alpha_1^{\infty})$$
+$$= \frac{\alpha_0}{1 - \alpha_1}, \hspace{10pt} \text{where } 0 \le \alpha_1 <1$$
+
+Autocovariance is
+$$\text{Cov}(r_{t+h}, r_t) = \mathbb{E}[r_{t+h}r_t]$$
+$$\mathbb{E}[\mathbb{E}(r_{t+h}r_t | r_s, s<t+h)]$$
+$$= \mathbb{E}[r_t \mathbb{E} (r_{t+h}| r_s, s<t+h)]$$
+$$= \mathbb{E}[r_t \times 0] = 0, \hspace{10pt} \forall h >0$$
+Thus, the unconditional distribution of $r_t$ is
+$$r_t \sim \text{white noise}\left(0, \frac{\alpha_0}{1 - \alpha_1} \right)$$
+
+$r_t$ is unconditionally homoscedastic when $0 \le \alpha_1 <1$.
+
+When $r_t$ is stationary $(0 \le \alpha_1 < 1)$, $r_t$ is conditionally heteroskedastic but unconditionally homoscedastic.
+
+  iv) $r_t$ is not i.i.d
+  
+Although $r_t$ has 0 covariance to its past values, $r_t^2$ does depend on squared past returns:
+$$\mathbb{E}[r^2_t | r_{t-1}] = \mathbb{E}[\alpha_0 e^2_t + \alpha_1 e^2_t r^2_{t-1} | r_{t-1}]$$
+$$= \alpha_0 + \alpha_1 r^2_{t-1}$$
+Thus ARCH(1) is a case where the elements in the process have 0 covariance, but elements are not independent.
+
+NB: Two variables with 0 covariance does not mean they are independent.
+
+  v) $r^2_t$ is a non-Gaussian AR(1) process
+  
+From ARCH(1), take square of $r_t$ and rewrite
+$$r_t^2 = \sigma^2_t e^2_t \tag{1}$$
+$$\alpha_0 + \alpha_1 r^2_{t-1} = \sigma^2_t \tag{2}$$
+Then subtract (2) from (1),
+$$r^2_t - (\alpha_0 + \alpha_1 r^2_{t-1}) = \sigma^2_t (e^2_t - 1)$$
+$$\Rightarrow r^2_t = \alpha_0 + \alpha_1 r^2_{t-1} + v_t$$
+where $v_t = \sigma^2_t (e^2_t -1)$ is non-normal white noise;
+$(e^2_t -1) \sim \chi^2$ since $e^2_t \sim N(0,1)^2$
+
+If $\mathbb{E}[r^4_t]<\infty$, then $r^2_t$ has same ACF as AR(1) process.
+
+ACF for $r^2_t$ is
+$$\rho_{r^2}(h) = \alpha_1^{|h|}, \hspace{10pt} \forall h \text{ and } \alpha_1 <1$$
+
+Knowing that the squared asset return is also a stationary AR(1) process, use ACF and PACF plots of asset return and squared asset return to look for an ARCH(1) model. 
+
+If the asset return time series plot exhibits a white noise pattern and the squared asset return PACF plot shows cut off pattern after lag 1, use an ARCH(1) model for modeling variance of the asset return.
+
+  vi) $r_t$ has heavier tails than Standard Normal Distribution if $\alpha_1 < \frac{1}{3}$
+
+When $3 \alpha_1 <1$ and $\mathbb{E}[r^4_t]< \infty$, can show that kurtosis of $r_t$ is greater than 3.
+
+That is, $r_t$ has heavier tails than standard normal distribution. 
+
+  vii) ARCH(m) Process
+
+An ARC(m) process is the process to predict current variance with squared asset return values going back to $m$ time periods,
+$$r_t = \sigma_t e_t, \hspace{10pt} \text{where } e_t \sim iidN(0,1)$$
+and $$\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1} + \alpha_2 r^2_{t-2} + \cdots + \alpha_m r^2_{t-m}$$
+
+With some restrictions on ARCH(m) coefficients, the squared asset returns is AR(m)
+
+\newpage
+
+# Lesson 2: GARCH Model
+
+GARCH stands for generalized autoregressive conditional heteroskedasticity, and is an extension of ARCH model. 
+
+In the variance function of ARCH model, a lagged variance term is added to the right of the equation to become a GARCH model.
+
+GARCH(1,1) is
+$$r_t = \sigma_t e_t, \hspace{10pt} \text{where } e_t \sim iidN(0,1)$$
+and
+$$\sigma_t^2 = \alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 \sigma^2_{t-1}$$
+with $\alpha_0 > 0$, $0 \le \alpha_1 <1$ and $0 \le \beta_1 < 1$.
+
+The above 3 requirements make $r_t$ stationary and variance non-negative and finite.
+
+Structurally, the relationship between GARCH and ARCH models is similar to that between ARMA and AR models.
+
+For ARCH(1) model,
+$$r_t = e_t \sqrt{\alpha_0 + \alpha_1 r^2_{t-1}}$$
+use $r_{t-1}$ (i.e. AR part of ARCH) to predict $r_t$.
+
+Similarly, GARCH(1,1) model,
+$$r_t = e_t \sqrt{\alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 \sigma^2_{t-1}}$$
+use $r_{t-1}$ (i.e. AR part of GARCH) and $\sigma_{t-1}$ (i.e. MA part of GARCH) to predict $r_t$.
+
+Though ARCH model covers all features of asset returns, it requires many parameters to properly model the asset return.
+
+GARCH model was developed so there's no need to include too many terms in a model.
+
+### Properties of GARCH(1,1)
+
+  i) $r_t$ is conditionally Normally Distributed
+  
+Same proof as ARCH(1),
+$$r_t | r_{t-1} \sim N(0, \alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 \sigma^2_{t-1})$$
+
+  ii) $r^2_t$ is ARMA(1,1) process
+  
+Since GARCH(1,1) is
+$$r_t = \sigma_t e_t \tag{1}$$
+and
+$$\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 \sigma^2_{t-1} \tag{2}$$
+
+Then subtract (1) and (2),
+$$r^2_t = \alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 \sigma^2_{t-1} + v_t \tag{3}$$
+where $v_t = \sigma^2_t (e^2_t -1) \sim$ white noise.
+
+Since $v_{t-1} = \sigma^2_{t-1} (e^2_{t-1} -1)$ and $r^2_{t-1} = \sigma^2_{t-1} e^2_{t-1}$, can get 
+$$\sigma^2_{t-1} = r^2_{t-1} - v_{t-1} \tag{4}$$
+Substitute (4) into (3),
+$$r_t^2 = \alpha_0 + (\alpha_1 + \beta_1)r^2_{t-1} + v_t - \beta_1 v_{t-1}$$
+The above is ARMA(1,1) with squared asset return as AR part and white noise as MA part.
+
+To ensure stationarity, $0 < \alpha_1 + \beta_1 <1$
+
+  iii) $r_t$ is White Noise
+  
+The unconditional $r_t$ distribution is,
+$$r_t \sim \text{white noise}\left(0, \frac{\alpha_0}{1 - (\alpha_1 + \beta_1)} \right), \hspace{10pt} \text{where } 0 < \alpha_1 + \beta_1 <1$$
+
+$r_t$ is unconditionally homoscedastic when $\alpha_1 + \beta_1 <1$.
+
+When $r_t$ is stationary $(0 < \alpha_1 + \beta_1 <1)$, $r_t$ is conditionally heteroskedastic but unconditionally homoscedastic.
+
+  iv) GARCH(1,1) has infinite memory
+  
+By iterating the variance equation from GARCH(1,1),
+$$\sigma_{t^2} = \alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 \sigma^2_{t-1}$$
+$$= \alpha_0 + \alpha_1 r^2_{t-1} + \beta_1 (\alpha_0 + \alpha_1 r^2_{t-2} + \beta_1 \sigma^2_{t-2})$$
+$$= \alpha_0 + \alpha_0 \beta_1 + \alpha_1 r^2_{t-1} + \alpha_1 \beta_1 r^2_{t-2} + \beta^2_1 (\alpha_0 + \alpha_1 r^2_{t-3} + \beta_1 \sigma^2_{t-3})$$
+$$= \alpha_0 (1 + \beta_1 + \beta_1^2 + \beta^3_1 \cdots) + \alpha_1 \sum^{\infty}_{i=1} \beta_1^{i-1} r^2_{t-i}$$
+Thus, all past asset returns have influence on today's conditional variance, i.e. GARCH(1,1) has infinite memory.
+
+All coefficients should decay in order to maintain stationarity of GARCH(1,1) process.
+
+Thus, GARCH model is better to model time series data than ARCH(1) model.
+
+### GARCH(p,q) Model
+
+Can extend GARCH(1,1) model to GARCH(p,q) model.
+
+Define GARCH(p,q) as
+$$r_t = \sigma_t e_t, \hspace{10pt} \text{where } e_t \sim iidN(0,1)$$
+
+and variance equation,
+$$\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1} + \alpha_2 r^2_{t-2} + \cdots + \alpha_p r^2_{t-p} + \beta_1 \sigma^2_{t-1} + \beta_2 \sigma^2_{t-2} + \cdots = \beta_q \sigma^2_{t-q}$$
+
+where $\alpha_0 >0$, $\alpha_i \ge 0$ for $i=1,\cdots,p$ and $\beta_j \ge0$ for $j=1,\cdots,q$.
+
+Can rewrite the variance equation with backshift operator,
+$$\sigma^2_t = \alpha_0 + \alpha(B) r^2_t + \beta (B) \sigma^2_t$$
+where 
+$$\alpha (B) = \alpha_1 B + \alpha_2 B^2 + \cdots + \alpha_p B^p$$
+and
+$$\beta (B) = \beta_1 B + \beta_2 B^2 + \cdots + \beta_q B^q$$
+For the above characteristic equations, the absolute values of roots of $B$ must be greater than 1 to ensure $r_t$ is stationary.
+
+### Model Diagnostics
+
+There are a number of tests used to check for ARCH and GARCH models.
+
+  i) Ljung-Box Test
+  
+is used to see if there's serial correlation in a time series. 
+
+Use this test if there's an overall correlation in the residuals or squared residuals from a time series model, including ARCH and GARCH models. 
+
+$H_0:$ There's no serial correlation in the time series.
+
+If p-value < 0.05, reject null hypothesis and time series has a serial correlation issue.
+
+  ii) Information Criteria
+  
+AIC and BIC are metrics used to evaluate overall model specifications. 
+
+The lower the numbers of AIC and/or BIC, the better the model specifications. 
+
+  iii) Log Likelihood Number
+
+Use the log likelihood number to evaluate the goodness-of-fit of a model if its fitted with the maximum likelihood method. 
+
+The lower the log likelihood number, the better the model fit.
+
+  iv) Engle's ARCH Lagrange Multiplier (LM) Test
+  
+Engle's ARCH LM test, or Engle's ARCH test, determines if there's a serial correlation (autocorrelation) issue in the squared residuals of a time series model. 
+
+$H_0:$ There's no serial correlation in the squared residuals.
+
+  v) Nyblom Stability Test
+  
+Is the test to check if there is a regime change for time series over time. 
+
+The test checks if there is any structural change among variables or if coefficients are stable with no variation overtime. 
+
+$H_0:$ There is no regime change and the variances for coefficients are 0.
+
+  vi) Sign Bias Test
+  
+Is the test to check if shocks not modeled by the model have an impact on volatilities. 
+
+The sign bias test is used to determine the impact of large and small shocks on volatility. 
+
+The negative sign bias test is to check if negative shocks not modeled by the model have an impact on volatility. 
+
+The positive sign bias test is to check if positive shocks not modeled by the model have an impact on volatility.
+
+$H_0:$ There is no impact from shocks not modeled by the model.
+
+  vii) Adjusted Pearson Goodness-of-Fit Test
+  
+This test compares the empirical distribution of standard residuals with the selected theoretical distribution. 
+
+It's a chi-squared test.
+
+$H_0:$ The empirical distribution of the standard residuals is equal to theoretical distribution.
+
+\newpage
+
+# Lesson 3: Bayesian Estimator for GARCH Model
+
+### Bayesian Statistics
+
+Bayesian statistics uses Bayes' theorem as the foundation to apply probabilities to data analysis. 
+
+Frequentist statistics assume parameters like mean, variance, and standard deviations are unknown but fixed parameters. 
+
+Maximum likelihood estimation belongs to frequentist statistics. 
+
+Bayesian statistics assume mean, variance and standard deviations are random variables with probability distributions. 
+
+This is the main difference between frequentist statistics and Bayesian statistics. 
+
+To run Bayesian statistics, a researcher has to either use experience or other techniques to assume a parameter's probability distribution before running the analysis. 
+
+These probability distributions are prior probability distributions or priors. 
+
+Then combine the information from data to derive posterior probability distributions for parameters or posteriors. 
+
+Now the parameters are not unknown fixed values but rather random variables, can make analysis more flexible.
+
+This method is criticized for subjective parameter probability distribution choice by the researcher before running the data analysis. 
+
+A posterior distribution is the multiplication of the likelihood function and the prior distribution.
+
+When posterior distribution formula is too complicated to manipulate or is in high dimension, conduct sampling to obtain a series of sample data points from the posterior distribution to investigate its marginal distribution density, mean, and other parameters.
+
+The most popular sampling method is the Markov-Chain-Monte-Carlo (MCMC) method. 
+
+Monte Carlo is a random sampling method when the samples are independent. 
+
+Markov-Chains address random samples that are autocorrelated to each other. 
+
+MCMC method is a random sampling method for autocorrelated samples. 
+
+There are several sampling algorithms under the MCMC method. 
+
+The two most popular ones are the Metropolis-Hastings algorithm and the Gibbs Sampling algorithm. 
+
+The MCMC method can be sensitive to the initial values used to start sampling. 
+
+Therefore, use the result from maximum likelihood estimation as the starting values for Bayesian estimation.
+
+### Bayesian Estimation on GARCH Model
+
+Use Student's t-distribution to model asset returns due to their heavy tail distribution.
+
+GARCH model with Student's t distribution,
+$$r_t = \epsilon_t \sqrt{\frac{v-2}{v} \omega_t \sigma^2_t}$$
+
+where $t = 1, \cdots, T$; $\epsilon_t \sim iidN(0,1)$; $\omega_t \sim iid \text{ Inverse Gamma}(\frac{v}{2}, \frac{v}{2})$; $\sigma^2_t = \alpha_0 + \alpha_1 r^2_{t-1} + \beta \sigma^2_{t-1}$ where $\alpha_0 >0$, $\alpha_1, \beta \ge 0$ and $v>2$.
+
+The above restrictions ensure variance is positive and finite, but not stationarity.
+
+Inclusion of $\omega_t$ as a prior multiplied with variance of $r_t$ in the model is that the marginal distribution of $r_t$ becomes a Student's t-distribution with degrees of freedom $v$.
+
+The priors for $\alpha_0$, $\alpha_1$, $\beta$ are assumed to be truncated normal distributions with domains greater than 0 since these restrictions ensure positive and finite variance.
+
+The prior for $v$ is shifted exponential distribution.
+
+The joint posterior distribution is
+$$p(\alpha_0, \alpha_1, \beta, v, \omega_t | r_t) = \frac{l(r_t | \alpha_0, \alpha_1, \beta, v, \omega_t) p(\alpha_0, \alpha_1, \beta, v, \omega_t)}{p(r_t)}$$
+
+Then, MCMC will sample from joint posterior distribution for each parameter.
+
+From sampled data, can generate the density for each parameter.
+
+MCMC sampling is sensitive to initial values. 
+
+One method to avoid extreme values from initial values is to drop the first $n$ numbers of sampled observations (i.e. burn-in period). 
+
+In MCMC, a sample series is called a chain.
+
+Generate two chains to check if the sample series are close enough to the posterior needed to analyze (i.e. convergence diagnostics). 
+
+There are several methods to conduct convergence diagnostics. 
+
+The Gelman-Rubin Diagnostic provides a "Scale Reduction Factor" to indicate if several series converge. 
+
+A value below 1.2 is okay since this diagnostic requires at least two chains, thus create two chains from MCMC.
+
+Trace plots are for parameters.
+They represent the two chains sampled from MCMC.
+
+The trace plot lays out the way the first sampled data is on the leftmost side of the plot, and the second sampled data follows it to the right and so on and so forth. 
+
+The Gelman-Rubin statistic tests for lack of convergence by comparing the variance between multiple chains to the variance within each chain.
+
+If convergence has been achieved, the between-chain and within-chain variances should be identical. 
+
+If r_hat < 1.2 for all model parameters, there's confidence that convergence has been reached.
+
+The MCMC is sensitive to starting value. 
+If starting value is way off, it can impact the final result of MCMC.
+
+Thus, assigning starting values to parameters before the MCMC starts sampling can restrain MCMC from going wild when sampling.
+
+Might need to run MCMC a number of times for MCMC to converge to a solution and find reasonable coefficient estimates.
+
+\newpage
+
+# Lesson 4: GARCH Model under State Space Model construct
+
+### State Space Models
+
+State space model (or dynamic linear model, DLM) is another popular time series model class. 
+
+State space model (SSM) states that there are two types of time series variables: one that can be observed and one that cannot be observed.
+
+The ones that cannot be observed are called states.
+
+Those that can be observed are called observations instead. 
+
+The states are generated by a system that describes how states evolve over time. 
+
+Need to find out the structure of this system but only have observations.
+
+Observations are dependent on states with noise added.
+
+An observation equation is used to describe the relationship between observations and states. 
+
+Then add a measurement noise ($v_t$) to the observation equation to fill the gap between the observations and states.
+
+Assume $y_t$ is the time series observation variable and $x_t$ is the time series state variable.
+
+Observation Equation,
+$$y_t = A_t x_t + v_t, \hspace{10pt} v_t \sim \text{WN}(0, V_t) \tag{1}$$
+where $v_t$ - measurement noise.
+
+State Equation,
+$$x_t = \Phi_t x_{t-1} + w_t, \hspace{10pt} w_t \sim \text{WN}(0, W_t) \tag{2}$$
+where $w_t$ - system noise.
+
+Assume $v_t$ and $v_s$ are independent when $t \ne s$; $w_t$ and $w_s$ are uncorrelated on all lags.
+
+The above two equations form the basis of a state space model.
+
+\begin{center}
+\includegraphics[width=5cm, height=2cm]{"C:/Catapult Programme/Training/Msc FE/MScFE 610 Financial Econometrics/Images/Im16.png"}
+\end{center}
+
+The evolution of state variable is represented by a state equation. 
+
+This is the system or model created by theory or process.
+
+State equation(s) can be a single equation or a set of equations to describe how states are generated. 
+
+Then, there are observation equation to connect states from a state equation to observations with a measurement noise.
+
+The number of state variables and observation variables can be more than one state variable or observation variable in a state space model. 
+
+The number of state variables also do not have to be the same as the number of observation variables. 
+
+The state space model design can be linear or non-linear.
+
+In (1) and (2), then $A_t$ and $\Phi_t$ both have time subscript, i.e. can change by time.
+
+If this is the case, its a time-varying state space model.
+
+If $A_t$ and $\Phi_t$ are fixed regardless of time (no time subscript), its a time-invariant state space model.
+
+The state space model is a very general and flexible time series modeling format. 
+
+Can construct a time series model for state equation and then add an observation equation to connect states with observations or data.
+
+Once a state space model is built, use the model to achieve the following three goals:
+
+  i) Predicting - forecast future values of states given all the information and data we have today
+  
+  ii) Filtering - estimate current values of states given all the information and data we have today
+  
+  iii) Smoothing - estimate pass values of states given all the information and data we have today
+
+### Properties of State Space Model
+
+  i) $x_t$ is a Markov Process
+  
+That is, $\mathbb{P}[x_t | x_{t-1}, x_{t-2}, \cdots, x_0] = \mathbb{P}[x_t | x_{t-1}]$.
+
+Markov process states that the probability of the value of a state at current time only depends on the value of the most recent state.
+
+The values of the state from older times do not have an impact on today's value.
+
+That is, $x_t$ is memoryless.
+
+  ii) $y_t$ is fully specified given $x_t$
+
+$$\mathbb{P}[y_t | x_t, x_{t-1}, \cdots, x_0; y_{t-1}, y_{t-2}, \cdots, y_1] = \mathbb{P}[y_t | x_t]$$
+
+With the above two properties, can write the joint distribution function for states and observations,
+$$\mathbb{P}[x_{0:t}, y_{1:t}] = \mathbb{P}[x_0] \Pi^t_{i=1} \mathbb{P}[x_i | x_{i-1}] \mathbb{P}[y_i | x_i]$$
+
+For $x_0$, assume its value or its distribution in order to proceed with the model building.
+
+State space modeling is gaining popularity among researchers:
+
+  i) Only need the most recent information to estimate the value of current state.
+  This property reduce the amount of historical data needed and data storage space required to estimate SSM.
+  
+  ii) SSM allows for time varying coefficients.
+  Its very helpful if the modeling period happens to have regime change.
+  Time varying SSM is good for capturing this change.
+
+Other advantages of SSM include:
+
+  a) Use SSM to handle missing values by using forecast function.
+
+  b) Apply SSM to build a model for complex multivariate systems.
+
+  c) Use SSM to build a model for non-stationary time series.
+
+### Estimation of Parameters for State Space Model
+
+Once state space model is specified, can estimate coefficients, i.e. $A_t, \Phi_t, V_t$ and $W_t$.
+
+The most popular estimation method is MLE. 
+
+Bayesian estimation is another viable choice for parameter estimation. 
+
+Bayesian estimation is a suitable approach for a state space model given the nature of the question of SSM is to estimate the values of states given all the observations known.
+
+### Kalman Filter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
