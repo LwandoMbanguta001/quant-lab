@@ -1,0 +1,357 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ch3: Futures
+
+### Introduction
+
+Futures contracts are standardised forward contracts, and they 
+developed because forward contracts are difficult to reverse.
+
+There's also a need for efficient price discovery which means liquidity needs to be enhanced, and this only comes about when activity in the market increases, and in pursuance of this contracts need to be standardised in terms of quality, quantity and expiry date. 
+
+Once this need is satisfied, an exchange is an appropriate market form, and an exchange mitigates risk, which further enhances the breadth and depth of the market.
+
+This does not mean all forward markets are destined to become futures markets. 
+
+In some markets, reversibility of deals is not crucial and customisation in terms of quantity and expiry is required. 
+
+For example, the outright forward forex market is where commercial transactions (importing and exporting) require customisation and rarely require reversal.
+
+### Futures Defined
+
+A futures contract is defined as a contractual obligation in terms of which one party to the deal undertakes on T+0 to sell an asset at a price (determined on T+0) on a future date, and the other party undertakes to buy the same asset at the same price on the same future date. 
+
+The differences (to forward contracts) are that the contracts are standardised, the underlying assets are standardised, and the contracts are exchange-traded, because these qualities render the contracts marketable.
+
+NB: futures are marketable in the sense that they can be “closed out” by undertaking an equal and opposite transaction.
+
+Forward markets are OTC markets (mostly), whereas futures markets are all formalised in the form of financial exchanges, the members of which effect all trading, and the exchange guarantees all transactions by interposing itself between buyer and seller.
+
+Thus, a future is a standardised contract which obligates the buyer to accept delivery of, and the seller to deliver, a 
+standardised quantity and quality of an asset at a pre-specified price on a prestipulated date in the future.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im24.png"}
+\end{center}
+
+At least one party to the contract must be a member of the exchange.
+
+Even though a client may buy a future from, or sell a future to, a member of the exchange, the transaction is guaranteed by the exchange, i.e. the exchange acts as the seller for each buyer, and as the buyer for each seller: it interposes itself in each futures deal.
+
+The futures market is a "zero sum game", i.e. for every buyer of a contract there's a seller.
+
+Consequently, if a buyer makes a loss, the seller gains by same amount.
+
+Though the future emphasisises delivery, its rare in practice, particularly in financial futures markets.
+
+Participants in futures markets prefer settlement of profit or loss on expiry date.
+
+NB: Delivery takes place only is a few financial and commodity futures contracts.
+
+Every futures contract has a specific size, as opposed to a forward contract where size is negotiated between buyer and seller. 
+
+A futures contract is a derivative instrument, i.e. it and its value are derived from an underlying asset and it cannot exist in the absence of this asset. 
+
+The underlying assets of futures contracts are divided into two broad categories, i.e. specific assets and notional assets, and there are various subcategories under each, such as storable assets, perishable assets, income-producing assets, etc. 
+
+Can categorise and sub-categorise futures broadly into:
+
+1) Financial futures
+  
+  i) Interest rates
+  
+  ii) Shares/equities
+  
+  iii) Currencies
+  
+2) Commodity futures
+
+  i) Agricultural
+  
+  ii) Metals and energy
+
+Futures market participants are fixing a price now for settlement in the future, thus the price of the future is related to the price of the underlying instrument.
+
+As the price of the underlying instrument varies, so does the price of the future (but not always to the same extent)
+
+The price of the future at expiry time on the expiry date is equivalent to spot price. 
+
+Thus futures price moves closer to spot price as time goes by (i.e. it converges on the spot price).
+
+The contract trades (i.e it can be reversed = “closed out”) because it has a value, and this value is largely influenced by the spot price of the underlying asset, but also by expectations. 
+
+Price is the only feature of future that varies and each contract has a minimum movement size or “tick size”.
+
+It's a feature of futures markets that no money changes hands when a deal is struck. 
+
+However, both buyer and seller are required to make a “good faith” deposit - termed the “margin”.
+This deposit is made with the broker who, in turn, passes it on to the exchange.
+
+### Futures Trading Price vs Spot Price
+
+Buyers and sellers of futures contracts trade at market prices for relevant futures, i.e. at prices established in the market by the interplay of supply of and demand for the futures contracts.
+
+These prices are different from spot prices of underlying assets, but the prices of futures are closely related to spot prices of underlying assets.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im25.png"}
+\end{center}
+
+The price of a future always converges upon the spot (cash market) price as the expiry date gets closer. 
+
+This is because basis (i.e. similar to net carry cost) becomes smaller with passage of time. 
+On expiry date, the basis (and net carry cost) is zero.
+
+At times, the future can trade above and at discount to the spot price.
+The difference between spot and market price is not consistent.
+
+This is because expectations play a major role in the determination of futures price.
+
+### Organisational Structure of Futures Markets
+
+The futures market is primary market, while futures cannot be sold, they can be "closed out" at any time dealing in the opposite direction.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im26.png"}
+\end{center}
+
+The market form of futures market is formal in the shape of an exchange. 
+
+With regards to trading driver and trading system, the futures market in South Africa is order and ATS (automated trading system), i.e. an order-matching method on an ATS is followed.
+
+1) The broking members of the exchange register their clients with the exchange (this is unique as most futures exchanges do not know who the clients of the members are).
+
+2) These members are broker-dealers, as they may deal as principals or agents and the capacity of trading is disclosed to the client. 
+The broker-dealers at times deal in dual capacity in a single deal.
+
+3) Some broker-dealers do not have clients and only deal as principals, and some broker-dealers deal only as agents with clients (both are called single capacity).
+
+4) The ATS is constructed in such a way that broker-dealers input their orders into the system, and sellers do so too.
+The system places on the screen the best buy and sell orders for all different contracts and has a drop-down facility where the non-best buy and sell orders appear (to show the depth of the market).
+
+5) Because buyers and sellers are ultimately to deal with the exchange, identities of broker-dealers are not displayed.
+
+6) When two opposite orders match, the deal is automatically 
+consummated by ATS, and the two members are informed via the 
+system. 
+The clients (if applicable) are informed in turn by their broker-dealers.
+
+7) A broker-dealer can deal in dual capacity, meaning a single order is split between principal and agent.
+
+Because large deals may affect prices unduly, the Rules of the exchange allow for off-ATS trading. 
+
+These deals are negotiated between members and then reported on the ATS, but most futures deals are done via the ATS.
+
+In some futures markets, the open outcry floor method of trading is preferred. 
+
+This is also an order driven trading system, which is highly transparent because the broker-dealers face each other in a “trading pit”, i.e. ensuring clients’ orders (and broker-dealers’ own orders) are transacted at the best prices. 
+
+An ATS is seen as imitating the transparency of floor trading.
+
+All deals are cleared through a clearing house (called JSE Clear) that is separate from the exchange. 
+
+The clearing house is regarded as being responsible for the management of the market. 
+
+The clearing house is backed by a Fidelity fund.
+
+### Margining and Marking to Market
+
+The Clearing House (CH) of the exchange becomes the buyer from every seller and the seller to every buyer the minute a trade matches on the trading platform.
+
+This process is known as novation. 
+As a result, the exchange now assumes the credit risk of each party that holds and open position, whether short or long.
+
+The exchange uses two lines of defence to protect the exchange from potential loss through the default by the open position holder:
+
+  i) Initial margin
+  
+The CH requires that for an open position, either long or short, to place a “good faith deposit’ known as an initial margin. 
+
+It's usually 5-8% of the value of the contract and is sufficient to cover a single day loss on an open position.
+
+The initial margin protects the exchange from default because it's extremely unlikely that losses on positions in a single day will exceed the initial margin.
+
+When a position is closed out (a long position is sold or vice versa) or the contract reaches expiry, the initial margin is refunded to the client.
+  
+  ii) Variation margin
+
+Each open position is marked-to-market at the end of each trading day and is based on daily settlement price. 
+
+This generates a variation margin which is a cash payment to the CH from the losing position and payment to the winning position from the CH.
+
+As a result of this daily process, futures trading is referred to as a ‘zero sum game’- the CH transfers variation margin from the loser to the winner. 
+
+If an open position holder is unable to meet a variation margin call, the exchange will “close the member out”. 
+
+That is, the exchange takes an offsetting contract and the loss is covered from the client’s initial margin
+
+### Open Interest
+
+This is the term for the number of outstanding contracts of a particular contract, i.e. number of contracts that are still open and obligated to delivery (physical or cash settlement). 
+
+Double counting is avoided in the number. 
+
+If broker-dealer A takes a position in a future and B takes the opposite position, open interest is equal to 1. 
+
+When a contract is launched by an exchange, open interest is zero. 
+
+As participants begin to trade, open interest rises, and this continues until maturity date approaches.
+
+On maturity date, the future is “closed out” and open interest is again zero (because the contract is replaced with another that has a new maturity date).
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im27.png"}
+\end{center}
+
+### Cash Settlement vs Physical Settlement
+
+In many commodities markets, physical settlement takes place, i.e. commodities that underlie futures contracts are delivered at expiry of the contract. 
+
+In financial futures markets, physical delivery also takes place in some cases, but in most cases settlement takes place in the form of cash settlement.
+
+Many traders in futures markets where delivery is required resort to trade reversing prior to expiry of the contract, because they do not want to deliver or receive the physical goods/metals etc.
+
+These traders are involved in the market for speculative or hedging reasons and take an opposite position to the one they hold prior to maturity, in so doing liquidate their position at the clearing house.
+
+### Payoff with Futures (Risk Profile)
+
+The gains and losses on futures are symmetrical around the difference between the spot price on expiry of futures contract and futures price at which the contract was purchased. 
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im28.png"}
+\end{center}
+
+If the spot price on maturity is $SP_m$ and the purchase price is $PP$, then the payoff on a long position per 1 unit of asset is
+$$SP_m - PP$$
+
+The payoff in the case of a short future is,
+$$PP - SP_m$$
+The payoff on a future is a total payoff because nothing was paid for the contract (remember margin is a deposit that earns interest and is repayable in full).
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im29.png"}
+\end{center}
+
+### Pricing of Futures (Fair Value vs Trading)
+
+All or some of the following factors influences the theoretical price of a future, called the fair value price (FVP):
+
+  i) Current/spot price of underlying asset.
+  
+  ii) Financing (interest) costs involved.
+  
+  iii) Cash flows (income) generated by underlying asset.
+  
+  iv) Other costs such as storage and transport costs and insurance.
+
+The theoretical price/FVP of a future is determined according to the cost-of-carry model (CCM).
+
+The FVP is equal to spot price (SP) of underlying asset, plus the cost-of-carry (CC) of underlying asset to expiry of contract. 
+Thus,
+
+$$\text{FVP} = \text{SP} + \text{CC}$$
+$$\text{CC} = \text{SP} \times ( \text{rfr} - I) \times t + \text{OC}$$
+where rfr - risk free rate (i.e. financing cost for period); I - income earned during period (i.e. dividends or interest); t - days to expiry ($\frac{dte}{365}$); OC - other costs (i.e. transport, insurance and storage).
+
+For financial futures,
+$$\text{FVP} = \text{SP} + \text{CC}$$
+$$\text{FVP} = \text{SP} + \text{SP} \times ( \text{rfr} - I) \times t$$
+$$= \text{SP} \times \left( 1 + [\text{rfr}-I] \times t\right)$$
+
+In the case of compound interest,
+$$\text{FVP} = \text{SP} \times \left( 1 + [\text{rfr}-I] \right)^t$$
+
+NB: Compounding makes little difference for short-term contracts.
+
+In the case of short-term interest rate futures, theoretical price or fair value price (FVP) is determined from calculated forward-forward rate (also called implied forward rate).
+
+NB: A basis point = 0.01% per annum.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
