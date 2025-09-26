@@ -1,0 +1,507 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ch5: Options
+
+### Introduction
+
+There exist options on specific instruments (called "physicals") in the various financial markets and commodities market, and options on other derivatives, i.e. futures and swaps.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im51.png"}
+\end{center}
+
+There exist options on derivatives futures and swaps (called swaptions), and there are options on specific instruments and indices in various financial markets and commodity markets.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im52.png"}
+\end{center}
+
+An option bestows upon the holder the right, but not the obligation, to buy or sell the asset underlying the option at a predetermined price during or at the end of a specified period.
+
+Holders exercise their options only if its rewarding to do so, and their potential profit is not finite, while their potential loss is limited to premium paid for the option.
+
+There are two parties to each option: the write and the owner/holder.
+
+The writer grants the rights that the option bestows on the owner.
+
+There are three brands of options:
+
+  i) An American option bestows the right upon the holder to exercise the option at any time before and on expiry date of the option.
+  
+  ii) A European option gives the holder the right to exercise the option only on expiry date of the option.
+  
+  iii) An Asian option has its payoff determined by the average price of the underlying asset over a certain period, rather than the price at a specific point in time.
+  Asian options can be beneficial for hedging purposes as they reduce the impact of volatility on the option's payoff.
+  Are commonly used in markets where prices are highly volatile, and their premiums are lower than those of American/European options due to the averaging feature.
+  
+  iv) A Bermudan option is where early exercise is restricted to certain dates during the life of the option.
+  Its exercise characteristics are somewhere between those of American and European style of options.
+  
+Most options traded locally and internationally are American options.
+
+Options are classified as:
+
+  i) Call option - bestows upon the purchaser the right to buy the underlying asset at the pre-specified price/rate from the writer of the option.
+  
+  ii) Put option - gives the holder the option to sell the underlying asset at the pre-specified price/rate to the writer.
+  
+The buyer pays the writer of the option an amount of money called the premium.
+
+There are two sides to every option contract (in the primary market):
+
+  i) The buyer who has taken a long position, i.e. has bought the option and has the benefits of the option.
+  The buyer pays the premium for the option to the seller.
+  
+  ii) The seller who has taken a short position, i.e. has sold the option and received the premium. 
+  Seller has "no options" but contracted to do something if the buyer decides to exercise the option.
+  The seller is the writer of the option.
+  
+If the writer does not have an offsetting position in the underlying market, he is said to be naked/uncovered.
+If the writer does, then is covered.
+
+Options are said to be:
+
+  i) in-the-money (ITM) - Price of underlying asset > strike price.
+  
+  ii) at-the-money (ATM) - Price of underlying asset = strike price.
+  
+  iii) out-the-money (OTM) - Price of underlying asset < strike price.
+
+Options can be written on anything.
+The house option is written free of charge (i.e. no premium is payable) and has a fixed term of a day or two or three, and is an American option.
+
+The underlying assets in the options markets of the world are other derivatives (futures and swaps) and specific instruments ("physicals") and notional instruments (indices) of the various markets.
+
+There are 8 possibilities of profit and/or losses when the price of the underlying asset changes.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im53.png"}
+\end{center}
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im54.png"}
+\end{center}
+
+```r 
+page 164
+```
+
+An uncovered/naked short call is where the writer does not have a position in the underlying instrument, i.e. is not holding the underlying instrument in the portfolio.
+
+Where the writer does have a matching position in the underlying asset, he is covered, i.e. has a covered short call.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im55.png"}
+\end{center}
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im56.png"}
+\end{center}
+
+### Intrinsic Value and Time Value
+
+The price/premium (P) of an option has two parts, i.e. intrinsic value (IV) and time value (TV).
+$$P = IV + TV$$
+
+The difference between the spot price of the underlying asset (SP) and the exercise price of the option (EP) is the intrinsic value (IV) of the option.
+
+  i) In-the-money (ITM) options have an intrinsic value.
+  
+  ii) At-the-money (ATM) options have no intrinsic value.
+  
+  iii) Out-the-money (OTM) options have no intrinsic value.
+  
+ITM options are:
+
+  i) Call options where $SP > EP$.
+  
+  ii) Put options where $SP < EP$.
+  
+Then, OTM options (have no intrinsic value):
+
+  i) Call options where $SP \le EP$.
+  
+  ii) Put options where $SP \ge EP$.
+
+Thus,
+
+  i) Call options have $IV = SP - EP$.
+
+  ii) Put options have $IV = EP - SP$.
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im57.png"}
+\end{center}
+
+The time value (TV) of an option is the difference between the premium (P) of an option and its intrinsic value (IV)
+
+```{r}
+page 170
+```
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im58.png"}
+\end{center}
+
+As an option moves towards the expiration date, time value diminishes and at expiration time value is zero.
+
+### Option Valuation/Pricing
+
+There are two main option pricing/valuation models used by market participants:
+
+  i) Black-Scholes model
+  
+Holds that the fair option price (or premium) is a function of the probability distribution of the underlying asset price at expiry.
+
+It consists of spot price of underlying asset (SP); exercise/strike price (EP); time to expiration; risk free rate; dividends expected on the underlying asset during the life of the option; volatility of underlying asset price.
+
+The longer the time to expiration, the more valuable both call and put options are.
+The holder of a short-term option has certain exercise opportunities.
+
+The holder of a similar long-term option also has these opportunities and more.
+Thus, the long option must be atleast equal in value to a short-term option with similar characteristics.
+
+The longer the time to expiration, the higher the probability the price of underlying assets will increase/decrease.
+
+(1) As the economy expands, rates tend to increase but so does expected rate of share price increases, because dividends increase.
+
+(2) Its also known that the present value of future cash flows also decreases as rates increase.
+
+The above two effects tend to reduce the prices of put options, i.e. the value of put options decreases as risk free rate increases.
+
+But the value of call options increase as risk free rate increases, as (1) dominates (2).
+
+Dividends have the effect of reducing the share price on ex-dividend date.
+This is positive for puts and negative for calls.
+
+The size of expected dividend is important, and the value of call options is negatively related to the size of expected dividend.
+The opposite applies to put option.
+
+Volatility (i.e. extent of variance in underlying asset price) is not observable.
+Its estimated from data in immediate past.
+
+As volatility increases, so does the chance the share will do well/badly.
+The investor in a share will not be affected because these two outcomes offset one another over time.
+
+In the case of an option holder:
+
+1) The call option holder benefits as prices increase and has limited downside risk if prices fall.
+
+2) The put option holder benefits as prices decrease and has limited downside risk if prices rise.
+
+Thus, both puts and calls increase in value as volatility increase.
+
+The Black-Scholes valuation model (for European call option) is
+$$P_c = N(d_1) S_0 - E(e^{-rt}) N(d_2)$$
+where $P_c$ - price of European call option; $S_0$ - price of underlying asset currently; $E$ - exercise price of option (or base of natural logarithm/exponential function); $r$ - risk-free rate pa; $N(d)$ - value of cummulative normal distribution evaluated at $d$; $t$ - time to expiry in years; $d_1 = \frac{\ln \left( \frac{S_0}{E} \right) + \left(r + \frac{\sigma^2}{2} \right)t}{\sigma \sqrt{t}}$; $d_2 = d_1 - \sigma \sqrt{t}$; $\sigma^2$ - variance (of price of underlying asset on annual basis).
+
+The Black-Scholes valuation model (for European put option) is
+$$P_p = - E(e^{-rt}) N(-d_2) - N(d_1)S_0$$
+
+The parameter of the model that cannot be directly observed is the price volatility of underlying asset (standard deviation).
+Its in the range of 20-40% pa, and estimated from history of assets.
+
+An alternative approach is implied volatility, which is volatility implied by option price observed in the market.
+
+Implied volatilities are used to gauge the opinion of market participants about the volatility of a particular underlying asset.
+
+Implied volatilities are derived from actively traded options and used to make comparisons of option prices.
+
+Black Scholes option pricing model rests on simplifying assumptions such as underlying asset pays no interest/dividends during its life, risk-free rate is fixed for the life of the option, financial markets are efficient and transaction costs are zero etc.
+
+```{r}
+page 175
+```
+  
+  ii) Binomial model
+
+Black Scholes model undervalues deep-in-the-money options, less accurate for dividend paying options and if option is of American variety.
+Another problem is assumption of log normality of future asset prices.
+
+The binomial model uses binomial tree, i.e. a diagram representing different possible paths that may be followed by underlying asset over life of option.
+
+There are two other valuation models, i.e. Monte Carlo simulation and Finite difference methods (implicit finite difference method and explicit finite difference method)
+
+The "Greeks" measure different dimensions of risk in option positions:
+
+  a) Delta - the rate of change of option price with respect to the price of underlying asset.
+  
+  b) Theta - Theta of a portfolio of derivatives is the rate of change of portfolio value with respect to passage of time, ceteris paribus.
+  Also referred as time decay of portfolio.
+  
+  c) Gamma - Gamma of a portfolio of derivatives of underlying asset is the rate of change of portfolio's delta with respect to price of underlying asset.
+  
+  d) Vega - Vega of a portfolio of derivatives is the rate of change of value of portfolio with respect to volatility of underlying asset.
+  
+  e) Rho - Rho of a portfolio of derivatives is the rate of change of portfolio value with respect to interest rate.
+  
+Put-call parity defines a special relationship between prices of European call and put options with the same strike price, nominal and expiry date.
+The relationship is used to synthesize long/short asset positions.
+
+It works by buying a call option and selling a put option with same strike price, same nominal, and same expiry creates a synthetic long asset position.
+Buying a put option and selling a call option with same strike price, same nominal, and same expiry creates a synthetic short asset position.
+
+For European options, there exists a standard relationship that ensures no arbitrage opportunities between the prices of calls and puts with same strike price and expiration.
+This is,
+$$C + \frac{X}{(1+r)^T} = P + S$$
+
+where $C$ - call price; $P$ - put price; $S$ - underlying asset price (spot price); $X$ - strike price; $r$ - risk free interest rate; $T$ - time to maturity (in years).
+
+This equation holds for European options that cannot be exercised before expiration. 
+It helps ensure that no arbitrage opportunities exist between prices of put and call options with the same strike price and expiration date. 
+
+The strike price is adjusted to its present value because these options are settled at expiration.
+
+There's a specific relationship for futures markets derived from put-call parity,
+$$\text{Futures price} = \text{Strike} + \text{call premium} - \text{put premium}$$
+
+If a long/short asset position is synthesised using options, can compare the implied futures price created through put-call parity with actual futures price trading in the market.
+
+Any discrepancy in price results in arbitrage opportunity.
+
+Selling futures will cause the price to fall. 
+Buying calls will drive the premium up and selling puts will drive the premium down. 
+
+Therefore, the effect of arbitrage trading drives the market prices back into line so that fair value is re-established. 
+
+Put-call parity plays a crucial role in maintaining balance between option and futures markets. 
+
+By understanding this relationship, traders can identify arbitrage opportunities and synthesize long or short positions in a risk-free 
+manner
+
+### Organisational Structure of Option Markets
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im42.png"}
+\end{center}
+
+The market form of options is a mixture of formal in the shape of an exchange where options are listed, and OTC.
+
+Whether option markets are primary markets and/or secondary market, depends on whether they are OTC or exchange-traded.
+
+In OTC markets, there are primary markets in which options are issued and secondary markets in which existing options can be sold and bought.
+
+In exchange-traded options, the primary and secondary markets are "merged".
+They are issued by the exchange (primary market) and can be "sold" ("closed out") in the sense of dealing in the opposite direction.
+
+But the holder/buyer of an option has other alternatives:
+  
+  i) exercise the option (if its an American option and has value), or
+  
+  ii) let it expire worthless on expiration date.
+  
+The main advantage of exchange-traded options:
+
+  i) They are guaranteed by the exchange
+  
+  ii) They are standardised 
+  
+  iii) They are (usually) liquid markets.
+  
+The main advantage of OTC market is that options are customised.
+
+The trading-driver process of listed options is the same as in listed futures.
+
+The client telephones the broker and places an order to sell/buy a particular number of call/put options.
+
+The order placed is either a:
+
+  i) Market order - an instruction to deal at the best available price
+  
+  ii) Limit order - an order to transact at a specific price.
+  
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im43.png"}
+\end{center}
+
+In OTC markets, the method of trading is screen/telephone or just telephone, and the trading driver is quote.
+
+Certain broker-dealers quote option buying and selling prices (premiums).
+Settlement takes place on $T+1$ or $T+2$.
+
+Not anyone is able to trade in the OTC market because each party is directly exposed to the other party in terms of risks such as settlement risk, risk of tainted scrip, default risk etc.
+
+### Options on Derivatives: Futures
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im59.png"}
+\end{center}
+
+All futures markets are formalised markets.
+Options are available on all futures, and most of options are exchange-traded.
+
+With regard to options on futures, i.e. futures options, the underlying instrument is a futures contract (not the underlying instrument of the future).
+
+Thus the relevant price is the price of the futures contract (and not the price of underlying instrument/index).
+
+The futures contract matures a short while after expiration of futures option.
+
+When the holder of a call futures option exercises the option, the writer is obligated to deliver to the holder of the option:
+
+  i) A long position in the underlying futures contract.
+  
+  ii) And an amount thats equal to the difference between the last MTM futures price and exercise price.
+  
+Conversely, when the holder of a put on a future exercises the option, the writer is obliged to deliver to the holder of the put:
+
+  i) A short position in the underlying futures contract.
+  
+  ii) And an amount equal to the difference between exercise price and last MTM futures price.
+  
+Most options on futures are settled in cash.
+
+```{r}
+page 186
+```
+
+Options contracts take on many of the features of the underlying instruments, i.e. futures contracts.
+
+The two basic uses of options on futures are to protect a future investment's return from falling interest rates/rising prices (call option), and to protect against rising interest rates/falling prices (put options).
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im60.png"}
+\end{center}
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im61.png"}
+\end{center}
+
+The can-do option is a hybrid of an exchange listed option and an OTC option, i.e. its listed but has flexibility of OTC option.
+
+Its expiry date is specified by investor, and settlement is cash/physical at the option of the investor.
+It has minimum contract size of R10 million.
+
+### Options on Derivatives: Swaps
+
+\begin{center}
+\includegraphics[width=10cm, height=4cm]{"C:/Catapult Programme/Training/SAIFM Exams/Derivatives Market/Images/Im62.png"}
+\end{center}
+
+Although options can be traded on any swaps, swaptions refer to option on interest rate swap (largest swap market).
+
+A swaption is a combination of an interest rate swap and an option.
+
+In interest rate swaps, fixed-rate obligations (cash flows) are swapped for floating rate obligations.
+
+In swaptions, the underlying instrument is fixed-rate obligation. 
+
+Thus, a call swaption imparts the right to the holder to receive the fixed rate in exchange for floating rate, while in put 
+swaptions, the holder has the right to pay fixed and receive floating.
+
+```{r}
+page 193
+```
+
+The swaption is an alternative to the forward swap.
+
+The forward swap obliges the holder to enter into a swap after a stipulated period, but the holder pays no premium 
+for it.
+
+In swaption, the holder is not obligated and can allow the swaption to lapse, i.e. allows the holder to benefit from favourable interest rate movements.
+
+### Options on Debt Market Instruments
+
+The term “debt market instruments” in respect of options encompasses money and bond market specific instruments (“physicals”) (or rather some of them) and 
+notional instruments (indices) (or some of them):
+
+1) Money market options:
+
+  i) Options on specific money market instruments
+  
+  ii) Interest rate caps and floors
+  
+2) Bond market options:
+
+  i) Options on specific bonds
+  
+  ii) Options on bond indices
+  
+  iii) Bond warrants (retail options)
+  
+  iv) Bond warrants (call options)
+  
+  v) Callable and puttable bonds (bonds with embedded options)
+  
+  vi) Convertible bonds
+  
+Money market options are comprised of options on specific money market instruments (and this includes ordinary deposits) and caps and floors (these 
+are option-like instruments).
+
+Money market options are options written on specific money market instruments, such as commercial paper, NCDs, deposits, etc. 
+
+```{r}
+page 196
+```
+
+Caps and floors (a combination of which is a collar) are akin to options. 
+These are cap options and floor options. 
+
+A cap purchased makes it possible for a company with a borrowing requirement
+to hedge itself against rising interest rates. The cap contract establishes a 
+ceiling, but the company retains the right to benefit from falling interest rates. 
+On the other hand, a floor contract allows a company with an investment 
+requirement (surplus funds) to shield itself against declining interest rates by 
+determining a specified floor upfront, while it retains the right to profit from rising 
+interest rates. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
