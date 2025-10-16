@@ -1,0 +1,174 @@
+---
+author: |
+  - |
+    Mbanguta Lwando
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+classoption: notitlepage
+geometry: margin=1in
+header-includes:
+  - "\\usepackage{graphicx}"
+  - \usepackage{pdfpages}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ch9: Historical Development of Bond Market in SA
+
+### The Early Days and Primary Market
+
+The bond market started with the first issue of long-term paper in the first colony of the Republic of South Africa. 
+
+The first attempt to issue debt instruments in the Colony of the Cape of Good Hope took place in 1820 when the Governor, Lord Charles Somerset, issued a Proclamation providing for the issue of debentures to the value of Rixdollars 200 000.
+
+This proved to be a failure and the Governor obtained a loan from the British Government. 
+
+Loans were mainly utilised in the ensuing years and the first issue of debentures took place in 1857.
+
+The Natal Colony, the Orange Free State Republic and the Transvaal Republic followed shortly afterwards with issues. 
+
+Public utility long-term paper was first issued in the Cape after 1843, while municipal bonds first appeared in 1861.
+
+The municipal authority of Durban followed shortly afterwards. 
+
+After Union in 1910, the first issue of loan stock (bonds) took place after the passing of 1911 General Loans Act, which provided for the loan procedures of the central government.
+
+Bonds were initially issued by public tender or directly to investors, but from around 1917, subscriptions for bonds were invited. 
+
+This was the main method of issuing bonds by government and by municipal authorities and public corporations until the early 1980s. 
+
+The Treasury, in the main, determined the rates on issues. 
+
+From 1982 the Treasury, in addition to issuing bonds on subscription, began issuing bonds on a tender basis via its agent, the Reserve Bank.
+
+Later that year, the Reserve Bank began to issue government bonds on a tap basis. 
+
+Most other large issuers of bonds adopted this method shortly afterwards. 
+
+Many of the issuers in the 1980s began to make markets in their own bonds and traded actively in their own bonds in order to enhance marketability. 
+
+This is a uniquely South African situation, as in other countries issuers play no part in the market making of their own bonds (they appoint banks to fulfil this task).
+
+The options market in bonds also saw light in the late eighties, which further enhanced the liquidity in the bond market. 
+
+In the late nineties, the National Treasury appointed market makers (called primary dealers) to take up and make a market in government bonds. 
+
+This is the primary method of issuing bonds since then.
+
+### Secondary Bond Market Development
+
+Prior to 1950s, the secondary bond market was non-existent and the government had difficulty in marketing new issues.
+
+To create stable and orderly conditions in the bond market, the Reserve Bank in consultation with Treasury (Department of Finance), introduced the “pattern of rates” in July 1952.
+
+This was a list of all government bonds in issue and the rates at which the Reserve Bank and the Public Debt Commissioners (now PIC) were prepared, at times, to buy and sell these securities. 
+
+This development added some impetus to the market. 
+
+As a result of developments in the money market in the early 1950s, activity in short-term government bonds (less than 3 years to maturity) emerged.
+
+By the mid-1950s, the market in short-term bonds was considered sufficiently developed to abolish the pattern of rates on these bonds. 
+This occurred in May 1955. 
+
+The establishment of the first merchant bank in 1955 and the first two discount houses in 1957 and 1961, led to further development of market in short-term bonds.
+
+With promulgation of 1965 Banks Act and introduction of severe liquid asset requirements (for which short-term government bonds qualified), the market became more active and discount houses began publishing price lists for various short-term bonds in issue. 
+
+Although the market became more active, it also became narrower.
+
+This was because the liquid asset requirements (for banks) caused the rate for liquid bonds to be lower than for other securities of equivalent maturity, rendering them unattractive for long-term insurers and pension funds.
+
+These institutions’ interest in these bonds was restricted to selling them to the banks as they became liquid (i.e. when they fell into liquid asset category). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
